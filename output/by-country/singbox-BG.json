@@ -5,8 +5,8 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-      "server": "104.19.41.169",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
+      "server": "172.67.79.139",
       "server_port": 80,
       "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
       "transport": {
@@ -19,8 +19,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
-      "server": "104.24.232.225",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe",
+      "server": "cloudflare.182682.xyz",
       "server_port": 443,
       "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
       "tls": {
@@ -41,34 +41,20 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
-      "server": "vpn-au-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "css.rbxcdn.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 03 - xiaohe"
+        "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
+        "🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 03 - xiaohe"
+        "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
+        "🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,8 +4,8 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
-  server: 104.19.41.169
+- name: 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
+  server: 172.67.79.139
   port: 80
   udp: true
   type: vless
@@ -15,8 +15,8 @@ proxies:
     path: /
     headers:
       Host: 25ec.yubo.qzz.io
-- name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
-  server: 104.24.232.225
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
+  server: cloudflare.182682.xyz
   port: 443
   udp: true
   type: vless
@@ -30,29 +30,19 @@ proxies:
     path: /
     headers:
       Host: 25ec.yubo.qzz.io
-- name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
-  server: vpn-au-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: css.rbxcdn.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
 rules:
 - MATCH,PROXIES

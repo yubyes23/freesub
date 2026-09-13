@@ -5,24 +5,31 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇿 阿塞拜疆 (Azerbaijan) 01 - xiaohe",
-      "server": "basalam.horqen.ir",
-      "server_port": 21289,
-      "uuid": "c12db015-a63c-43e5-a744-6398a90373b5"
+      "tag": "🇩🇪 德国 (Germany) 01 (家宽) - xiaohe",
+      "server": "cf.0sm.com",
+      "server_port": 80,
+      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "25ec.yubo.qzz.io"
+        }
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇿 阿塞拜疆 (Azerbaijan) 01 - xiaohe"
+        "🇩🇪 德国 (Germany) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇿 阿塞拜疆 (Azerbaijan) 01 - xiaohe"
+        "🇩🇪 德国 (Germany) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - xiaohe
-  server: 104.17.146.33
+  server: 162.159.139.88
   port: 80
   udp: true
   type: vless
@@ -16,7 +16,7 @@ proxies:
     headers:
       Host: 25ec.yubo.qzz.io
 - name: 🇩🇪 德国 (Germany) 02 - xiaohe
-  server: 104.25.249.73
+  server: 104.17.147.49
   port: 80
   udp: true
   type: vless
@@ -27,18 +27,18 @@ proxies:
     headers:
       Host: 25ec.yubo.qzz.io
 - name: 🇩🇪 德国 (Germany) 03 - xiaohe
-  server: 104.17.146.199
-  port: 443
+  server: 104.17.128.10
+  port: 80
   udp: true
-  type: trojan
-  password: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  sni: 25ec.yubo.qzz.io
-  skip-cert-verify: false
+  type: vless
+  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: 25ec.yubo.qzz.io
 - name: 🇩🇪 德国 (Germany) 04 - xiaohe
-  server: 104.17.155.78
+  server: 104.24.134.57
   port: 80
   udp: true
   type: vless
@@ -49,7 +49,7 @@ proxies:
     headers:
       Host: 25ec.yubo.qzz.io
 - name: 🇩🇪 德国 (Germany) 05 - xiaohe
-  server: 104.16.146.99
+  server: 25ec.yubo.qzz.io
   port: 80
   udp: true
   type: vless
@@ -60,37 +60,29 @@ proxies:
     headers:
       Host: 25ec.yubo.qzz.io
 - name: 🇩🇪 德国 (Germany) 06 - xiaohe
-  server: 104.17.155.78
-  port: 443
+  server: 104.17.147.32
+  port: 80
   udp: true
   type: vless
   uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  tls: true
-  servername: 25ec.yubo.qzz.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
       Host: 25ec.yubo.qzz.io
 - name: 🇩🇪 德国 (Germany) 07 - xiaohe
-  server: 104.16.146.99
-  port: 443
+  server: 162.159.139.248
+  port: 80
   udp: true
   type: vless
   uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  tls: true
-  servername: 25ec.yubo.qzz.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
       Host: 25ec.yubo.qzz.io
 - name: 🇩🇪 德国 (Germany) 08 - xiaohe
-  server: cf.877771.xyz
+  server: 104.19.145.239
   port: 80
   udp: true
   type: vless
@@ -101,7 +93,7 @@ proxies:
     headers:
       Host: 25ec.yubo.qzz.io
 - name: 🇩🇪 德国 (Germany) 09 - xiaohe
-  server: 104.25.251.122
+  server: 104.17.144.162
   port: 443
   udp: true
   type: vless
@@ -116,33 +108,29 @@ proxies:
     headers:
       Host: 25ec.yubo.qzz.io
 - name: 🇩🇪 德国 (Germany) 10 - xiaohe
-  server: 104.25.244.221
-  port: 443
+  server: cf.090227.xyz
+  port: 80
   udp: true
   type: vless
   uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  tls: true
-  servername: 25ec.yubo.qzz.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
       Host: 25ec.yubo.qzz.io
 - name: 🇩🇪 德国 (Germany) 11 - xiaohe
-  server: 104.16.146.99
-  port: 443
+  server: 104.17.144.162
+  port: 80
   udp: true
-  type: trojan
-  password: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  sni: 25ec.yubo.qzz.io
-  skip-cert-verify: false
+  type: vless
+  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: 25ec.yubo.qzz.io
 - name: 🇩🇪 德国 (Germany) 12 - xiaohe
-  server: 104.17.186.110
+  server: 162.159.130.74
   port: 443
   udp: true
   type: trojan
@@ -153,7 +141,7 @@ proxies:
   ws-opts:
     path: /
 - name: 🇩🇪 德国 (Germany) 13 - xiaohe
-  server: 104.19.41.169
+  server: cdn.tzpro.xyz
   port: 443
   udp: true
   type: trojan
@@ -164,7 +152,7 @@ proxies:
   ws-opts:
     path: /
 - name: 🇩🇪 德国 (Germany) 14 - xiaohe
-  server: cf.090227.xyz
+  server: 172.67.79.139
   port: 443
   udp: true
   type: trojan
@@ -175,18 +163,7 @@ proxies:
   ws-opts:
     path: /
 - name: 🇩🇪 德国 (Germany) 15 - xiaohe
-  server: xn--b6gac.eu.org
-  port: 443
-  udp: true
-  type: trojan
-  password: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  sni: 25ec.yubo.qzz.io
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 德国 (Germany) 16 - xiaohe
-  server: 25ec.yubo.qzz.io
+  server: cf.0sm.com
   port: 443
   udp: true
   type: vless
@@ -200,8 +177,19 @@ proxies:
     path: /
     headers:
       Host: 25ec.yubo.qzz.io
+- name: 🇩🇪 德国 (Germany) 16 - xiaohe
+  server: xn--b6gac.eu.org
+  port: 443
+  udp: true
+  type: trojan
+  password: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  sni: 25ec.yubo.qzz.io
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
 - name: 🇩🇪 德国 (Germany) 17 - xiaohe
-  server: 104.25.251.122
+  server: 104.24.134.57
   port: 443
   udp: true
   type: trojan
@@ -212,22 +200,18 @@ proxies:
   ws-opts:
     path: /
 - name: 🇩🇪 德国 (Germany) 18 - xiaohe
-  server: 104.17.146.199
+  server: 162.159.139.248
   port: 443
   udp: true
-  type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  tls: true
-  servername: 25ec.yubo.qzz.io
+  type: trojan
+  password: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  sni: 25ec.yubo.qzz.io
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: 25ec.yubo.qzz.io
 - name: 🇩🇪 德国 (Germany) 19 - xiaohe
-  server: cf.877771.xyz
+  server: 104.25.249.185
   port: 443
   udp: true
   type: trojan
@@ -238,40 +222,70 @@ proxies:
   ws-opts:
     path: /
 - name: 🇩🇪 德国 (Germany) 20 - xiaohe
-  server: 104.24.232.225
-  port: 80
+  server: 104.16.245.1
+  port: 443
   udp: true
   type: vless
   uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  tls: true
+  servername: 25ec.yubo.qzz.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
       Host: 25ec.yubo.qzz.io
 - name: 🇩🇪 德国 (Germany) 21 - xiaohe
-  server: 104.17.186.110
-  port: 80
+  server: 104.25.249.185
+  port: 443
   udp: true
   type: vless
   uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  tls: true
+  servername: 25ec.yubo.qzz.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
       Host: 25ec.yubo.qzz.io
 - name: 🇩🇪 德国 (Germany) 22 - xiaohe
-  server: cf.0sm.com
-  port: 80
+  server: 162.159.139.88
+  port: 443
   udp: true
-  type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  type: trojan
+  password: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  sni: 25ec.yubo.qzz.io
+  skip-cert-verify: false
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: 25ec.yubo.qzz.io
 - name: 🇩🇪 德国 (Germany) 23 - xiaohe
-  server: 104.19.41.169
+  server: cf.0sm.com
+  port: 443
+  udp: true
+  type: trojan
+  password: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  sni: 25ec.yubo.qzz.io
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 德国 (Germany) 24 - xiaohe
+  server: cf.090227.xyz
+  port: 443
+  udp: true
+  type: trojan
+  password: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  sni: 25ec.yubo.qzz.io
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 德国 (Germany) 25 - xiaohe
+  server: 104.19.145.239
   port: 443
   udp: true
   type: vless
@@ -280,57 +294,13 @@ proxies:
   servername: 25ec.yubo.qzz.io
   skip-cert-verify: false
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 25ec.yubo.qzz.io
-- name: 🇩🇪 德国 (Germany) 24 - xiaohe
-  server: 104.25.244.221
-  port: 80
-  udp: true
-  type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 25ec.yubo.qzz.io
-- name: 🇩🇪 德国 (Germany) 25 - xiaohe
-  server: 25ec.yubo.qzz.io
-  port: 80
-  udp: true
-  type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
   network: ws
   ws-opts:
     path: /
     headers:
       Host: 25ec.yubo.qzz.io
 - name: 🇩🇪 德国 (Germany) 26 - xiaohe
-  server: 104.25.251.122
-  port: 80
-  udp: true
-  type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 25ec.yubo.qzz.io
-- name: 🇩🇪 德国 (Germany) 27 - xiaohe
-  server: xn--b6gac.eu.org
-  port: 80
-  udp: true
-  type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 25ec.yubo.qzz.io
-- name: 🇩🇪 德国 (Germany) 28 - xiaohe
-  server: cf.090227.xyz
+  server: 162.159.139.248
   port: 443
   udp: true
   type: vless
@@ -344,19 +314,41 @@ proxies:
     path: /
     headers:
       Host: 25ec.yubo.qzz.io
-- name: 🇩🇪 德国 (Germany) 29 - xiaohe
-  server: 104.17.146.199
-  port: 80
+- name: 🇩🇪 德国 (Germany) 27 - xiaohe
+  server: 104.17.147.32
+  port: 443
   udp: true
-  type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  type: trojan
+  password: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  sni: 25ec.yubo.qzz.io
+  skip-cert-verify: false
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: 25ec.yubo.qzz.io
+- name: 🇩🇪 德国 (Germany) 28 (家宽) - xiaohe
+  server: 104.17.128.170
+  port: 443
+  udp: true
+  type: trojan
+  password: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  sni: 25ec.yubo.qzz.io
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 德国 (Germany) 29 - xiaohe
+  server: 104.17.25.21
+  port: 443
+  udp: true
+  type: trojan
+  password: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  sni: 25ec.yubo.qzz.io
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
 - name: 🇩🇪 德国 (Germany) 30 - xiaohe
-  server: cdn.tzpro.xyz
+  server: 104.17.128.170
   port: 443
   udp: true
   type: vless
@@ -371,125 +363,75 @@ proxies:
     headers:
       Host: 25ec.yubo.qzz.io
 - name: 🇩🇪 德国 (Germany) 31 - xiaohe
-  server: 25ec.yubo.qzz.io
-  port: 443
+  server: cdn.tzpro.xyz
+  port: 80
   udp: true
-  type: trojan
-  password: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  sni: 25ec.yubo.qzz.io
-  skip-cert-verify: false
+  type: vless
+  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: 25ec.yubo.qzz.io
 - name: 🇩🇪 德国 (Germany) 32 - xiaohe
-  server: 104.25.249.73
+  server: 104.17.147.32
   port: 443
   udp: true
-  type: trojan
-  password: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  sni: 25ec.yubo.qzz.io
+  type: vless
+  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  tls: true
+  servername: 25ec.yubo.qzz.io
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: 25ec.yubo.qzz.io
 - name: 🇩🇪 德国 (Germany) 33 - xiaohe
-  server: 104.17.146.33
+  server: www.shopify.com
   port: 443
   udp: true
-  type: trojan
-  password: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  sni: 25ec.yubo.qzz.io
+  type: vless
+  uuid: 44ccea3e-41f5-47c4-bcb1-7f651d7b0747
+  tls: true
+  servername: php.bou.qzz.io
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /44ccea3e-41f5-47c4-bcb1-7f651d7b0747
+    headers:
+      Host: php.bou.qzz.io
 - name: 🇩🇪 德国 (Germany) 34 - xiaohe
-  server: 104.17.139.210
-  port: 80
-  udp: true
-  type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 25ec.yubo.qzz.io
-- name: 🇩🇪 德国 (Germany) 35 - xiaohe
-  server: cloudflare-ip.mofashi.ltd
-  port: 80
-  udp: true
-  type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 25ec.yubo.qzz.io
-- name: 🇩🇪 德国 (Germany) 36 - xiaohe
-  server: replay.wwwinternetvideo.click
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 2691cbe7c20cced8b0aeb12c812d09077e5b3eec7669fb8f
-  sni: replay.wwwinternetvideo.click
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 37 - xiaohe
-  server: cfip.1323123.xyz
-  port: 80
-  udp: true
-  type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 25ec.yubo.qzz.io
-- name: 🇩🇪 德国 (Germany) 38 - xiaohe
-  server: time.is
+  server: 80.91.79.136
   port: 443
   udp: true
   type: vless
-  uuid: 44ccea3e-41f5-47c4-bcb1-7f651d7b0747
-  tls: true
-  servername: php.bou.qzz.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /44ccea3e-41f5-47c4-bcb1-7f651d7b0747
-    headers:
-      Host: php.bou.qzz.io
-- name: 🇩🇪 德国 (Germany) 39 - xiaohe
-  server: store.ubi.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 44ccea3e-41f5-47c4-bcb1-7f651d7b0747
-  tls: true
-  servername: php.bou.qzz.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /44ccea3e-41f5-47c4-bcb1-7f651d7b0747
-    headers:
-      Host: php.bou.qzz.io
-- name: 🇩🇪 德国 (Germany) 40 - xiaohe
-  server: 5.35.81.60
-  port: 4443
-  udp: true
-  type: vless
-  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  uuid: 807cd1e0-f4ce-4785-b7a3-cde0c1614b8d
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: nhvyI4KrKDUSgw9Fa63SDeNATaTsAu9bRZ4qaraydRM
-    short-id: e5f6a1b2
-  servername: maps.apple.com
+    public-key: g9uQwtqcqsPvzqQy2hM4rpvTIGXRQSAt-MAgHpz_gCI
+    short-id: 0b0bf0590fb9c138
+  servername: www.logitech.com
   client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: snob-grpc-de
-- name: 🇩🇪 德国 (Germany) 41 - xiaohe
+- name: 🇩🇪 德国 (Germany) 35 - xiaohe
+  server: www.udemy.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 44ccea3e-41f5-47c4-bcb1-7f651d7b0747
+  tls: true
+  servername: php.bou.qzz.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /44ccea3e-41f5-47c4-bcb1-7f651d7b0747
+    headers:
+      Host: php.bou.qzz.io
+- name: 🇩🇪 德国 (Germany) 36 - xiaohe
   server: 2.27.59.206
   port: 443
   udp: true
@@ -499,6 +441,14 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
+- name: 🇩🇪 德国 (Germany) 37 - xiaohe
+  server: replay.wwwinternetvideo.click
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 2691cbe7c20cced8b0aeb12c812d09077e5b3eec7669fb8f
+  sni: replay.wwwinternetvideo.click
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -531,7 +481,7 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 25 - xiaohe
   - 🇩🇪 德国 (Germany) 26 - xiaohe
   - 🇩🇪 德国 (Germany) 27 - xiaohe
-  - 🇩🇪 德国 (Germany) 28 - xiaohe
+  - 🇩🇪 德国 (Germany) 28 (家宽) - xiaohe
   - 🇩🇪 德国 (Germany) 29 - xiaohe
   - 🇩🇪 德国 (Germany) 30 - xiaohe
   - 🇩🇪 德国 (Germany) 31 - xiaohe
@@ -541,10 +491,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 35 - xiaohe
   - 🇩🇪 德国 (Germany) 36 - xiaohe
   - 🇩🇪 德国 (Germany) 37 - xiaohe
-  - 🇩🇪 德国 (Germany) 38 - xiaohe
-  - 🇩🇪 德国 (Germany) 39 - xiaohe
-  - 🇩🇪 德国 (Germany) 40 - xiaohe
-  - 🇩🇪 德国 (Germany) 41 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -577,7 +523,7 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 25 - xiaohe
   - 🇩🇪 德国 (Germany) 26 - xiaohe
   - 🇩🇪 德国 (Germany) 27 - xiaohe
-  - 🇩🇪 德国 (Germany) 28 - xiaohe
+  - 🇩🇪 德国 (Germany) 28 (家宽) - xiaohe
   - 🇩🇪 德国 (Germany) 29 - xiaohe
   - 🇩🇪 德国 (Germany) 30 - xiaohe
   - 🇩🇪 德国 (Germany) 31 - xiaohe
@@ -587,9 +533,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 35 - xiaohe
   - 🇩🇪 德国 (Germany) 36 - xiaohe
   - 🇩🇪 德国 (Germany) 37 - xiaohe
-  - 🇩🇪 德国 (Germany) 38 - xiaohe
-  - 🇩🇪 德国 (Germany) 39 - xiaohe
-  - 🇩🇪 德国 (Germany) 40 - xiaohe
-  - 🇩🇪 德国 (Germany) 41 - xiaohe
 rules:
 - MATCH,PROXIES

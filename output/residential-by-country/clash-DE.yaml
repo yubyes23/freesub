@@ -4,28 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇷 法国 (France) 01 - xiaohe
-  server: 188.114.96.3
-  port: 443
+- name: 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
+  server: cf.0sm.com
+  port: 80
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
+  type: vless
+  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
   network: ws
   ws-opts:
-    path: /assignment
+    path: /
+    headers:
+      Host: 25ec.yubo.qzz.io
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇫🇷 法国 (France) 01 - xiaohe
+  - 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 (France) 01 - xiaohe
+  - 🇩🇪 德国 (Germany) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
