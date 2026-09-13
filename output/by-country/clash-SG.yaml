@@ -27,14 +27,6 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 03 - xiaohe
-  server: 138.2.73.238
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: f87376e17da040ed04c9665ce8972930
-  sni: 138.2.73.238
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,7 +34,6 @@ proxy-groups:
   - AUTO
   - 🇸🇬 新加坡 (Singapore) 01 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 02 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -50,6 +41,5 @@ proxy-groups:
   proxies:
   - 🇸🇬 新加坡 (Singapore) 01 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 02 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 03 - xiaohe
 rules:
 - MATCH,PROXIES

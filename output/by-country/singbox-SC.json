@@ -6,7 +6,30 @@
     {
       "type": "vless",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
-      "server": "104.17.139.237",
+      "server": "xn--b6gac.eu.org",
+      "server_port": 443,
+      "uuid": "3576016a-4b14-4e5f-94f2-73fde6791602",
+      "tls": {
+        "enabled": true,
+        "server_name": "5685.bnm.dpdns.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "5685.bnm.dpdns.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe",
+      "server": "104.25.249.73",
       "server_port": 80,
       "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
       "transport": {
@@ -19,7 +42,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe",
       "server": "138.124.0.168",
       "server_port": 8080,
       "password": "h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT",
@@ -35,7 +58,8 @@
       "outbounds": [
         "auto",
         "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
-        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe"
+        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe",
+        "🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe"
       ]
     },
     {
@@ -43,7 +67,8 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
-        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe"
+        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe",
+        "🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -11,51 +11,21 @@ proxies:
   type: trojan
   password: humanity
   sni: www.calmlunch.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇫🇷 法国 (France) 02 - xiaohe
-  server: kama1.api3-max.ru
-  port: 443
-  udp: true
-  type: vless
-  uuid: 97ecaad4-452c-45ec-b591-d68d3308aad4
-  flow: xtls-rprx-vision
-  tls: true
-  servername: kama1.api3-max.ru
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 03 - xiaohe
-  server: 172.67.175.23
-  port: 443
-  udp: true
-  type: vless
-  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
-  tls: true
-  servername: trex-panel-nubj0s.samifakor.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /stream/TrexBridge/ef859652a80e
-    headers:
-      Host: trex-panel-nubj0s.samifakor.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇫🇷 法国 (France) 01 - xiaohe
-  - 🇫🇷 法国 (France) 02 - xiaohe
-  - 🇫🇷 法国 (France) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇫🇷 法国 (France) 01 - xiaohe
-  - 🇫🇷 法国 (France) 02 - xiaohe
-  - 🇫🇷 法国 (France) 03 - xiaohe
 rules:
 - MATCH,PROXIES

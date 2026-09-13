@@ -39,25 +39,12 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
-      "server": "138.2.73.238",
-      "server_port": 50160,
-      "password": "f87376e17da040ed04c9665ce8972930",
-      "tls": {
-        "enabled": true,
-        "server_name": "138.2.73.238",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 03 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 02 - xiaohe"
       ]
     },
     {
@@ -65,8 +52,7 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 03 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
