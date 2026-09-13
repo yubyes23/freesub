@@ -71,10 +71,8 @@ SOURCE_URLS = [
     "https://5673.yubk.dpdns.org/662a937e-af17-4330-aeb1-3262d369dfe5?sub=owo.o00o.ooo",
     "https://web.nob.de5.net/file/11.txt",
     "https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/refs/heads/master/list.txt",
-    "https://raw.githubusercontent.com/somemoo/v2rayfree/main/v2rayfree",
     "https://raw.githubusercontent.com/WLget/V2Ray_configs_64/refs/heads/master/ConfigSub_list.txt",
     "https://raw.githubusercontent.com/qunhui201/free/refs/heads/main/test/working_nodes.txt",
-    "https://fm.sdnlv0.cn/api/v1/feima/subscribe?token=3096c750be9b1699ec7c22f0796df66c",
     "https://25ec.yubo.qzz.io/8cc4f532-7c2f-4884-ab4e-64f5046152a2/sub",
 ]
 
