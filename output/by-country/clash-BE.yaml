@@ -4,19 +4,8 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
-  server: 172.67.79.139
-  port: 80
-  udp: true
-  type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 25ec.yubo.qzz.io
-- name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
-  server: cloudflare.182682.xyz
+- name: 🇧🇪 比利时 (Belgium) 01 - xiaohe
+  server: 25ec.yubo.qzz.io
   port: 443
   udp: true
   type: vless
@@ -35,14 +24,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
+  - 🇧🇪 比利时 (Belgium) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
-  - 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
+  - 🇧🇪 比利时 (Belgium) 01 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -5,18 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: cloudflare-ip.mofashi.ltd
-  port: 80
-  udp: true
-  type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 25ec.yubo.qzz.io
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: cf.877771.xyz
+  server: 104.17.145.208
   port: 443
   udp: true
   type: vless
@@ -30,7 +19,7 @@ proxies:
     path: /
     headers:
       Host: 25ec.yubo.qzz.io
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   server: msk.frkn.org
   port: 443
   udp: true
@@ -38,6 +27,14 @@ proxies:
   password: f317b5d6-d399-4d3d-a051-89d674ae953c
   sni: msk.frkn.org
   skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  server: 31.76.71.252
+  port: 443
+  udp: true
+  type: hysteria2
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+  sni: gta.internet-card.sbs
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
