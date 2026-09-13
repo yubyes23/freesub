@@ -1,0 +1,44 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇫🇷 法国 (France) 01 - xiaohe
+  server: 188.114.96.3
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 02 - xiaohe
+  server: kama1.api3-max.ru
+  port: 443
+  udp: true
+  type: vless
+  uuid: 97ecaad4-452c-45ec-b591-d68d3308aad4
+  flow: xtls-rprx-vision
+  tls: true
+  servername: kama1.api3-max.ru
+  skip-cert-verify: false
+  client-fingerprint: chrome
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇫🇷 法国 (France) 01 - xiaohe
+  - 🇫🇷 法国 (France) 02 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇫🇷 法国 (France) 01 - xiaohe
+  - 🇫🇷 法国 (France) 02 - xiaohe
+rules:
+- MATCH,PROXIES

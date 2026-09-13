@@ -4,8 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - xiaohe",
+      "server": "104.17.211.193",
+      "server_port": 80,
+      "uuid": "3576016a-4b14-4e5f-94f2-73fde6791602",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "5685.bnm.dpdns.org"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
       "server": "msk.frkn.org",
       "server_port": 443,
       "password": "f317b5d6-d399-4d3d-a051-89d674ae953c",
@@ -13,18 +27,6 @@
         "enabled": true,
         "server_name": "msk.frkn.org",
         "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
-      "server": "gta.internet-card.sbs",
-      "server_port": 443,
-      "password": "mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj",
-      "tls": {
-        "enabled": true,
-        "server_name": "gta.internet-card.sbs",
-        "insecure": true
       }
     },
     {

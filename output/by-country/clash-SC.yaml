@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  server: 104.17.145.170
+  server: cfip.1323123.xyz
   port: 80
   udp: true
   type: vless
@@ -16,21 +16,6 @@ proxies:
     headers:
       Host: 5685.bnm.dpdns.org
 - name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
-  server: 104.19.178.194
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  tls: true
-  servername: 5685.bnm.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
   server: 138.124.0.168
   port: 8080
   udp: true
@@ -45,7 +30,6 @@ proxy-groups:
   - AUTO
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,6 +37,5 @@ proxy-groups:
   proxies:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
 rules:
 - MATCH,PROXIES

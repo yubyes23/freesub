@@ -1,0 +1,52 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
+      "server": "144.31.126.220",
+      "server_port": 6543,
+      "uuid": "dc7b22e7-508a-4cd4-94c6-334469189098",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cvedcdigital.vip",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "eBgbY5NYKPBmk6gEvU3DJrRdRoUAv965qZC6Zjy_Q3w",
+          "short_id": "a4f8c92d"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇫🇮 芬兰 (Finland) 01 - xiaohe"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇫🇮 芬兰 (Finland) 01 - xiaohe"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

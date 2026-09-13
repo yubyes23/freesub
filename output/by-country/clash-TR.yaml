@@ -1,0 +1,34 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  server: 170.168.97.8
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 96b44347-cac5-cfae-383b-1724ae9b5aec
+  tls: true
+  reality-opts:
+    public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
+  servername: download.nvidia.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+rules:
+- MATCH,PROXIES

@@ -5,13 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: 144.31.93.126
+  server: poland-viper.moritech.net
   port: 443
   udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: poland-viper.moritech.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   server: poland-new-ded.failspace.top
   port: 443
@@ -24,16 +27,13 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: poland-viper.moritech.net
+  server: 144.31.93.126
   port: 443
   udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: poland-viper.moritech.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
