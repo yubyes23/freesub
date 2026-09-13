@@ -53,16 +53,15 @@ except ImportError as e:
 # ══════════════════════════════════════════════════════════════════
 
 SOURCE_URLS = [
-    "https://wild-cloud-9893.heleimail.workers.dev",
-    "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-TW.txt",
-    "https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/all.txt",
-    "https://raw.githubusercontent.com/10ium/HiN-VPN/main/subscription/base64/mix",
-    "https://raw.githubusercontent.com/10ium/telegram-configs-collector/main/protocols/hysteria",
-    "https://raw.githubusercontent.com/10ium/telegram-configs-collector/main/security/tls",
-    "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/v2ray-base64.txt",
-    "https://raw.githubusercontent.com/freefq/free/master/v2",
-    "https://open.heleimail.workers.dev/",
-    "https://www.ermao.net/sub/v2ray/ermao.net",
+    "https://5673.yubk.dpdns.org/662a937e-af17-4330-aeb1-3262d369dfe5",
+    "https://8888.yubo220.dpdns.org/ceaa7750-5bb7-47ac-94fe-06edc192288b",
+    "https://7766.clzuo.dpdns.org/autotyhughjfghfgh",
+    "https://5858.clzuo.dpdns.org/80cd8aa5-6263-4afd-907c-fb8979e2d511",
+    "https://7526.yubb.de5.net/6ebd0183-bbfd-4cac-89c4-0e89372b903f",
+    "https://8526.clyuo.dpdns.org/cf0c3b32-182e-48e8-8b31-a49115845033",
+    "https://5685.bnm.dpdns.org/3576016a-4b14-4e5f-94f2-73fde6791602/sub",
+    "https://free.beo.qzz.io/files/nodes.tx",
+    "https://free.beo.qzz.io/files/2323.tx",
 ]
 
 OUTPUT_DIR = "output"
