@@ -4,45 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  server: cfip.1323123.xyz
+- name: 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
+  server: 172.67.74.34
   port: 443
   udp: true
   type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
+  uuid: f888a23f-acb8-4be2-9b74-e560491619eb
   tls: true
-  servername: 5685.bnm.dpdns.org
+  servername: 5656.boye.de5.net
   skip-cert-verify: false
-  client-fingerprint: randomized
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇷🇴 罗马尼亚 (Romania) 02 (家宽) - xiaohe
-  server: roma2.moritech.net
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: roma2.moritech.net
-  skip-cert-verify: false
-  client-fingerprint: edge
+      Host: 5656.boye.de5.net
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 02 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 02 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

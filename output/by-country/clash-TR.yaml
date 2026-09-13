@@ -5,19 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 170.168.97.8
-  port: 8443
+  server: 45.74.159.233
+  port: 56659
   udp: true
   type: vless
-  uuid: 96b44347-cac5-cfae-383b-1724ae9b5aec
+  uuid: 12af43c3-84b4-4248-878b-b75f35835487
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
-  servername: download.nvidia.com
+    public-key: qLggZ7qospn6X7UEO1zSoohNXK4Y1EX7Hx2sJeWfvw0
+    short-id: 9aa3a3f599f3d5d0
+  servername: amp-api-edge.apps.apple.com
   client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
 proxy-groups:
 - name: PROXIES
   type: select

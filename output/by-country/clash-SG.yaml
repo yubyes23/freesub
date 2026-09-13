@@ -5,32 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - xiaohe
-  server: 104.17.54.210
-  port: 80
-  udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇸🇬 新加坡 (Singapore) 02 - xiaohe
-  server: 104.17.136.86
-  port: 443
-  udp: true
-  type: vless
-  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
-  tls: true
-  servername: c2cc.yuba.xx.kg
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: c2cc.yuba.xx.kg
-- name: 🇸🇬 新加坡 (Singapore) 03 - xiaohe
   server: 47.129.241.226
   port: 443
   udp: true
@@ -38,8 +12,8 @@ proxies:
   password: qQe1z5kU8kN6SlKnDt9Ru3Qp
   sni: vpn-sg-001.fastervpn.world
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 04 - xiaohe
-  server: news.zoom.us
+- name: 🇸🇬 新加坡 (Singapore) 02 - xiaohe
+  server: 141.193.213.21
   port: 8443
   udp: true
   type: vless
@@ -53,6 +27,14 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 03 - xiaohe
+  server: 138.2.73.238
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: f87376e17da040ed04c9665ce8972930
+  sni: 138.2.73.238
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,7 +43,6 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 01 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 02 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 03 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -70,6 +51,5 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 01 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 02 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 03 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 04 - xiaohe
 rules:
 - MATCH,PROXIES

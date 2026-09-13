@@ -5,39 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - xiaohe
-  server: 104.17.146.4
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  tls: true
-  servername: 25ec.yubo.qzz.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 25ec.yubo.qzz.io
-- name: 🇬🇧 英国 (United Kingdom) 02 - xiaohe
-  server: 104.17.139.122
-  port: 80
-  udp: true
-  type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 25ec.yubo.qzz.io
-- name: 🇬🇧 英国 (United Kingdom) 03 - xiaohe
-  server: 158.173.221.214
-  port: 11001
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: c58d16e593d44f42
-- name: 🇬🇧 英国 (United Kingdom) 04 - xiaohe
   server: vpn-uk-002.fastervpn.world
   port: 443
   udp: true
@@ -45,18 +12,24 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: vpn-uk-002.fastervpn.world
   skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 05 - xiaohe
-  server: 31.76.7.154
-  port: 7443
+- name: 🇬🇧 英国 (United Kingdom) 02 - xiaohe
+  server: 158.173.221.214
+  port: 11001
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: c58d16e593d44f42
+- name: 🇬🇧 英国 (United Kingdom) 03 - xiaohe
+  server: rus.2clash.ru
+  port: 443
   udp: true
   type: vless
-  uuid: d7cad038-0c3f-4cce-8f8a-36464aaf66c0
+  uuid: 3b6a9df3-f1d1-4bc1-94a5-0d8f2d5512b1
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
-    short-id: d2061bb1
-  servername: ya.ru
+    public-key: Rf2jgZShaYRQ2kh9nF79eB2KFcIdiYHwPWJyFKA_CWU
+  servername: max.ru
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -66,8 +39,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 01 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 02 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 03 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 04 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -76,7 +47,5 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 01 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 02 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 03 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 04 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 05 - xiaohe
 rules:
 - MATCH,PROXIES

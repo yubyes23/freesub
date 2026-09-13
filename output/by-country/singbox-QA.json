@@ -6,12 +6,12 @@
     {
       "type": "trojan",
       "tag": "🇶🇦 卡塔尔 (Qatar) 01 - xiaohe",
-      "server": "z-jp2.1card.cc",
+      "server": "z-jp1.1card.cc",
       "server_port": 10008,
       "password": "ultra@kWZdAzt_IH593eGLRjdxnBZ0",
       "tls": {
         "enabled": true,
-        "server_name": "z-jp2.1card.cc",
+        "server_name": "www.cloudflare.com",
         "insecure": true
       }
     },

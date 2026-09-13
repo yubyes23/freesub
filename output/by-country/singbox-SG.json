@@ -4,45 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
-      "server": "104.17.54.210",
-      "server_port": 80,
-      "uuid": "3576016a-4b14-4e5f-94f2-73fde6791602",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "5685.bnm.dpdns.org"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
-      "server": "104.17.136.86",
-      "server_port": 443,
-      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
-      "tls": {
-        "enabled": true,
-        "server_name": "c2cc.yuba.xx.kg",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "randomized"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "c2cc.yuba.xx.kg"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
+      "tag": "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
       "server": "47.129.241.226",
       "server_port": 443,
       "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
@@ -54,8 +17,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
-      "server": "news.zoom.us",
+      "tag": "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
+      "server": "141.193.213.21",
       "server_port": 8443,
       "uuid": "29c3dd6b-b164-40ca-a0d5-f06aca52a8b2",
       "tls": {
@@ -76,14 +39,25 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
+      "server": "138.2.73.238",
+      "server_port": 50160,
+      "password": "f87376e17da040ed04c9665ce8972930",
+      "tls": {
+        "enabled": true,
+        "server_name": "138.2.73.238",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
         "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 04 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 03 - xiaohe"
       ]
     },
     {
@@ -92,8 +66,7 @@
       "outbounds": [
         "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
         "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 04 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

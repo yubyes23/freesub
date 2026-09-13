@@ -5,41 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
-      "server": "cfip.1323123.xyz",
+      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
+      "server": "172.67.74.34",
       "server_port": 443,
-      "uuid": "3576016a-4b14-4e5f-94f2-73fde6791602",
+      "uuid": "f888a23f-acb8-4be2-9b74-e560491619eb",
       "tls": {
         "enabled": true,
-        "server_name": "5685.bnm.dpdns.org",
+        "server_name": "5656.boye.de5.net",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "randomized"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
         "type": "ws",
         "path": "/?ed=2048",
         "headers": {
-          "Host": "5685.bnm.dpdns.org"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 02 (家宽) - xiaohe",
-      "server": "roma2.moritech.net",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "roma2.moritech.net",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
+          "Host": "5656.boye.de5.net"
         }
       }
     },
@@ -48,16 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
-        "🇷🇴 罗马尼亚 (Romania) 02 (家宽) - xiaohe"
+        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
-        "🇷🇴 罗马尼亚 (Romania) 02 (家宽) - xiaohe"
+        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

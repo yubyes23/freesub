@@ -44,12 +44,36 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 03 - xiaohe",
+      "server": "172.67.175.23",
+      "server_port": 443,
+      "uuid": "50414e45-4c5f-5a45-5553-ef859652a80e",
+      "tls": {
+        "enabled": true,
+        "server_name": "trex-panel-nubj0s.samifakor.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/stream/TrexBridge/ef859652a80e",
+        "headers": {
+          "Host": "trex-panel-nubj0s.samifakor.workers.dev"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇫🇷 法国 (France) 01 - xiaohe",
-        "🇫🇷 法国 (France) 02 - xiaohe"
+        "🇫🇷 法国 (France) 02 - xiaohe",
+        "🇫🇷 法国 (France) 03 - xiaohe"
       ]
     },
     {
@@ -57,7 +81,8 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇷 法国 (France) 01 - xiaohe",
-        "🇫🇷 法国 (France) 02 - xiaohe"
+        "🇫🇷 法国 (France) 02 - xiaohe",
+        "🇫🇷 法国 (France) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

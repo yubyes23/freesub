@@ -4,53 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
-      "server": "104.17.146.4",
-      "server_port": 443,
-      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
-      "tls": {
-        "enabled": true,
-        "server_name": "25ec.yubo.qzz.io",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "25ec.yubo.qzz.io"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
-      "server": "104.17.139.122",
-      "server_port": 80,
-      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "25ec.yubo.qzz.io"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 03 - xiaohe",
-      "server": "158.173.221.214",
-      "server_port": 11001,
-      "method": "chacha20-ietf-poly1305",
-      "password": "c58d16e593d44f42"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇬🇧 英国 (United Kingdom) 04 - xiaohe",
+      "tag": "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
       "server": "vpn-uk-002.fastervpn.world",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -61,23 +16,31 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
+      "server": "158.173.221.214",
+      "server_port": 11001,
+      "method": "chacha20-ietf-poly1305",
+      "password": "c58d16e593d44f42"
+    },
+    {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 05 - xiaohe",
-      "server": "31.76.7.154",
-      "server_port": 7443,
-      "uuid": "d7cad038-0c3f-4cce-8f8a-36464aaf66c0",
+      "tag": "🇬🇧 英国 (United Kingdom) 03 - xiaohe",
+      "server": "rus.2clash.ru",
+      "server_port": 443,
+      "uuid": "3b6a9df3-f1d1-4bc1-94a5-0d8f2d5512b1",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ya.ru",
+        "server_name": "max.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ",
-          "short_id": "d2061bb1"
+          "public_key": "Rf2jgZShaYRQ2kh9nF79eB2KFcIdiYHwPWJyFKA_CWU",
+          "short_id": ""
         }
       }
     },
@@ -88,9 +51,7 @@
         "auto",
         "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
         "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 03 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 04 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 05 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 03 - xiaohe"
       ]
     },
     {
@@ -99,9 +60,7 @@
       "outbounds": [
         "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
         "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 03 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 04 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 05 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
