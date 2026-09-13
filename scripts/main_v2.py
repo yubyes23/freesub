@@ -76,10 +76,6 @@ SOURCE_URLS = [
     "https://raw.githubusercontent.com/qunhui201/free/refs/heads/main/test/working_nodes.txt",
     "https://fm.sdnlv0.cn/api/v1/feima/subscribe?token=3096c750be9b1699ec7c22f0796df66c",
     "https://25ec.yubo.qzz.io/8cc4f532-7c2f-4884-ab4e-64f5046152a2/sub",
-    "https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/all_extracted_configs.txt",
-    "https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/all_extracted_configs.txt",
-    "https://free.beo.qzz.io/files/nodes.tx",
-    "https://free.beo.qzz.io/files/2323.tx",
 ]
 
 OUTPUT_DIR = "output"
