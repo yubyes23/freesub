@@ -5,16 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  server: cf.877771.xyz
+  server: 104.17.48.106
   port: 80
   udp: true
   type: vless
-  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
+  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
-      Host: c2cc.yuba.xx.kg
+      Host: 5685.bnm.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select

@@ -5,21 +5,18 @@
   "outbounds": [
     {
       "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 01 - xiaohe",
-      "server": "188.114.96.3",
+      "tag": "🇨🇭 瑞士 (Switzerland) 01 - xiaohe",
+      "server": "mfyousheng.nl.eu.org",
       "server_port": 443,
-      "password": "humanity",
+      "password": "Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q",
       "tls": {
         "enabled": true,
-        "server_name": "www.calmlunch.com",
+        "server_name": "mfyousheng.nl.eu.org",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
+        "path": "/tjwsLhx0SFASG4l9FERJ1g"
       }
     },
     {
@@ -27,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇷 法国 (France) 01 - xiaohe"
+        "🇨🇭 瑞士 (Switzerland) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇷 法国 (France) 01 - xiaohe"
+        "🇨🇭 瑞士 (Switzerland) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
