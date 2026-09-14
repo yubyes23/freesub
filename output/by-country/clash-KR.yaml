@@ -5,13 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - xiaohe
-  server: 152.70.237.123
-  port: 2053
+  server: kr3-r.link-t7.com
+  port: 10048
   udp: true
-  type: hysteria2
-  password: maintell
-  sni: bing.com
-  skip-cert-verify: true
+  type: vless
+  uuid: 7134DB35-F254-4468-BA00-D9C099CF5AF7
+  tls: true
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: update
 proxy-groups:
 - name: PROXIES
   type: select

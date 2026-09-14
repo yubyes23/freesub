@@ -4,14 +4,49 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
-      "server": "47.129.241.226",
+      "server": "104.18.34.165",
+      "server_port": 80,
+      "uuid": "3576016a-4b14-4e5f-94f2-73fde6791602",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "5685.bnm.dpdns.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
+      "server": "8.219.144.195",
       "server_port": 443,
-      "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
+      "uuid": "867e835d-b5a8-4ab2-aa93-ab8a7cc80470",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "vpn-sg-001.fastervpn.world",
+        "server_name": "www.nvidia.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "qbsLW0C_w5YhxXuCO42VQU3wjmJu93mpAGBBbcfMLSM",
+          "short_id": "0c09d9bb1f10bc4d"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
+      "server": "sg1.xiaoliyu.cyou",
+      "server_port": 1933,
+      "password": "19f72087-4591-4d72-930b-2697078ec2be",
+      "tls": {
+        "enabled": true,
+        "server_name": "sg1.xiaoliyu.cyou",
         "insecure": true
       }
     },
@@ -20,14 +55,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇬 新加坡 (Singapore) 01 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
+        "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
+        "🇸🇬 新加坡 (Singapore) 03 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇬 新加坡 (Singapore) 01 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
+        "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
+        "🇸🇬 新加坡 (Singapore) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,8 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 - xiaohe
-  server: 162.159.43.187
-  port: 8080
+  server: 172.64.229.2
+  port: 80
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -16,8 +16,8 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇺🇸 美国 (United States) 02 - xiaohe
-  server: 104.18.46.46
-  port: 8080
+  server: 162.159.43.187
+  port: 2052
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -27,29 +27,26 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇺🇸 美国 (United States) 03 - xiaohe
-  server: 104.16.145.211
+  server: 104.17.155.61
   port: 80
   udp: true
   type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
+  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
-      Host: 5685.bnm.dpdns.org
+      Host: c2cc.yuba.xx.kg
 - name: 🇺🇸 美国 (United States) 04 - xiaohe
-  server: cf.877771.xyz
-  port: 80
+  server: 38.54.6.46
+  port: 36712
   udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
+  type: hysteria2
+  password: CompanyHy2_2026!
+  sni: www.microsoft.com
+  skip-cert-verify: true
 - name: 🇺🇸 美国 (United States) 05 - xiaohe
-  server: 104.17.145.208
+  server: 104.17.171.155
   port: 80
   udp: true
   type: vless
@@ -60,7 +57,7 @@ proxies:
     headers:
       Host: 5685.bnm.dpdns.org
 - name: 🇺🇸 美国 (United States) 06 - xiaohe
-  server: 104.16.145.211
+  server: 104.19.224.50
   port: 80
   udp: true
   type: vless
@@ -71,7 +68,7 @@ proxies:
     headers:
       Host: c2cc.yuba.xx.kg
 - name: 🇺🇸 美国 (United States) 07 - xiaohe
-  server: 104.17.133.79
+  server: cf.090227.xyz
   port: 80
   udp: true
   type: vless
@@ -82,29 +79,18 @@ proxies:
     headers:
       Host: 5685.bnm.dpdns.org
 - name: 🇺🇸 美国 (United States) 08 - xiaohe
-  server: 104.17.184.74
+  server: 104.17.165.5
   port: 80
   udp: true
   type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
+  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
-      Host: 5685.bnm.dpdns.org
+      Host: c2cc.yuba.xx.kg
 - name: 🇺🇸 美国 (United States) 09 - xiaohe
-  server: 104.17.145.170
-  port: 80
-  udp: true
-  type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 25ec.yubo.qzz.io
-- name: 🇺🇸 美国 (United States) 10 - xiaohe
-  server: 104.17.144.29
+  server: cf.877771.xyz
   port: 443
   udp: true
   type: vless
@@ -113,13 +99,35 @@ proxies:
   servername: c2cc.yuba.xx.kg
   skip-cert-verify: false
   client-fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: c2cc.yuba.xx.kg
+- name: 🇺🇸 美国 (United States) 10 - xiaohe
+  server: cf.090227.xyz
+  port: 80
+  udp: true
+  type: vless
+  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
       Host: c2cc.yuba.xx.kg
 - name: 🇺🇸 美国 (United States) 11 - xiaohe
-  server: 104.17.133.175
+  server: cf.877771.xyz
+  port: 80
+  udp: true
+  type: vless
+  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: 5685.bnm.dpdns.org
+- name: 🇺🇸 美国 (United States) 12 - xiaohe
+  server: 104.17.223.78
   port: 443
   udp: true
   type: vless
@@ -133,19 +141,8 @@ proxies:
     path: /?ed=2048
     headers:
       Host: c2cc.yuba.xx.kg
-- name: 🇺🇸 美国 (United States) 12 - xiaohe
-  server: 104.17.133.82
-  port: 80
-  udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
 - name: 🇺🇸 美国 (United States) 13 - xiaohe
-  server: 172.67.168.164
+  server: cdn.tzpro.xyz
   port: 80
   udp: true
   type: vless
@@ -156,18 +153,22 @@ proxies:
     headers:
       Host: c2cc.yuba.xx.kg
 - name: 🇺🇸 美国 (United States) 14 - xiaohe
-  server: 104.17.144.29
-  port: 80
+  server: 104.19.224.50
+  port: 443
   udp: true
   type: vless
   uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
+  tls: true
+  servername: c2cc.yuba.xx.kg
+  skip-cert-verify: false
+  client-fingerprint: randomized
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
       Host: c2cc.yuba.xx.kg
 - name: 🇺🇸 美国 (United States) 15 - xiaohe
-  server: 104.17.145.208
+  server: 104.17.171.155
   port: 80
   udp: true
   type: vless
@@ -178,7 +179,7 @@ proxies:
     headers:
       Host: c2cc.yuba.xx.kg
 - name: 🇺🇸 美国 (United States) 16 - xiaohe
-  server: 104.17.144.29
+  server: 104.17.189.85
   port: 80
   udp: true
   type: vless
@@ -189,18 +190,22 @@ proxies:
     headers:
       Host: 5685.bnm.dpdns.org
 - name: 🇺🇸 美国 (United States) 17 - xiaohe
-  server: cf.0sm.com
-  port: 80
+  server: 104.16.152.110
+  port: 443
   udp: true
   type: vless
   uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
+  tls: true
+  servername: 5685.bnm.dpdns.org
+  skip-cert-verify: false
+  client-fingerprint: randomized
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
       Host: 5685.bnm.dpdns.org
 - name: 🇺🇸 美国 (United States) 18 - xiaohe
-  server: 104.17.236.128
+  server: xn--b6gac.eu.org
   port: 80
   udp: true
   type: vless
@@ -211,44 +216,33 @@ proxies:
     headers:
       Host: 5685.bnm.dpdns.org
 - name: 🇺🇸 美国 (United States) 19 - xiaohe
-  server: cloudflare-ip.mofashi.ltd
-  port: 443
-  udp: true
-  type: trojan
-  password: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  sni: 25ec.yubo.qzz.io
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇺🇸 美国 (United States) 20 - xiaohe
-  server: 104.17.133.79
+  server: 104.24.46.20
   port: 443
   udp: true
   type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
+  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
   tls: true
-  servername: 5685.bnm.dpdns.org
+  servername: c2cc.yuba.xx.kg
   skip-cert-verify: false
   client-fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: c2cc.yuba.xx.kg
+- name: 🇺🇸 美国 (United States) 20 - xiaohe
+  server: 104.17.223.78
+  port: 80
+  udp: true
+  type: vless
+  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
       Host: 5685.bnm.dpdns.org
 - name: 🇺🇸 美国 (United States) 21 - xiaohe
-  server: cf.0sm.com
-  port: 80
-  udp: true
-  type: vless
-  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: c2cc.yuba.xx.kg
-- name: 🇺🇸 美国 (United States) 22 - xiaohe
-  server: cf.877771.xyz
+  server: 104.18.40.223
   port: 443
   udp: true
   type: vless
@@ -262,8 +256,8 @@ proxies:
     path: /?ed=2048
     headers:
       Host: c2cc.yuba.xx.kg
-- name: 🇺🇸 美国 (United States) 23 - xiaohe
-  server: xn--b6gac.eu.org
+- name: 🇺🇸 美国 (United States) 22 - xiaohe
+  server: 104.24.46.20
   port: 80
   udp: true
   type: vless
@@ -273,8 +267,41 @@ proxies:
     path: /?ed=2048
     headers:
       Host: 5685.bnm.dpdns.org
+- name: 🇺🇸 美国 (United States) 23 - xiaohe
+  server: 104.17.189.85
+  port: 80
+  udp: true
+  type: vless
+  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: c2cc.yuba.xx.kg
 - name: 🇺🇸 美国 (United States) 24 - xiaohe
-  server: cf.090227.xyz
+  server: 104.16.152.110
+  port: 80
+  udp: true
+  type: vless
+  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: c2cc.yuba.xx.kg
+- name: 🇺🇸 美国 (United States) 25 - xiaohe
+  server: 104.18.40.223
+  port: 80
+  udp: true
+  type: vless
+  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: 5685.bnm.dpdns.org
+- name: 🇺🇸 美国 (United States) 26 - xiaohe
+  server: cdn.tzpro.xyz
   port: 443
   udp: true
   type: vless
@@ -288,23 +315,8 @@ proxies:
     path: /?ed=2048
     headers:
       Host: c2cc.yuba.xx.kg
-- name: 🇺🇸 美国 (United States) 25 - xiaohe
-  server: cf.090227.xyz
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  tls: true
-  servername: 25ec.yubo.qzz.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 25ec.yubo.qzz.io
-- name: 🇺🇸 美国 (United States) 26 - xiaohe
-  server: xn--b6gac.eu.org
+- name: 🇺🇸 美国 (United States) 27 - xiaohe
+  server: 104.24.46.20
   port: 80
   udp: true
   type: vless
@@ -314,19 +326,30 @@ proxies:
     path: /?ed=2048
     headers:
       Host: c2cc.yuba.xx.kg
-- name: 🇺🇸 美国 (United States) 27 - xiaohe
-  server: 104.17.94.88
+- name: 🇺🇸 美国 (United States) 28 - xiaohe
+  server: 104.17.165.5
   port: 80
   udp: true
   type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2048
     headers:
-      Host: 25ec.yubo.qzz.io
-- name: 🇺🇸 美国 (United States) 28 - xiaohe
-  server: 104.16.145.211
+      Host: 5685.bnm.dpdns.org
+- name: 🇺🇸 美国 (United States) 29 - xiaohe
+  server: 104.17.97.123
+  port: 80
+  udp: true
+  type: vless
+  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: c2cc.yuba.xx.kg
+- name: 🇺🇸 美国 (United States) 30 - xiaohe
+  server: 104.18.40.223
   port: 443
   udp: true
   type: vless
@@ -340,67 +363,49 @@ proxies:
     path: /?ed=2048
     headers:
       Host: 5685.bnm.dpdns.org
-- name: 🇺🇸 美国 (United States) 29 - xiaohe
-  server: 104.17.26.197
-  port: 80
-  udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇺🇸 美国 (United States) 30 - xiaohe
-  server: 104.17.133.175
-  port: 80
-  udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
 - name: 🇺🇸 美国 (United States) 31 - xiaohe
-  server: 104.17.145.170
+  server: 104.16.152.110
   port: 443
   udp: true
   type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  tls: true
-  servername: 25ec.yubo.qzz.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 25ec.yubo.qzz.io
-- name: 🇺🇸 美国 (United States) 32 - xiaohe
-  server: 104.17.236.128
-  port: 80
-  udp: true
-  type: vless
   uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
+  tls: true
+  servername: c2cc.yuba.xx.kg
+  skip-cert-verify: false
+  client-fingerprint: randomized
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
       Host: c2cc.yuba.xx.kg
-- name: 🇺🇸 美国 (United States) 33 - xiaohe
-  server: cf.877771.xyz
+- name: 🇺🇸 美国 (United States) 32 - xiaohe
+  server: 104.19.224.50
   port: 80
   udp: true
   type: vless
+  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: 5685.bnm.dpdns.org
+- name: 🇺🇸 美国 (United States) 33 - xiaohe
+  server: 104.17.97.123
+  port: 443
+  udp: true
+  type: vless
   uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
+  tls: true
+  servername: c2cc.yuba.xx.kg
+  skip-cert-verify: false
+  client-fingerprint: randomized
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
       Host: c2cc.yuba.xx.kg
 - name: 🇺🇸 美国 (United States) 34 - xiaohe
-  server: 104.17.133.82
+  server: 104.17.165.5
   port: 443
   udp: true
   type: vless
@@ -415,7 +420,22 @@ proxies:
     headers:
       Host: 5685.bnm.dpdns.org
 - name: 🇺🇸 美国 (United States) 35 - xiaohe
-  server: 104.18.61.135
+  server: c2cc.yuba.xx.kg
+  port: 443
+  udp: true
+  type: vless
+  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
+  tls: true
+  servername: c2cc.yuba.xx.kg
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: c2cc.yuba.xx.kg
+- name: 🇺🇸 美国 (United States) 36 - xiaohe
+  server: 104.17.207.113
   port: 443
   udp: true
   type: vless
@@ -429,57 +449,42 @@ proxies:
     path: /?ed=2048
     headers:
       Host: 5685.bnm.dpdns.org
-- name: 🇺🇸 美国 (United States) 36 - xiaohe
-  server: 104.17.133.79
-  port: 443
-  udp: true
-  type: vless
-  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
-  tls: true
-  servername: c2cc.yuba.xx.kg
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: c2cc.yuba.xx.kg
 - name: 🇺🇸 美国 (United States) 37 - xiaohe
-  server: xn--b6gac.eu.org
+  server: 104.17.171.155
   port: 443
-  udp: true
-  type: vless
-  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
-  tls: true
-  servername: c2cc.yuba.xx.kg
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: c2cc.yuba.xx.kg
-- name: 🇺🇸 美国 (United States) 38 - xiaohe
-  server: 172.67.168.164
-  port: 80
   udp: true
   type: vless
   uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
+  tls: true
+  servername: 5685.bnm.dpdns.org
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: 5685.bnm.dpdns.org
+- name: 🇺🇸 美国 (United States) 38 - xiaohe
+  server: cloudflare.182682.xyz
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
+  tls: true
+  servername: 5685.bnm.dpdns.org
+  skip-cert-verify: false
+  client-fingerprint: randomized
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
       Host: 5685.bnm.dpdns.org
 - name: 🇺🇸 美国 (United States) 39 - xiaohe
-  server: cdn.tzpro.xyz
-  port: 443
+  server: 172.64.146.28
+  port: 80
   udp: true
   type: vless
   uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  tls: true
-  servername: 5685.bnm.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: randomized
   network: ws
   ws-opts:
     path: /?ed=2048
@@ -497,55 +502,18 @@ proxies:
     headers:
       Host: 5685.bnm.dpdns.org
 - name: 🇺🇸 美国 (United States) 41 - xiaohe
-  server: 104.17.236.128
-  port: 443
+  server: 172.64.146.28
+  port: 80
   udp: true
   type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  tls: true
-  servername: 5685.bnm.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: randomized
+  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
-      Host: 5685.bnm.dpdns.org
+      Host: c2cc.yuba.xx.kg
 - name: 🇺🇸 美国 (United States) 42 - xiaohe
-  server: 104.17.184.74
-  port: 443
-  udp: true
-  type: trojan
-  password: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  sni: 25ec.yubo.qzz.io
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇺🇸 美国 (United States) 43 - xiaohe
-  server: 104.17.133.79
-  port: 80
-  udp: true
-  type: vless
-  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: c2cc.yuba.xx.kg
-- name: 🇺🇸 美国 (United States) 44 - xiaohe
-  server: 104.17.26.197
-  port: 80
-  udp: true
-  type: vless
-  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: c2cc.yuba.xx.kg
-- name: 🇺🇸 美国 (United States) 45 - xiaohe
-  server: cf.0sm.com
+  server: cf.090227.xyz
   port: 443
   udp: true
   type: vless
@@ -554,28 +522,57 @@ proxies:
   servername: c2cc.yuba.xx.kg
   skip-cert-verify: false
   client-fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: c2cc.yuba.xx.kg
+- name: 🇺🇸 美国 (United States) 43 - xiaohe
+  server: 104.17.155.61
+  port: 80
+  udp: true
+  type: vless
+  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: 5685.bnm.dpdns.org
+- name: 🇺🇸 美国 (United States) 44 - xiaohe
+  server: cf.0sm.com
+  port: 80
+  udp: true
+  type: vless
+  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: 5685.bnm.dpdns.org
+- name: 🇺🇸 美国 (United States) 45 - xiaohe
+  server: 104.17.154.227
+  port: 80
+  udp: true
+  type: vless
+  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
       Host: c2cc.yuba.xx.kg
 - name: 🇺🇸 美国 (United States) 46 - xiaohe
-  server: 172.64.79.34
-  port: 443
+  server: 104.17.207.113
+  port: 80
   udp: true
   type: vless
   uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
-  tls: true
-  servername: c2cc.yuba.xx.kg
-  skip-cert-verify: false
-  client-fingerprint: randomized
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
       Host: c2cc.yuba.xx.kg
 - name: 🇺🇸 美国 (United States) 47 - xiaohe
-  server: 104.17.145.170
+  server: 104.17.154.227
   port: 443
   udp: true
   type: vless
@@ -590,75 +587,31 @@ proxies:
     headers:
       Host: 5685.bnm.dpdns.org
 - name: 🇺🇸 美国 (United States) 48 - xiaohe
-  server: 104.18.61.135
-  port: 443
+  server: 104.17.109.52
+  port: 80
   udp: true
-  type: trojan
-  password: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  sni: 25ec.yubo.qzz.io
-  skip-cert-verify: false
+  type: vless
+  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2048
+    headers:
+      Host: c2cc.yuba.xx.kg
 - name: 🇺🇸 美国 (United States) 49 - xiaohe
-  server: 104.17.133.175
-  port: 80
+  server: us05.shifor01.life
+  port: 443
   udp: true
   type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 25ec.yubo.qzz.io
+  uuid: 11f21602-47aa-42e2-9149-69120f2e6df6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE
+    short-id: 169fc2df88419465
+  servername: us05.shifor01.life
+  client-fingerprint: chrome
 - name: 🇺🇸 美国 (United States) 50 - xiaohe
-  server: 82.198.246.37
-  port: 180
-  udp: true
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 (United States) 51 - xiaohe
-  server: 104.17.145.170
-  port: 80
-  udp: true
-  type: vless
-  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: c2cc.yuba.xx.kg
-- name: 🇺🇸 美国 (United States) 52 - xiaohe
-  server: cfip.1323123.xyz
-  port: 80
-  udp: true
-  type: vless
-  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: c2cc.yuba.xx.kg
-- name: 🇺🇸 美国 (United States) 53 - xiaohe
-  server: 107.175.219.48
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 18bd49994f2eea74ff62798bd75fb7d1
-  sni: 107.175.219.48
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 54 - xiaohe
-  server: 144.202.99.96
-  port: 443
-  udp: true
-  type: hysteria2
-  password: user1:ShVN9wnGVNptyPsNNpdBhlTUBG7vKZqh
-  sni: 144.202.99.96
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 55 - xiaohe
-  server: 104.16.145.211
+  server: cloudflare.182682.xyz
   port: 443
   udp: true
   type: vless
@@ -672,8 +625,68 @@ proxies:
     path: /?ed=2048
     headers:
       Host: c2cc.yuba.xx.kg
+- name: 🇺🇸 美国 (United States) 51 - xiaohe
+  server: cfip.1323123.xyz
+  port: 80
+  udp: true
+  type: vless
+  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: 5685.bnm.dpdns.org
+- name: 🇺🇸 美国 (United States) 52 - xiaohe
+  server: 107.174.255.14
+  port: 4356
+  udp: true
+  type: hysteria2
+  password: c2356e22-b026-4f12-8508-cf61f0b0c867
+  sni: 107.174.255.14
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 53 - xiaohe
+  server: 104.18.34.165
+  port: 80
+  udp: true
+  type: vless
+  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: c2cc.yuba.xx.kg
+- name: 🇺🇸 美国 (United States) 54 - xiaohe
+  server: 104.17.155.61
+  port: 443
+  udp: true
+  type: vless
+  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
+  tls: true
+  servername: c2cc.yuba.xx.kg
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: c2cc.yuba.xx.kg
+- name: 🇺🇸 美国 (United States) 55 - xiaohe
+  server: cdn.tzpro.xyz
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
+  tls: true
+  servername: 5685.bnm.dpdns.org
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: 5685.bnm.dpdns.org
 - name: 🇺🇸 美国 (United States) 56 - xiaohe
-  server: cloudflare.182682.xyz
+  server: 104.18.34.165
   port: 443
   udp: true
   type: vless
@@ -688,108 +701,86 @@ proxies:
     headers:
       Host: c2cc.yuba.xx.kg
 - name: 🇺🇸 美国 (United States) 57 - xiaohe
-  server: cloudflare.182682.xyz
-  port: 80
-  udp: true
-  type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 25ec.yubo.qzz.io
-- name: 🇺🇸 美国 (United States) 58 - xiaohe
-  server: 80.91.79.136
-  port: 443
-  udp: true
-  type: vless
-  uuid: 807cd1e0-f4ce-4785-b7a3-cde0c1614b8d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: g9uQwtqcqsPvzqQy2hM4rpvTIGXRQSAt-MAgHpz_gCI
-    short-id: 0b0bf0590fb9c138
-  servername: www.logitech.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 59 - xiaohe
   server: xn--b6gac.eu.org
   port: 443
   udp: true
   type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
+  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
   tls: true
-  servername: 5685.bnm.dpdns.org
+  servername: c2cc.yuba.xx.kg
   skip-cert-verify: false
   client-fingerprint: randomized
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇺🇸 美国 (United States) 60 - xiaohe
-  server: cdn.tzpro.xyz
-  port: 80
+      Host: c2cc.yuba.xx.kg
+- name: 🇺🇸 美国 (United States) 58 - xiaohe
+  server: 104.245.242.8
+  port: 8443
   udp: true
   type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇺🇸 美国 (United States) 61 - xiaohe
-  server: 107.174.255.14
-  port: 4356
-  udp: true
-  type: hysteria2
-  password: c2356e22-b026-4f12-8508-cf61f0b0c867
-  sni: 107.174.255.14
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 62 - xiaohe
-  server: cloudflare.182682.xyz
+  uuid: 4350213a-b4e7-262a-0bd7-bd16957cf71a
+  tls: true
+  reality-opts:
+    public-key: FOQzn10eHqu4F5xOxiXW2bTDG8lH4TdOXP6A5rDqKFk
+  servername: download.nvidia.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
+- name: 🇺🇸 美国 (United States) 59 - xiaohe
+  server: 104.17.154.227
   port: 443
   udp: true
   type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  tls: true
-  servername: 5685.bnm.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇺🇸 美国 (United States) 63 - xiaohe
-  server: 198.46.159.171
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: EkkoHY2_2024!
-  sni: 198.46.159.171
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 64 - xiaohe
-  server: cfip.1323123.xyz
-  port: 80
-  udp: true
-  type: vless
   uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  tls: true
+  servername: 25ec.yubo.qzz.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
       Host: 25ec.yubo.qzz.io
-- name: 🇺🇸 美国 (United States) 65 - xiaohe
-  server: 2.27.249.79
+- name: 🇺🇸 美国 (United States) 60 - xiaohe
+  server: cfip.1323123.xyz
+  port: 443
+  udp: true
+  type: vless
+  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
+  tls: true
+  servername: c2cc.yuba.xx.kg
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: c2cc.yuba.xx.kg
+- name: 🇺🇸 美国 (United States) 61 - xiaohe
+  server: cloudflare.182682.xyz
+  port: 80
+  udp: true
+  type: vless
+  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: c2cc.yuba.xx.kg
+- name: 🇺🇸 美国 (United States) 62 - xiaohe
+  server: 144.31.49.138
   port: 443
   udp: true
   type: hysteria2
   password: cd74c0a406664a5bc0bac098220a2468
-  sni: nl1.sferavpn.pro
+  sni: ru1.sferavpn.pro
   skip-cert-verify: false
   obfs: salamander
   obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
-- name: 🇺🇸 美国 (United States) 66 - xiaohe
+- name: 🇺🇸 美国 (United States) 63 - xiaohe
   server: www.shopify.com
   port: 443
   udp: true
@@ -805,29 +796,64 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
+- name: 🇺🇸 美国 (United States) 64 - xiaohe
+  server: 2.27.249.79
+  port: 443
+  udp: true
+  type: hysteria2
+  password: cd74c0a406664a5bc0bac098220a2468
+  sni: nl1.sferavpn.pro
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
+- name: 🇺🇸 美国 (United States) 65 - xiaohe
+  server: gta.internet-card.sbs
+  port: 443
+  udp: true
+  type: hysteria2
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+  sni: gta.internet-card.sbs
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 66 - xiaohe
+  server: cfip.1323123.xyz
+  port: 80
+  udp: true
+  type: vless
+  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: c2cc.yuba.xx.kg
 - name: 🇺🇸 美国 (United States) 67 - xiaohe
+  server: 198.46.215.223
+  port: 4444
+  udp: true
+  type: tuic
+  uuid: 6346ee2b-aefa-4a58-963a-bb851ed08f41
+  password: 0b628b17
+  sni: proxy.bingtao.xyz
+  skip-cert-verify: true
+  congestion-controller: bbr
+  udp-relay-mode: native
+  alpn:
+  - h3
+- name: 🇺🇸 美国 (United States) 68 - xiaohe
+  server: 198.46.215.223
+  port: 4443
+  udp: true
+  type: hysteria2
+  password: 31329f25
+  sni: proxy.bingtao.xyz
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 69 - xiaohe
   server: starlink-ft.251313.xyz
   port: 443
   udp: true
   type: hysteria2
-  password: https://xship.top
+  password: https://xship.best
   sni: xship.top
   skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 68 - xiaohe
-  server: 141.101.122.147
-  port: 443
-  udp: true
-  type: vless
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
-  tls: true
-  servername: a.cwvps.eu.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: a.cwvps.eu.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -901,6 +927,7 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 66 - xiaohe
   - 🇺🇸 美国 (United States) 67 - xiaohe
   - 🇺🇸 美国 (United States) 68 - xiaohe
+  - 🇺🇸 美国 (United States) 69 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -974,5 +1001,6 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 66 - xiaohe
   - 🇺🇸 美国 (United States) 67 - xiaohe
   - 🇺🇸 美国 (United States) 68 - xiaohe
+  - 🇺🇸 美国 (United States) 69 - xiaohe
 rules:
 - MATCH,PROXIES

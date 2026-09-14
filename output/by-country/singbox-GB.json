@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
-      "server": "104.27.30.154",
+      "server": "cf.877771.xyz",
       "server_port": 80,
       "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
       "transport": {
@@ -18,15 +18,18 @@
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
-      "server": "104.18.61.135",
+      "server": "151.101.56.101",
       "server_port": 443,
-      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
+      "password": "MiTiVPN",
       "tls": {
         "enabled": true,
-        "server_name": "25ec.yubo.qzz.io",
+        "server_name": "ssl.fastly.com",
         "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -34,34 +37,19 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/des---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN",
         "headers": {
-          "Host": "25ec.yubo.qzz.io"
+          "Host": "mitivpn---ss--s---mitivpn-5.global.ssl.fastly.net"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 03 - xiaohe",
-      "server": "104.27.30.154",
-      "server_port": 443,
-      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
-      "tls": {
-        "enabled": true,
-        "server_name": "25ec.yubo.qzz.io",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "25ec.yubo.qzz.io"
-        }
-      }
+      "server": "129.151.87.146",
+      "server_port": 61312,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "Qye4JK+lHU/8aJtTB5om+IMoxG4r3luE4ogzVo1+Oxk="
     },
     {
       "type": "hysteria2",
@@ -84,6 +72,56 @@
       "password": "c58d16e593d44f42"
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 06 - xiaohe",
+      "server": "87.86.252.153",
+      "server_port": 30126,
+      "method": "chacha20-ietf-poly1305",
+      "password": "ce680bff12723187"
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 07 - xiaohe",
+      "server": "31.76.54.56",
+      "server_port": 6443,
+      "uuid": "d7cad038-0c3f-4cce-8f8a-36464aaf66c0",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.samsung.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HHz-2xJzux-wn53uLOnSpdjds9rnRZEI7sr6z5hYnis",
+          "short_id": "79245360"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 08 - xiaohe",
+      "server": "193.25.216.175",
+      "server_port": 18555,
+      "uuid": "15553b23-a621-4dfd-995e-2fe28d124526",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.oracle.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aFbCyrLOre-V3ORpBjqenGfDt62Ng_i1sSq-DmZHVgc",
+          "short_id": "89e0494514ec"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -92,7 +130,10 @@
         "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
         "🇬🇧 英国 (United Kingdom) 03 - xiaohe",
         "🇬🇧 英国 (United Kingdom) 04 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 05 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 05 - xiaohe",
+        "🇬🇧 英国 (United Kingdom) 06 - xiaohe",
+        "🇬🇧 英国 (United Kingdom) 07 - xiaohe",
+        "🇬🇧 英国 (United Kingdom) 08 - xiaohe"
       ]
     },
     {
@@ -103,7 +144,10 @@
         "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
         "🇬🇧 英国 (United Kingdom) 03 - xiaohe",
         "🇬🇧 英国 (United Kingdom) 04 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 05 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 05 - xiaohe",
+        "🇬🇧 英国 (United Kingdom) 06 - xiaohe",
+        "🇬🇧 英国 (United Kingdom) 07 - xiaohe",
+        "🇬🇧 英国 (United Kingdom) 08 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

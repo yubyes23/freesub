@@ -5,12 +5,36 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - xiaohe
-  server: 47.129.241.226
+  server: 104.18.34.165
+  port: 80
+  udp: true
+  type: vless
+  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: 5685.bnm.dpdns.org
+- name: 🇸🇬 新加坡 (Singapore) 02 - xiaohe
+  server: 8.219.144.195
   port: 443
   udp: true
+  type: vless
+  uuid: 867e835d-b5a8-4ab2-aa93-ab8a7cc80470
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: qbsLW0C_w5YhxXuCO42VQU3wjmJu93mpAGBBbcfMLSM
+    short-id: 0c09d9bb1f10bc4d
+  servername: www.nvidia.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 03 - xiaohe
+  server: sg1.xiaoliyu.cyou
+  port: 1933
+  udp: true
   type: hysteria2
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-sg-001.fastervpn.world
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: sg1.xiaoliyu.cyou
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -18,11 +42,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇬 新加坡 (Singapore) 01 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 02 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇬 新加坡 (Singapore) 01 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 02 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 03 - xiaohe
 rules:
 - MATCH,PROXIES
