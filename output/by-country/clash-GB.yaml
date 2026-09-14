@@ -5,16 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - xiaohe
-  server: 162.159.160.158
-  port: 80
+  server: 158.173.221.214
+  port: 11001
   udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: c58d16e593d44f42
 - name: 🇬🇧 英国 (United Kingdom) 02 - xiaohe
   server: vpn-uk-002.fastervpn.world
   port: 443
@@ -24,17 +20,6 @@ proxies:
   sni: vpn-uk-002.fastervpn.world
   skip-cert-verify: true
 - name: 🇬🇧 英国 (United Kingdom) 03 - xiaohe
-  server: 162.159.160.63
-  port: 80
-  udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇬🇧 英国 (United Kingdom) 04 - xiaohe
   server: ys6n-mveg4s.truvexel.com
   port: 443
   udp: true
@@ -49,21 +34,6 @@ proxies:
     path: /a85ba9f6-ec48-40d1-ba5e-0ebbb7487789
     headers:
       Host: ys6n-mveg4s.truvexel.com
-- name: 🇬🇧 英国 (United Kingdom) 05 - xiaohe
-  server: 82.38.171.81
-  port: 10451
-  udp: true
-  type: hysteria2
-  password: b3a11068-1a7e-4643-85de-7c82cce46943
-  sni: uk.shamanapp.online
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 06 - xiaohe
-  server: 158.173.221.214
-  port: 11001
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: c58d16e593d44f42
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,9 +42,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 01 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 02 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 03 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 04 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 05 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -83,8 +50,5 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 01 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 02 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 03 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 04 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 05 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 06 - xiaohe
 rules:
 - MATCH,PROXIES
