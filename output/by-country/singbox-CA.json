@@ -16,18 +16,43 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇨🇦 加拿大 (Canada) 02 - xiaohe",
+      "server": "cf.877771.xyz",
+      "server_port": 443,
+      "password": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
+      "tls": {
+        "enabled": true,
+        "server_name": "25ec.yubo.qzz.io",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "25ec.yubo.qzz.io"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇦 加拿大 (Canada) 01 - xiaohe"
+        "🇨🇦 加拿大 (Canada) 01 - xiaohe",
+        "🇨🇦 加拿大 (Canada) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇦 加拿大 (Canada) 01 - xiaohe"
+        "🇨🇦 加拿大 (Canada) 01 - xiaohe",
+        "🇨🇦 加拿大 (Canada) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

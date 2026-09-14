@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - xiaohe
+  server: 47.129.241.226
+  port: 443
+  udp: true
+  type: hysteria2
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-sg-001.fastervpn.world
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 02 - xiaohe
   server: sg1.xiaoliyu.cyou
   port: 1933
   udp: true
@@ -12,8 +20,8 @@ proxies:
   password: 19f72087-4591-4d72-930b-2697078ec2be
   sni: sg1.xiaoliyu.cyou
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 02 - xiaohe
-  server: msjp.mangshe.xyz
+- name: 🇸🇬 新加坡 (Singapore) 03 - xiaohe
+  server: mszz.mangshe.xyz
   port: 20562
   udp: true
   type: hysteria2
@@ -27,6 +35,7 @@ proxy-groups:
   - AUTO
   - 🇸🇬 新加坡 (Singapore) 01 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 02 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -34,5 +43,6 @@ proxy-groups:
   proxies:
   - 🇸🇬 新加坡 (Singapore) 01 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 02 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 03 - xiaohe
 rules:
 - MATCH,PROXIES

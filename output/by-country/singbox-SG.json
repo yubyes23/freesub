@@ -6,6 +6,18 @@
     {
       "type": "hysteria2",
       "tag": "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
+      "server": "47.129.241.226",
+      "server_port": 443,
+      "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-sg-001.fastervpn.world",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
       "server": "sg1.xiaoliyu.cyou",
       "server_port": 1933,
       "password": "19f72087-4591-4d72-930b-2697078ec2be",
@@ -17,8 +29,8 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
-      "server": "msjp.mangshe.xyz",
+      "tag": "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
+      "server": "mszz.mangshe.xyz",
       "server_port": 20562,
       "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
       "tls": {
@@ -33,7 +45,8 @@
       "outbounds": [
         "auto",
         "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 02 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
+        "🇸🇬 新加坡 (Singapore) 03 - xiaohe"
       ]
     },
     {
@@ -41,7 +54,8 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 02 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
+        "🇸🇬 新加坡 (Singapore) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

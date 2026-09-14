@@ -5,28 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - xiaohe
-  server: cfip.1323123.xyz
-  port: 443
+  server: 162.159.160.158
+  port: 80
   udp: true
   type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  tls: true
-  servername: 25ec.yubo.qzz.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2048
     headers:
-      Host: 25ec.yubo.qzz.io
+      Host: 5685.bnm.dpdns.org
 - name: 🇬🇧 英国 (United Kingdom) 02 - xiaohe
-  server: 146.70.23.32
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 03 - xiaohe
   server: vpn-uk-002.fastervpn.world
   port: 443
   udp: true
@@ -34,7 +23,41 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: vpn-uk-002.fastervpn.world
   skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 03 - xiaohe
+  server: 162.159.160.63
+  port: 80
+  udp: true
+  type: vless
+  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: 5685.bnm.dpdns.org
 - name: 🇬🇧 英国 (United Kingdom) 04 - xiaohe
+  server: ys6n-mveg4s.truvexel.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: a85ba9f6-ec48-40d1-ba5e-0ebbb7487789
+  tls: true
+  servername: ys6n-mveg4s.truvexel.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /a85ba9f6-ec48-40d1-ba5e-0ebbb7487789
+    headers:
+      Host: ys6n-mveg4s.truvexel.com
+- name: 🇬🇧 英国 (United Kingdom) 05 - xiaohe
+  server: 82.38.171.81
+  port: 10451
+  udp: true
+  type: hysteria2
+  password: b3a11068-1a7e-4643-85de-7c82cce46943
+  sni: uk.shamanapp.online
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 06 - xiaohe
   server: 158.173.221.214
   port: 11001
   udp: true
@@ -50,6 +73,8 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 02 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 03 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 04 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 05 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,5 +84,7 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 02 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 03 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 04 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 05 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 06 - xiaohe
 rules:
 - MATCH,PROXIES
