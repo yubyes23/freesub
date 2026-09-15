@@ -4,16 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇫🇷 法国 (France) 01 - xiaohe",
-      "server": "15.237.218.241",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
+      "server": "13.39.182.161",
+      "server_port": 22222,
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 02 - xiaohe",
+      "server": "13.37.25.107",
+      "server_port": 22223,
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
     },
     {
       "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 02 - xiaohe",
+      "tag": "🇫🇷 法国 (France) 03 - xiaohe",
       "server": "188.114.96.3",
       "server_port": 443,
       "password": "humanity",
@@ -36,7 +42,8 @@
       "outbounds": [
         "auto",
         "🇫🇷 法国 (France) 01 - xiaohe",
-        "🇫🇷 法国 (France) 02 - xiaohe"
+        "🇫🇷 法国 (France) 02 - xiaohe",
+        "🇫🇷 法国 (France) 03 - xiaohe"
       ]
     },
     {
@@ -44,7 +51,8 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇷 法国 (France) 01 - xiaohe",
-        "🇫🇷 法国 (France) 02 - xiaohe"
+        "🇫🇷 法国 (France) 02 - xiaohe",
+        "🇫🇷 法国 (France) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

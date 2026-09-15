@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - xiaohe
-  server: 158.173.221.214
-  port: 11001
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: c58d16e593d44f42
-- name: 🇬🇧 英国 (United Kingdom) 02 - xiaohe
   server: vpn-uk-002.fastervpn.world
   port: 443
   udp: true
@@ -19,21 +12,13 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: vpn-uk-002.fastervpn.world
   skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 03 - xiaohe
-  server: ys6n-mveg4s.truvexel.com
-  port: 443
+- name: 🇬🇧 英国 (United Kingdom) 02 - xiaohe
+  server: 158.173.221.214
+  port: 11001
   udp: true
-  type: vless
-  uuid: a85ba9f6-ec48-40d1-ba5e-0ebbb7487789
-  tls: true
-  servername: ys6n-mveg4s.truvexel.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /a85ba9f6-ec48-40d1-ba5e-0ebbb7487789
-    headers:
-      Host: ys6n-mveg4s.truvexel.com
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: c58d16e593d44f42
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,7 +26,6 @@ proxy-groups:
   - AUTO
   - 🇬🇧 英国 (United Kingdom) 01 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 02 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -49,6 +33,5 @@ proxy-groups:
   proxies:
   - 🇬🇧 英国 (United Kingdom) 01 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 02 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 03 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
-      "server": "158.173.221.214",
-      "server_port": 11001,
-      "method": "chacha20-ietf-poly1305",
-      "password": "c58d16e593d44f42"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
+      "tag": "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
       "server": "vpn-uk-002.fastervpn.world",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -24,27 +16,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 03 - xiaohe",
-      "server": "ys6n-mveg4s.truvexel.com",
-      "server_port": 443,
-      "uuid": "a85ba9f6-ec48-40d1-ba5e-0ebbb7487789",
-      "tls": {
-        "enabled": true,
-        "server_name": "ys6n-mveg4s.truvexel.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/a85ba9f6-ec48-40d1-ba5e-0ebbb7487789",
-        "headers": {
-          "Host": "ys6n-mveg4s.truvexel.com"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
+      "server": "158.173.221.214",
+      "server_port": 11001,
+      "method": "chacha20-ietf-poly1305",
+      "password": "c58d16e593d44f42"
     },
     {
       "type": "selector",
@@ -52,8 +29,7 @@
       "outbounds": [
         "auto",
         "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 03 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 02 - xiaohe"
       ]
     },
     {
@@ -61,8 +37,7 @@
       "tag": "auto",
       "outbounds": [
         "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 03 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

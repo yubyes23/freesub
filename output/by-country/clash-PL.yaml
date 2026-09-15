@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: 144.31.93.126
+  server: go.wwwinternetvideo.click
   port: 443
   udp: true
   type: hysteria2
