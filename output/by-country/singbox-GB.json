@@ -6,9 +6,18 @@
     {
       "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
-      "server": "104.16.92.242",
-      "server_port": 80,
+      "server": "104.17.116.35",
+      "server_port": 443,
       "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
+      "tls": {
+        "enabled": true,
+        "server_name": "25ec.yubo.qzz.io",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
         "path": "/",
@@ -38,12 +47,16 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇬🇧 英国 (United Kingdom) 04 - xiaohe",
-      "server": "134.65.61.221",
-      "server_port": 61312,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "csIhMhVn3wF7rtlb0rU2Y3dx53jcnlSbGkxMl8aHrv0="
+      "server": "vpn-uk-001.fastervpn.world",
+      "server_port": 443,
+      "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-uk-001.fastervpn.world",
+        "insecure": true
+      }
     },
     {
       "type": "selector",
