@@ -1,0 +1,61 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
+  server: 162.159.160.175
+  port: 80
+  udp: true
+  type: vless
+  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 25ec.yubo.qzz.io
+- name: 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
+  server: 162.159.160.208
+  port: 443
+  udp: true
+  type: vless
+  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
+  tls: true
+  servername: c2cc.yuba.xx.kg
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: c2cc.yuba.xx.kg
+- name: 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
+  server: 162.159.160.208
+  port: 80
+  udp: true
+  type: vless
+  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: c2cc.yuba.xx.kg
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
+  - 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
+  - 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
+  - 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
+  - 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
+rules:
+- MATCH,PROXIES

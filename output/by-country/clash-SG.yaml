@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - xiaohe
-  server: 104.17.144.242
+  server: 104.18.46.219
   port: 80
   udp: true
   type: vless
@@ -16,211 +16,7 @@ proxies:
     headers:
       Host: 5685.bnm.dpdns.org
 - name: 🇸🇬 新加坡 (Singapore) 02 - xiaohe
-  server: cf.090227.xyz
-  port: 80
-  udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇸🇬 新加坡 (Singapore) 03 - xiaohe
-  server: cfip.1323123.xyz
-  port: 80
-  udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇸🇬 新加坡 (Singapore) 04 - xiaohe
-  server: 104.17.52.52
-  port: 80
-  udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇸🇬 新加坡 (Singapore) 05 - xiaohe
-  server: cf.090227.xyz
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  tls: true
-  servername: 5685.bnm.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇸🇬 新加坡 (Singapore) 06 - xiaohe
-  server: 172.66.46.158
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  tls: true
-  servername: 5685.bnm.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇸🇬 新加坡 (Singapore) 07 - xiaohe
-  server: 104.18.40.64
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  tls: true
-  servername: 5685.bnm.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇸🇬 新加坡 (Singapore) 08 - xiaohe
-  server: 104.17.49.130
-  port: 80
-  udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇸🇬 新加坡 (Singapore) 09 - xiaohe
-  server: 104.16.100.191
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  tls: true
-  servername: 5685.bnm.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇸🇬 新加坡 (Singapore) 10 - xiaohe
-  server: 104.18.40.156
-  port: 80
-  udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇸🇬 新加坡 (Singapore) 11 - xiaohe
-  server: 104.17.161.199
-  port: 80
-  udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇸🇬 新加坡 (Singapore) 12 - xiaohe
-  server: 104.17.16.190
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  tls: true
-  servername: 5685.bnm.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇸🇬 新加坡 (Singapore) 13 - xiaohe
-  server: 104.17.169.226
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  tls: true
-  servername: 5685.bnm.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇸🇬 新加坡 (Singapore) 14 - xiaohe
-  server: 104.19.34.118
-  port: 80
-  udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇸🇬 新加坡 (Singapore) 15 - xiaohe
-  server: 104.17.144.56
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  tls: true
-  servername: 5685.bnm.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇸🇬 新加坡 (Singapore) 16 - xiaohe
-  server: cf.0sm.com
-  port: 80
-  udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇸🇬 新加坡 (Singapore) 17 - xiaohe
-  server: xn--b6gac.eu.org
-  port: 80
-  udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇸🇬 新加坡 (Singapore) 18 - xiaohe
-  server: 104.16.100.191
+  server: saas.sin.fan
   port: 443
   udp: true
   type: vless
@@ -234,105 +30,8 @@ proxies:
     path: /?ed=2048
     headers:
       Host: 5656.boye.de5.net
-- name: 🇸🇬 新加坡 (Singapore) 19 - xiaohe
-  server: cf.877771.xyz
-  port: 80
-  udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇸🇬 新加坡 (Singapore) 20 - xiaohe
-  server: xn--b6gac.eu.org
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  tls: true
-  servername: 5685.bnm.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇸🇬 新加坡 (Singapore) 21 - xiaohe
-  server: 104.17.144.56
-  port: 80
-  udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇸🇬 新加坡 (Singapore) 22 - xiaohe
-  server: cloudflare-ip.mofashi.ltd
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  tls: true
-  servername: 5685.bnm.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇸🇬 新加坡 (Singapore) 23 - xiaohe
-  server: cloudflare.182682.xyz
-  port: 80
-  udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇸🇬 新加坡 (Singapore) 24 - xiaohe
-  server: cf.877771.xyz
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  tls: true
-  servername: 5685.bnm.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇸🇬 新加坡 (Singapore) 25 - xiaohe
-  server: cnamefuckxxs.yuchen.icu
-  port: 80
-  udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇸🇬 新加坡 (Singapore) 26 - xiaohe
-  server: 47.129.241.226
-  port: 443
-  udp: true
-  type: hysteria2
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-sg-001.fastervpn.world
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 27 - xiaohe
-  server: 68.64.179.129
+- name: 🇸🇬 新加坡 (Singapore) 03 - xiaohe
+  server: 103.137.22.71
   port: 443
   udp: true
   type: vless
@@ -340,13 +39,41 @@ proxies:
   tls: true
   servername: cdn8848.776676.xyz
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /register?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇸🇬 新加坡 (Singapore) 04 - xiaohe
+  server: 43.175.131.30
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /code?ed=2560
+    path: /article?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇸🇬 新加坡 (Singapore) 28 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 05 - xiaohe
+  server: 8.222.84.103
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /member/discount?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇸🇬 新加坡 (Singapore) 06 - xiaohe
   server: 217.60.7.121
   port: 2053
   udp: true
@@ -361,15 +88,7 @@ proxies:
     path: /static/media/video-chunk.f4v
     headers:
       Host: singapore.36109178.xyz
-- name: 🇸🇬 新加坡 (Singapore) 29 - xiaohe
-  server: sg1.xiaoliyu.cyou
-  port: 1933
-  udp: true
-  type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: sg1.xiaoliyu.cyou
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 30 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 07 - xiaohe
   server: mszz.mangshe.xyz
   port: 20562
   udp: true
@@ -389,29 +108,6 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 05 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 06 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 07 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 08 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 09 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 10 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 11 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 12 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 13 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 14 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 15 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 16 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 17 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 18 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 19 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 20 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 21 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 22 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 23 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 24 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 25 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 26 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 27 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 28 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 29 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 30 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -424,28 +120,5 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 05 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 06 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 07 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 08 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 09 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 10 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 11 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 12 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 13 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 14 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 15 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 16 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 17 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 18 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 19 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 20 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 21 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 22 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 23 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 24 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 25 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 26 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 27 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 28 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 29 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 30 - xiaohe
 rules:
 - MATCH,PROXIES
