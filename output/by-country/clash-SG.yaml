@@ -5,27 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - xiaohe
-  server: 104.17.157.100
-  port: 80
+  server: 104.17.63.88
+  port: 443
   udp: true
   type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
+  uuid: f888a23f-acb8-4be2-9b74-e560491619eb
+  tls: true
+  servername: 5656.boye.de5.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
-      Host: 5685.bnm.dpdns.org
+      Host: 5656.boye.de5.net
 - name: 🇸🇬 新加坡 (Singapore) 02 - xiaohe
-  server: 104.17.255.199
-  port: 80
+  server: 104.19.58.142
+  port: 443
   udp: true
   type: vless
-  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
+  uuid: f888a23f-acb8-4be2-9b74-e560491619eb
+  tls: true
+  servername: 5656.boye.de5.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
-      Host: c2cc.yuba.xx.kg
+      Host: 5656.boye.de5.net
 proxy-groups:
 - name: PROXIES
   type: select

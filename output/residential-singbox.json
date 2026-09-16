@@ -4,8 +4,31 @@
   },
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
+      "server": "172.64.159.191",
+      "server_port": 443,
+      "uuid": "f888a23f-acb8-4be2-9b74-e560491619eb",
+      "tls": {
+        "enabled": true,
+        "server_name": "5656.boye.de5.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "5656.boye.de5.net"
+        }
+      }
+    },
+    {
       "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
       "server": "82259754d625.oylfmxz.cn",
       "server_port": 443,
       "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
@@ -28,14 +51,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
+        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
+        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

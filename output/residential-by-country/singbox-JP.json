@@ -5,31 +5,8 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
-      "server": "104.17.63.88",
-      "server_port": 443,
-      "uuid": "f888a23f-acb8-4be2-9b74-e560491619eb",
-      "tls": {
-        "enabled": true,
-        "server_name": "5656.boye.de5.net",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "5656.boye.de5.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
-      "server": "104.19.58.142",
+      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
+      "server": "172.64.159.191",
       "server_port": 443,
       "uuid": "f888a23f-acb8-4be2-9b74-e560491619eb",
       "tls": {
@@ -54,16 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 02 - xiaohe"
+        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 02 - xiaohe"
+        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

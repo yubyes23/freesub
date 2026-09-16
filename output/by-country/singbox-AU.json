@@ -5,17 +5,14 @@
   "outbounds": [
     {
       "type": "trojan",
-      "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "199.232.78.101",
+      "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
+      "server": "cf.090227.xyz",
       "server_port": 443,
-      "password": "MITIVPN",
+      "password": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
       "tls": {
         "enabled": true,
-        "server_name": "ssl.fastly.com",
+        "server_name": "25ec.yubo.qzz.io",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -23,9 +20,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "@mehrosaboran",
+        "path": "/",
         "headers": {
-          "Host": "mitivpn---ss--s---mitivpn-11s.global.ssl.fastly.net"
+          "Host": "25ec.yubo.qzz.io"
         }
       }
     },
@@ -34,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
