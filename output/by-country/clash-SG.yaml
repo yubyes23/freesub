@@ -5,58 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - xiaohe
-  server: 104.17.34.189
+  server: 138.2.89.249
   port: 443
   udp: true
-  type: vless
-  uuid: f888a23f-acb8-4be2-9b74-e560491619eb
-  tls: true
-  servername: 5656.boye.de5.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5656.boye.de5.net
-- name: 🇸🇬 新加坡 (Singapore) 02 - xiaohe
-  server: 217.60.7.121
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
-  tls: true
-  servername: singapore.36109178.xyz
-  skip-cert-verify: false
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /static/media/video-chunk.f4v
-    headers:
-      Host: singapore.36109178.xyz
-- name: 🇸🇬 新加坡 (Singapore) 03 - xiaohe
-  server: mszz.mangshe.xyz
-  port: 20562
-  udp: true
   type: hysteria2
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: www.microsoft.com
+  password: d042d150716709bb778cc73889cddb02
+  sni: www.bing.com
   skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 309502c4a8df10b46fb976d4a8c43f42
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇬 新加坡 (Singapore) 01 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 02 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇬 新加坡 (Singapore) 01 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 02 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 03 - xiaohe
 rules:
 - MATCH,PROXIES

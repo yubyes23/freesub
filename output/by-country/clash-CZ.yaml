@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 104.18.46.203
+  server: 104.17.132.196
   port: 80
   udp: true
   type: vless

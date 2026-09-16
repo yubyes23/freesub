@@ -4,39 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
-      "server": "172.67.164.138",
-      "server_port": 443,
-      "password": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
-      "tls": {
-        "enabled": true,
-        "server_name": "25ec.yubo.qzz.io",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "25ec.yubo.qzz.io"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
-      "server": "158.173.221.214",
-      "server_port": 11001,
-      "method": "chacha20-ietf-poly1305",
-      "password": "c58d16e593d44f42"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇬🇧 英国 (United Kingdom) 03 - xiaohe",
+      "tag": "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
       "server": "vpn-uk-002.fastervpn.world",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -51,18 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 03 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 03 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

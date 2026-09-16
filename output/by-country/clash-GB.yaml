@@ -5,24 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - xiaohe
-  server: 172.67.164.138
-  port: 443
-  udp: true
-  type: trojan
-  password: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  sni: 25ec.yubo.qzz.io
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇬🇧 英国 (United Kingdom) 02 - xiaohe
-  server: 158.173.221.214
-  port: 11001
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: c58d16e593d44f42
-- name: 🇬🇧 英国 (United Kingdom) 03 - xiaohe
   server: vpn-uk-002.fastervpn.world
   port: 443
   udp: true
@@ -36,15 +18,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇬🇧 英国 (United Kingdom) 01 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 02 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇬🇧 英国 (United Kingdom) 01 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 02 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 03 - xiaohe
 rules:
 - MATCH,PROXIES

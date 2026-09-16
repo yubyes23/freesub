@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - xiaohe
-  server: 104.17.152.110
+  server: 104.17.149.205
   port: 443
   udp: true
   type: vless
@@ -20,7 +20,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 02 - xiaohe
-  server: 104.18.46.203
+  server: 104.16.145.74
   port: 443
   udp: true
   type: vless
@@ -35,7 +35,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 03 - xiaohe
-  server: 104.17.196.137
+  server: 104.20.15.182
   port: 443
   udp: true
   type: vless
@@ -50,7 +50,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 04 - xiaohe
-  server: 104.17.126.73
+  server: 104.17.95.243
   port: 443
   udp: true
   type: vless
@@ -65,7 +65,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 05 - xiaohe
-  server: 104.17.99.211
+  server: 104.17.135.118
   port: 443
   udp: true
   type: vless
@@ -80,7 +80,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 06 - xiaohe
-  server: 172.67.164.138
+  server: 104.17.149.54
   port: 443
   udp: true
   type: vless
@@ -95,7 +95,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 07 - xiaohe
-  server: 104.17.104.227
+  server: 5656.boye.de5.net
   port: 443
   udp: true
   type: vless
@@ -110,7 +110,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 08 - xiaohe
-  server: 104.21.124.47
+  server: 104.17.132.107
   port: 443
   udp: true
   type: vless
@@ -125,7 +125,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 09 - xiaohe
-  server: 104.17.152.77
+  server: 104.17.208.99
   port: 443
   udp: true
   type: vless
@@ -140,7 +140,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 10 - xiaohe
-  server: 104.21.84.22
+  server: 104.20.9.65
   port: 443
   udp: true
   type: vless
@@ -155,22 +155,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 11 - xiaohe
-  server: 149.22.87.240
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 12 - xiaohe
-  server: 138.3.208.26
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 13 - xiaohe
-  server: 104.17.152.204
+  server: 104.17.184.5
   port: 443
   udp: true
   type: vless
@@ -184,6 +169,51 @@ proxies:
     path: /?ed=2048
     headers:
       Host: 5656.boye.de5.net
+- name: 🇯🇵 日本 (Japan) 12 - xiaohe
+  server: 104.17.29.133
+  port: 443
+  udp: true
+  type: vless
+  uuid: f888a23f-acb8-4be2-9b74-e560491619eb
+  tls: true
+  servername: 5656.boye.de5.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: 5656.boye.de5.net
+- name: 🇯🇵 日本 (Japan) 13 - xiaohe
+  server: 149.22.87.240
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 14 - xiaohe
+  server: 104.17.132.196
+  port: 443
+  udp: true
+  type: vless
+  uuid: f888a23f-acb8-4be2-9b74-e560491619eb
+  tls: true
+  servername: 5656.boye.de5.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: 5656.boye.de5.net
+- name: 🇯🇵 日本 (Japan) 15 - xiaohe
+  server: mszz.mangshe.xyz
+  port: 20561
+  udp: true
+  type: hysteria2
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: www.microsoft.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -202,6 +232,8 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 11 - xiaohe
   - 🇯🇵 日本 (Japan) 12 - xiaohe
   - 🇯🇵 日本 (Japan) 13 - xiaohe
+  - 🇯🇵 日本 (Japan) 14 - xiaohe
+  - 🇯🇵 日本 (Japan) 15 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -220,5 +252,7 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 11 - xiaohe
   - 🇯🇵 日本 (Japan) 12 - xiaohe
   - 🇯🇵 日本 (Japan) 13 - xiaohe
+  - 🇯🇵 日本 (Japan) 14 - xiaohe
+  - 🇯🇵 日本 (Japan) 15 - xiaohe
 rules:
 - MATCH,PROXIES

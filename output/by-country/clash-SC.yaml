@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  server: cf.0sm.com
+  server: 104.20.9.65
   port: 443
   udp: true
   type: vless
@@ -20,7 +20,7 @@ proxies:
     headers:
       Host: 25ec.yubo.qzz.io
 - name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
-  server: cdn.tzpro.xyz
+  server: cloudflare-ip.mofashi.ltd
   port: 80
   udp: true
   type: vless

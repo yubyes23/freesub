@@ -5,25 +5,23 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 01 - xiaohe",
-      "server": "31.77.61.62",
-      "server_port": 50051,
-      "uuid": "4141d4ab-dba8-4da5-a4e6-dc89c34ded3e",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
+      "server": "31.214.152.140",
+      "server_port": 443,
+      "uuid": "ad297a2b-ae17-4d2d-8fce-e2eafb89b145",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "jobinvest.ru",
+        "server_name": "dw.b-cdn.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "short_id": "cd1dd1e4a801f54b"
+          "public_key": "bjqOUjqNQMF6NZ2kRis0NTNTcpdLBrr7CvZjFATrhg8",
+          "short_id": "08"
         }
-      },
-      "transport": {
-        "type": "grpc"
       }
     },
     {
@@ -31,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇷 法国 (France) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇷 法国 (France) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
