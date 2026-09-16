@@ -1,0 +1,31 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
+  server: 172.67.153.105
+  port: 80
+  udp: true
+  type: vless
+  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: 5685.bnm.dpdns.org
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
+rules:
+- MATCH,PROXIES
