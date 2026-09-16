@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
-      "server": "172.67.69.48",
+      "server": "cf.0sm.com",
       "server_port": 443,
       "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
       "tls": {
@@ -29,7 +29,7 @@
     {
       "type": "vless",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe",
-      "server": "cf.877771.xyz",
+      "server": "cdn.tzpro.xyz",
       "server_port": 80,
       "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
       "transport": {

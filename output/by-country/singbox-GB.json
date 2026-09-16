@@ -4,11 +4,11 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
-      "server": "104.17.116.35",
+      "server": "172.67.164.138",
       "server_port": 443,
-      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
+      "password": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
       "tls": {
         "enabled": true,
         "server_name": "25ec.yubo.qzz.io",
@@ -47,26 +47,13 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇬🇧 英国 (United Kingdom) 04 - xiaohe",
-      "server": "vpn-uk-001.fastervpn.world",
-      "server_port": 443,
-      "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-uk-001.fastervpn.world",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
         "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 03 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 04 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 03 - xiaohe"
       ]
     },
     {
@@ -75,8 +62,7 @@
       "outbounds": [
         "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
         "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 03 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 04 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

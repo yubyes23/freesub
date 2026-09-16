@@ -4,9 +4,69 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
-      "server": "go.wwwinternetvideo.click",
+      "server": "94.183.157.223",
+      "server_port": 8090,
+      "uuid": "818eaf39-544f-4d1d-977e-87be7e33eecf",
+      "tls": {
+        "enabled": true,
+        "server_name": "askuhgfdsg.space.coupons",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "askuhgfdsg.space.coupons"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
+      "server": "atomic-prase23893.my-vm.work",
+      "server_port": 8088,
+      "uuid": "tmp_user",
+      "transport": {
+        "type": "ws",
+        "path": "/api",
+        "headers": {
+          "Host": "queuev4.vk.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 03 - xiaohe",
+      "server": "94.183.157.174",
+      "server_port": 8090,
+      "uuid": "818eaf39-544f-4d1d-977e-87be7e33eecf",
+      "tls": {
+        "enabled": true,
+        "server_name": "askuhgfdsg.space.coupons",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "askuhgfdsg.space.coupons"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇵🇱 波兰 (Poland) 04 - xiaohe",
+      "server": "144.31.93.126",
       "server_port": 443,
       "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
       "tls": {
@@ -20,14 +80,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 波兰 (Poland) 01 - xiaohe"
+        "🇵🇱 波兰 (Poland) 01 - xiaohe",
+        "🇵🇱 波兰 (Poland) 02 - xiaohe",
+        "🇵🇱 波兰 (Poland) 03 - xiaohe",
+        "🇵🇱 波兰 (Poland) 04 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 波兰 (Poland) 01 - xiaohe"
+        "🇵🇱 波兰 (Poland) 01 - xiaohe",
+        "🇵🇱 波兰 (Poland) 02 - xiaohe",
+        "🇵🇱 波兰 (Poland) 03 - xiaohe",
+        "🇵🇱 波兰 (Poland) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

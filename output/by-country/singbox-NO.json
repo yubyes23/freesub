@@ -5,22 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "13.143.137.164",
-      "server_port": 9443,
-      "uuid": "953358cb-82ba-4296-960d-6d2ec3468f4c",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇳🇴 挪威 (Norway) 01 - xiaohe",
+      "server": "aldebaran.yokkastars.com",
+      "server_port": 40443,
+      "uuid": "ed91e79c-f6bf-4fba-8cc0-6d45acaec22b",
       "tls": {
         "enabled": true,
-        "server_name": "plaincanvas.videoclothing.xyz",
+        "server_name": "deepl.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "dZ0rhO_PL67-Ciwc6CHQgtde3a5EUUuReA7M-lRNCDQ",
-          "short_id": "e336c9a786fae301"
+          "public_key": "dvx6zPztKbgHpYaW6J4OZQC74Uy0JS6HUVdDfbjG5V4",
+          "short_id": "7606"
         }
       }
     },
@@ -29,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
+        "🇳🇴 挪威 (Norway) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
+        "🇳🇴 挪威 (Norway) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

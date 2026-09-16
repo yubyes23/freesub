@@ -5,64 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - xiaohe
-  server: mszz.mangshe.xyz
-  port: 20562
+  server: 104.17.34.189
+  port: 443
   udp: true
-  type: hysteria2
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: www.microsoft.com
-  skip-cert-verify: true
+  type: vless
+  uuid: f888a23f-acb8-4be2-9b74-e560491619eb
+  tls: true
+  servername: 5656.boye.de5.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: 5656.boye.de5.net
 - name: 🇸🇬 新加坡 (Singapore) 02 - xiaohe
-  server: 103.137.22.71
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /register?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇸🇬 新加坡 (Singapore) 03 - xiaohe
-  server: 68.64.179.129
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /code?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇸🇬 新加坡 (Singapore) 04 - xiaohe
-  server: 8.222.84.103
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /member/discount?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇸🇬 新加坡 (Singapore) 05 - xiaohe
-  server: sg1.xiaoliyu.cyou
-  port: 1933
-  udp: true
-  type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: sg1.xiaoliyu.cyou
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 06 - xiaohe
   server: 217.60.7.121
   port: 2053
   udp: true
@@ -77,6 +34,14 @@ proxies:
     path: /static/media/video-chunk.f4v
     headers:
       Host: singapore.36109178.xyz
+- name: 🇸🇬 新加坡 (Singapore) 03 - xiaohe
+  server: mszz.mangshe.xyz
+  port: 20562
+  udp: true
+  type: hysteria2
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: www.microsoft.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -85,9 +50,6 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 01 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 02 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 03 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 04 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 05 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -96,8 +58,5 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 01 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 02 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 03 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 04 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 05 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 06 - xiaohe
 rules:
 - MATCH,PROXIES

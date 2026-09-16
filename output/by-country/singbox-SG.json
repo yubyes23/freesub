@@ -4,89 +4,31 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
-      "server": "mszz.mangshe.xyz",
-      "server_port": 20562,
-      "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
+      "server": "104.17.34.189",
+      "server_port": 443,
+      "uuid": "f888a23f-acb8-4be2-9b74-e560491619eb",
       "tls": {
         "enabled": true,
-        "server_name": "www.microsoft.com",
-        "insecure": true
+        "server_name": "5656.boye.de5.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "5656.boye.de5.net"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
-      "server": "103.137.22.71",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/register?ed=2560fp=chrome",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
-      "server": "68.64.179.129",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/code?ed=2560fp=chrome",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
-      "server": "8.222.84.103",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/member/discount?ed=2560fp=chrome",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 05 - xiaohe",
-      "server": "sg1.xiaoliyu.cyou",
-      "server_port": 1933,
-      "password": "19f72087-4591-4d72-930b-2697078ec2be",
-      "tls": {
-        "enabled": true,
-        "server_name": "sg1.xiaoliyu.cyou",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 06 - xiaohe",
       "server": "217.60.7.121",
       "server_port": 2053,
       "uuid": "65c56e1f-5c41-40bc-b0b5-9346772476ca",
@@ -108,16 +50,25 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
+      "server": "mszz.mangshe.xyz",
+      "server_port": 20562,
+      "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
         "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 05 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 06 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 03 - xiaohe"
       ]
     },
     {
@@ -126,10 +77,7 @@
       "outbounds": [
         "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
         "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 05 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 06 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
