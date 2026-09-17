@@ -4,25 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: 31.76.71.63
-  port: 443
+- name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
+  server: hk01.kfc-520.com
+  port: 60001
   udp: true
   type: hysteria2
-  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
-  sni: cabinet.wwwinternetvideo.click
+  password: 49f7ff21-a176-30cc-ab60-a5988fd85ce0
+  sni: hk01.kfc-520.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
 rules:
 - MATCH,PROXIES

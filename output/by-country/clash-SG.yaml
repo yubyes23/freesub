@@ -5,35 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - xiaohe
-  server: 104.17.63.88
+  server: 45.202.247.152
   port: 443
   udp: true
   type: vless
-  uuid: f888a23f-acb8-4be2-9b74-e560491619eb
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: 5656.boye.de5.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2048
+    path: /jump.html/star?ed=2560fp=chrome
     headers:
-      Host: 5656.boye.de5.net
+      Host: cdn8848.776676.xyz
 - name: 🇸🇬 新加坡 (Singapore) 02 - xiaohe
-  server: 104.19.58.142
+  server: 43.159.4.80
   port: 443
   udp: true
   type: vless
-  uuid: f888a23f-acb8-4be2-9b74-e560491619eb
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: 5656.boye.de5.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2048
+    path: /episode/files?ed=2560fp=chrome
     headers:
-      Host: 5656.boye.de5.net
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
