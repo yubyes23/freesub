@@ -5,7 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe
-  server: 104.17.188.155
+  server: 25ec.yubo.qzz.io
+  port: 443
+  udp: true
+  type: trojan
+  password: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  sni: 25ec.yubo.qzz.io
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇸🇦 沙特 (Saudi Arabia) 02 - xiaohe
+  server: xn--b6gac.eu.org
   port: 80
   udp: true
   type: vless
@@ -21,11 +32,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe
+  - 🇸🇦 沙特 (Saudi Arabia) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe
+  - 🇸🇦 沙特 (Saudi Arabia) 02 - xiaohe
 rules:
 - MATCH,PROXIES

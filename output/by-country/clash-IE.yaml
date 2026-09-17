@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 - xiaohe
-  server: 172.64.159.190
+- name: 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
+  server: 162.159.160.237
   port: 443
   udp: true
   type: vless
-  uuid: 43e60b75-9920-450a-94ee-8762758ca49c
+  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
   tls: true
-  servername: a860d725.69lover.site
+  servername: c2cc.yuba.xx.kg
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: randomized
   network: ws
   ws-opts:
-    path: /api/v2/288cd04559d84d1d/stream
+    path: /?ed=2048
     headers:
-      Host: a860d725.69lover.site
+      Host: c2cc.yuba.xx.kg
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 - xiaohe
+  - 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 - xiaohe
+  - 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
 rules:
 - MATCH,PROXIES
