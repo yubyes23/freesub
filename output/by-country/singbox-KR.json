@@ -5,14 +5,17 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "cloudflare.182682.xyz",
+      "tag": "🇰🇷 韩国 (South Korea) 01 - xiaohe",
+      "server": "172.64.159.190",
       "server_port": 443,
-      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
+      "uuid": "43e60b75-9920-450a-94ee-8762758ca49c",
       "tls": {
         "enabled": true,
-        "server_name": "25ec.yubo.qzz.io",
+        "server_name": "a860d725.69lover.site",
         "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -20,9 +23,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/api/v2/288cd04559d84d1d/stream",
         "headers": {
-          "Host": "25ec.yubo.qzz.io"
+          "Host": "a860d725.69lover.site"
         }
       }
     },
@@ -31,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

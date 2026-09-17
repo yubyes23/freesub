@@ -5,13 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - xiaohe
-  server: 13.38.76.125
+  server: 15.237.137.134
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇫🇷 法国 (France) 02 - xiaohe
+  server: 13.39.233.161
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇫🇷 法国 (France) 03 - xiaohe
+  server: 13.38.76.125
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇫🇷 法国 (France) 04 - xiaohe
   server: 188.114.96.3
   port: 443
   udp: true
@@ -29,6 +43,8 @@ proxy-groups:
   - AUTO
   - 🇫🇷 法国 (France) 01 - xiaohe
   - 🇫🇷 法国 (France) 02 - xiaohe
+  - 🇫🇷 法国 (France) 03 - xiaohe
+  - 🇫🇷 法国 (France) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -36,5 +52,7 @@ proxy-groups:
   proxies:
   - 🇫🇷 法国 (France) 01 - xiaohe
   - 🇫🇷 法国 (France) 02 - xiaohe
+  - 🇫🇷 法国 (France) 03 - xiaohe
+  - 🇫🇷 法国 (France) 04 - xiaohe
 rules:
 - MATCH,PROXIES

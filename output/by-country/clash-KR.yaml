@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
-  server: cfip.1323123.xyz
+- name: 🇰🇷 韩国 (South Korea) 01 - xiaohe
+  server: 172.64.159.190
   port: 443
   udp: true
   type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  uuid: 43e60b75-9920-450a-94ee-8762758ca49c
   tls: true
-  servername: 25ec.yubo.qzz.io
+  servername: a860d725.69lover.site
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /api/v2/288cd04559d84d1d/stream
     headers:
-      Host: 25ec.yubo.qzz.io
+      Host: a860d725.69lover.site
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 01 - xiaohe
 rules:
 - MATCH,PROXIES

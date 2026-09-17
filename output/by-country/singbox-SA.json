@@ -6,18 +6,9 @@
     {
       "type": "vless",
       "tag": "🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe",
-      "server": "104.20.36.192",
-      "server_port": 443,
+      "server": "104.17.188.155",
+      "server_port": 80,
       "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
-      "tls": {
-        "enabled": true,
-        "server_name": "25ec.yubo.qzz.io",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
       "transport": {
         "type": "ws",
         "path": "/",
