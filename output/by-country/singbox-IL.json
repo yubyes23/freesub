@@ -5,14 +5,14 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 01 - xiaohe",
-      "server": "152-69-231-175.liao.kdns.fr",
+      "tag": "🇮🇱 以色列 (Israel) 01 - xiaohe",
+      "server": "129.159.156.109",
       "server_port": 50160,
-      "password": "1beb216e3f60aea9555dae60d219a5ca",
+      "password": "f25f19f29ce3fb53a35bf1b35b452a43",
       "tls": {
         "enabled": true,
-        "server_name": "152-69-231-175.liao.kdns.fr",
-        "insecure": false
+        "server_name": "www.bing.com",
+        "insecure": true
       }
     },
     {
@@ -20,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 - xiaohe"
+        "🇮🇱 以色列 (Israel) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 - xiaohe"
+        "🇮🇱 以色列 (Israel) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

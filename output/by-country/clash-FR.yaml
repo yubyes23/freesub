@@ -5,16 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - xiaohe
-  server: 104.18.46.29
-  port: 80
+  server: 104.17.142.114
+  port: 443
   udp: true
-  type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  type: trojan
+  password: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  sni: 25ec.yubo.qzz.io
+  skip-cert-verify: false
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: 25ec.yubo.qzz.io
 - name: 🇫🇷 法国 (France) 02 - xiaohe
   server: 15.237.137.134
   port: 443
@@ -22,38 +22,6 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇫🇷 法国 (France) 03 - xiaohe
-  server: 13.37.81.71
-  port: 22224
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇫🇷 法国 (France) 04 - xiaohe
-  server: 188.114.96.3
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 05 - xiaohe
-  server: 199.232.78.160
-  port: 443
-  udp: true
-  type: vless
-  uuid: XpnTeam-2
-  tls: true
-  servername: ssl.fastly.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: Appxdn.global.ssl.fastly.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,9 +29,6 @@ proxy-groups:
   - AUTO
   - 🇫🇷 法国 (France) 01 - xiaohe
   - 🇫🇷 法国 (France) 02 - xiaohe
-  - 🇫🇷 法国 (France) 03 - xiaohe
-  - 🇫🇷 法国 (France) 04 - xiaohe
-  - 🇫🇷 法国 (France) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -71,8 +36,5 @@ proxy-groups:
   proxies:
   - 🇫🇷 法国 (France) 01 - xiaohe
   - 🇫🇷 法国 (France) 02 - xiaohe
-  - 🇫🇷 法国 (France) 03 - xiaohe
-  - 🇫🇷 法国 (France) 04 - xiaohe
-  - 🇫🇷 法国 (France) 05 - xiaohe
 rules:
 - MATCH,PROXIES

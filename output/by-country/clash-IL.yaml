@@ -4,25 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 - xiaohe
-  server: 152-69-231-175.liao.kdns.fr
+- name: 🇮🇱 以色列 (Israel) 01 - xiaohe
+  server: 129.159.156.109
   port: 50160
   udp: true
   type: hysteria2
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 152-69-231-175.liao.kdns.fr
-  skip-cert-verify: false
+  password: f25f19f29ce3fb53a35bf1b35b452a43
+  sni: www.bing.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 - xiaohe
+  - 🇮🇱 以色列 (Israel) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 - xiaohe
+  - 🇮🇱 以色列 (Israel) 01 - xiaohe
 rules:
 - MATCH,PROXIES
