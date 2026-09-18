@@ -5,14 +5,14 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇮🇳 印度 (India) 01 - xiaohe",
-      "server": "vpn-in-001.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tag": "🇰🇷 韩国 (South Korea) 01 - xiaohe",
+      "server": "152-69-231-175.liao.kdns.fr",
+      "server_port": 50160,
+      "password": "1beb216e3f60aea9555dae60d219a5ca",
       "tls": {
         "enabled": true,
-        "server_name": "vpn-in-001.fastervpn.world",
-        "insecure": true
+        "server_name": "152-69-231-175.liao.kdns.fr",
+        "insecure": false
       }
     },
     {
@@ -20,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 印度 (India) 01 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 印度 (India) 01 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

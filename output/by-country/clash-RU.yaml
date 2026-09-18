@@ -5,22 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: msk.frkn.org
-  port: 443
+  server: cdn.tzpro.xyz
+  port: 80
   udp: true
-  type: hysteria2
-  password: f317b5d6-d399-4d3d-a051-89d674ae953c
-  sni: msk.frkn.org
-  skip-cert-verify: false
+  type: vless
+  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: c2cc.yuba.xx.kg
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: gta.internet-card.sbs
-  port: 443
-  udp: true
-  type: hysteria2
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  sni: gta.internet-card.sbs
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   server: ru.xiaoliyu.cyou
   port: 4433
   udp: true
@@ -28,14 +23,22 @@ proxies:
   password: 19f72087-4591-4d72-930b-2697078ec2be
   sni: ru.xiaoliyu.cyou
   skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   server: 91.240.86.70
   port: 22443
   udp: true
   type: hysteria2
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: 91.240.86.70
-  skip-cert-verify: true
+  sni: hy.quattro-tech.ru
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  server: msk.frkn.org
+  port: 443
+  udp: true
+  type: hysteria2
+  password: f317b5d6-d399-4d3d-a051-89d674ae953c
+  sni: msk.frkn.org
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select

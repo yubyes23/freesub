@@ -5,13 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: 217.60.182.79
+  server: news.gazette.help
   port: 443
   udp: true
   type: hysteria2
   password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
-  sni: cabinet.wwwinternetvideo.click
-  skip-cert-verify: true
+  sni: news.gazette.help
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select

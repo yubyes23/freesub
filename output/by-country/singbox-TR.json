@@ -5,24 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 01 - xiaohe",
-      "server": "104.21.71.28",
-      "server_port": 443,
-      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
+      "server": "tur11.zavqeron.ir",
+      "server_port": 8443,
+      "uuid": "fafd0278-71ba-4809-8137-3c87e7d8dd58",
       "tls": {
         "enabled": true,
-        "server_name": "25ec.yubo.qzz.io",
-        "insecure": false,
+        "server_name": "amp-api-edge.apps.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "25ec.yubo.qzz.io"
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "t5qC-Lzm_NKsc6nQ8ORzyivswiRPlbPLK0hS4d3FxTY",
+          "short_id": "a2eb2b8f0f0a88b1"
         }
       }
     },
@@ -31,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇦 加拿大 (Canada) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇦 加拿大 (Canada) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
