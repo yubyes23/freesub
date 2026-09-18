@@ -4,8 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇫🇷 法国 (France) 01 - xiaohe",
+      "server": "151.247.197.253",
+      "server_port": 36723,
+      "password": "Krab9Hyst2_Rk7pQ2xL",
+      "tls": {
+        "enabled": true,
+        "server_name": "151.247.197.253",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇷 法国 (France) 02 - xiaohe",
       "server": "13.37.239.112",
       "server_port": 443,
       "method": "aes-256-cfb",
@@ -16,14 +28,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇷 法国 (France) 01 - xiaohe"
+        "🇫🇷 法国 (France) 01 - xiaohe",
+        "🇫🇷 法国 (France) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇷 法国 (France) 01 - xiaohe"
+        "🇫🇷 法国 (France) 01 - xiaohe",
+        "🇫🇷 法国 (France) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
