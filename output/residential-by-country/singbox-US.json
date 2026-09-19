@@ -5,21 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 01 - xiaohe",
-      "server": "34.95.28.161",
+      "tag": "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
+      "server": "104.20.6.238",
       "server_port": 443,
-      "uuid": "448b76ac-c636-4303-bec1-0b2c22afee0c",
+      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "c2cc.yuba.xx.kg",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "l4tGdE5Zn8ABfBQns3pRBcxy6CckHTLSIsw5JaBumTk",
-          "short_id": "c9d4bf8d94ec8dab"
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "c2cc.yuba.xx.kg"
         }
       }
     },
@@ -28,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇦 加拿大 (Canada) 01 - xiaohe"
+        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇦 加拿大 (Canada) 01 - xiaohe"
+        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -6,23 +6,70 @@
     {
       "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
-      "server": "172.64.146.192",
-      "server_port": 443,
-      "uuid": "f888a23f-acb8-4be2-9b74-e560491619eb",
-      "tls": {
-        "enabled": true,
-        "server_name": "5656.boye.de5.net",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "server": "cf.0sm.com",
+      "server_port": 80,
+      "uuid": "3576016a-4b14-4e5f-94f2-73fde6791602",
       "transport": {
         "type": "ws",
         "path": "/?ed=2048",
         "headers": {
-          "Host": "5656.boye.de5.net"
+          "Host": "5685.bnm.dpdns.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
+      "server": "172.64.154.238",
+      "server_port": 80,
+      "uuid": "3576016a-4b14-4e5f-94f2-73fde6791602",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "5685.bnm.dpdns.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
+      "server": "104.16.49.39",
+      "server_port": 80,
+      "uuid": "3576016a-4b14-4e5f-94f2-73fde6791602",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "5685.bnm.dpdns.org"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
+      "server": "168.107.65.209",
+      "server_port": 56927,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "jzbveBTs+YuJotZVNhD1uM6abJDkpkxoV/ZPZTYTaSs="
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 05 - xiaohe",
+      "server": "13.212.69.185",
+      "server_port": 8686,
+      "uuid": "f0b9ae63-91a7-4673-924e-498e0e0828c0",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "A3NXnUIT-W0m1Y_leRnv5so2IeCvk9FCFgL31PulfTw",
+          "short_id": "628b3c90c98ead4f"
         }
       }
     },
@@ -31,14 +78,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇬 新加坡 (Singapore) 01 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
+        "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
+        "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
+        "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
+        "🇸🇬 新加坡 (Singapore) 05 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇬 新加坡 (Singapore) 01 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
+        "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
+        "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
+        "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
+        "🇸🇬 新加坡 (Singapore) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -1,0 +1,44 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
+  server: 172.66.1.10
+  port: 80
+  udp: true
+  type: vless
+  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 25ec.yubo.qzz.io
+- name: 🇦🇲 亚美尼亚 (Armenia) 02 - xiaohe
+  server: 104.17.133.147
+  port: 443
+  udp: true
+  type: trojan
+  password: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  sni: 25ec.yubo.qzz.io
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
+  - 🇦🇲 亚美尼亚 (Armenia) 02 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
+  - 🇦🇲 亚美尼亚 (Armenia) 02 - xiaohe
+rules:
+- MATCH,PROXIES

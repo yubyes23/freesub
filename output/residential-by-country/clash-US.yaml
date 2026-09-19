@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇧 英国 (United Kingdom) 01 - xiaohe
-  server: 172.64.146.233
+- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  server: 104.20.6.238
   port: 443
   udp: true
   type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
   tls: true
-  servername: 25ec.yubo.qzz.io
+  servername: c2cc.yuba.xx.kg
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: randomized
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2048
     headers:
-      Host: 25ec.yubo.qzz.io
+      Host: c2cc.yuba.xx.kg
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇧 英国 (United Kingdom) 01 - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 (United Kingdom) 01 - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

@@ -4,16 +4,16 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇦 加拿大 (Canada) 01 - xiaohe
-  server: 34.95.28.161
+- name: 🇪🇸 西班牙 (Spain) 01 - xiaohe
+  server: 34.175.44.113
   port: 443
   udp: true
   type: vless
-  uuid: 448b76ac-c636-4303-bec1-0b2c22afee0c
+  uuid: 0b4b1548-c7ca-45a5-9096-6c3cc4b1c43b
   tls: true
   reality-opts:
-    public-key: l4tGdE5Zn8ABfBQns3pRBcxy6CckHTLSIsw5JaBumTk
-    short-id: c9d4bf8d94ec8dab
+    public-key: iI9J--AfPKCXbVle3Om-WMn_g-3bO3SsVzUCNtwUkU0
+    short-id: fe85cb6a5c84e64c
   servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
@@ -21,12 +21,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇨🇦 加拿大 (Canada) 01 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 (Canada) 01 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 01 - xiaohe
 rules:
 - MATCH,PROXIES

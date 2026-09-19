@@ -5,10 +5,10 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 01 - xiaohe",
-      "server": "34.95.28.161",
+      "tag": "🇪🇸 西班牙 (Spain) 01 - xiaohe",
+      "server": "34.175.44.113",
       "server_port": 443,
-      "uuid": "448b76ac-c636-4303-bec1-0b2c22afee0c",
+      "uuid": "0b4b1548-c7ca-45a5-9096-6c3cc4b1c43b",
       "tls": {
         "enabled": true,
         "server_name": "www.cloudflare.com",
@@ -18,8 +18,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "l4tGdE5Zn8ABfBQns3pRBcxy6CckHTLSIsw5JaBumTk",
-          "short_id": "c9d4bf8d94ec8dab"
+          "public_key": "iI9J--AfPKCXbVle3Om-WMn_g-3bO3SsVzUCNtwUkU0",
+          "short_id": "fe85cb6a5c84e64c"
         }
       }
     },
@@ -28,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇦 加拿大 (Canada) 01 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇦 加拿大 (Canada) 01 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

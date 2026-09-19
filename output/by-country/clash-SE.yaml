@@ -4,16 +4,16 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇦 加拿大 (Canada) 01 - xiaohe
-  server: 34.95.28.161
+- name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
+  server: 34.51.231.250
   port: 443
   udp: true
   type: vless
-  uuid: 448b76ac-c636-4303-bec1-0b2c22afee0c
+  uuid: e4be912f-68e8-4d51-80a4-1342b646f8e0
   tls: true
   reality-opts:
-    public-key: l4tGdE5Zn8ABfBQns3pRBcxy6CckHTLSIsw5JaBumTk
-    short-id: c9d4bf8d94ec8dab
+    public-key: fV003yDr_sb_Wkgz6MxnIUJMgD15osWhzU-HZ5fLPFg
+    short-id: 79ff7d51e3c56323
   servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
@@ -21,12 +21,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇨🇦 加拿大 (Canada) 01 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 (Canada) 01 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
 rules:
 - MATCH,PROXIES

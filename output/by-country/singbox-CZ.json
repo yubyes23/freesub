@@ -4,11 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "172.64.146.192",
-      "server_port": 80,
-      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
+      "server": "25ec.yubo.qzz.io",
+      "server_port": 443,
+      "password": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
+      "tls": {
+        "enabled": true,
+        "server_name": "25ec.yubo.qzz.io",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
         "path": "/",

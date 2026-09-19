@@ -5,22 +5,8 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
-      "server": "162.159.160.151",
-      "server_port": 80,
-      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "25ec.yubo.qzz.io"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe",
-      "server": "162.159.160.48",
+      "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe",
+      "server": "172.66.1.10",
       "server_port": 80,
       "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
       "transport": {
@@ -33,8 +19,8 @@
     },
     {
       "type": "trojan",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 03 - xiaohe",
-      "server": "162.159.160.151",
+      "tag": "🇦🇲 亚美尼亚 (Armenia) 02 - xiaohe",
+      "server": "104.17.133.147",
       "server_port": 443,
       "password": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
       "tls": {
@@ -59,18 +45,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
-        "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe",
-        "🇮🇪 爱尔兰 (Ireland) 03 - xiaohe"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe",
+        "🇦🇲 亚美尼亚 (Armenia) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
-        "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe",
-        "🇮🇪 爱尔兰 (Ireland) 03 - xiaohe"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe",
+        "🇦🇲 亚美尼亚 (Armenia) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
