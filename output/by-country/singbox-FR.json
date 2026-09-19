@@ -4,23 +4,17 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇫🇷 法国 (France) 01 - xiaohe",
-      "server": "104.16.62.211",
-      "server_port": 80,
-      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "25ec.yubo.qzz.io"
-        }
-      }
+      "server": "13.37.239.112",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     },
     {
       "type": "shadowsocks",
       "tag": "🇫🇷 法国 (France) 02 - xiaohe",
-      "server": "13.37.239.112",
+      "server": "15.237.210.147",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -53,14 +47,6 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 05 - xiaohe",
-      "server": "15.237.210.147",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -68,8 +54,7 @@
         "🇫🇷 法国 (France) 01 - xiaohe",
         "🇫🇷 法国 (France) 02 - xiaohe",
         "🇫🇷 法国 (France) 03 - xiaohe",
-        "🇫🇷 法国 (France) 04 - xiaohe",
-        "🇫🇷 法国 (France) 05 - xiaohe"
+        "🇫🇷 法国 (France) 04 - xiaohe"
       ]
     },
     {
@@ -79,8 +64,7 @@
         "🇫🇷 法国 (France) 01 - xiaohe",
         "🇫🇷 法国 (France) 02 - xiaohe",
         "🇫🇷 法国 (France) 03 - xiaohe",
-        "🇫🇷 法国 (France) 04 - xiaohe",
-        "🇫🇷 法国 (France) 05 - xiaohe"
+        "🇫🇷 法国 (France) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
