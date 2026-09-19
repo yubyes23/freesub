@@ -24,7 +24,7 @@
       "tls": {
         "enabled": true,
         "server_name": "hopp-germany-new.ddnsguru.com",
-        "insecure": true
+        "insecure": false
       }
     },
     {
