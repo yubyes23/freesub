@@ -5,31 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 162.159.45.19
-  port: 80
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 104.17.233.12
+  server: cf.877771.xyz
   port: 443
   udp: true
   type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
+  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
   tls: true
-  servername: 5685.bnm.dpdns.org
+  servername: 25ec.yubo.qzz.io
   skip-cert-verify: false
-  client-fingerprint: randomized
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /?ed=2048
+    path: /
     headers:
-      Host: 5685.bnm.dpdns.org
+      Host: 25ec.yubo.qzz.io
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  server: 104.17.148.142
+  port: 80
+  udp: true
+  type: vless
+  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 25ec.yubo.qzz.io
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   server: msk.frkn.org
   port: 443
@@ -37,7 +37,7 @@ proxies:
   type: hysteria2
   password: f317b5d6-d399-4d3d-a051-89d674ae953c
   sni: msk.frkn.org
-  skip-cert-verify: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
