@@ -5,26 +5,42 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - xiaohe
-  server: 134.65.58.197
-  port: 61312
+  server: 104.17.48.224
+  port: 80
   udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: aKfETv3FnRLG5JBPKBZLrjX42g1rwmCWW9kPwL4jskI=
+  type: vless
+  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 25ec.yubo.qzz.io
 - name: 🇬🇧 英国 (United Kingdom) 02 - xiaohe
-  server: 144.24.225.39
-  port: 61312
+  server: cdn.tzpro.xyz
+  port: 443
   udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: JXVCv3N78Ulr/V2Rsk0UN8DJEzD+yC0cbtWo9zjGTkg=
+  type: vless
+  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  tls: true
+  servername: 25ec.yubo.qzz.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 25ec.yubo.qzz.io
 - name: 🇬🇧 英国 (United Kingdom) 03 - xiaohe
-  server: 129.151.66.224
-  port: 61312
+  server: cloudflare-ip.mofashi.ltd
+  port: 443
   udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: em25pV7s2EUkWhgDNcKJDRPTc8KBbjReVwoUdeqeQoU=
+  type: trojan
+  password: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  sni: 25ec.yubo.qzz.io
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
 - name: 🇬🇧 英国 (United Kingdom) 04 - xiaohe
   server: 144.24.224.187
   port: 61312
@@ -32,6 +48,38 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: 76nBYE3i8Fu1GL4LVCy25yAEe8eAPxphDp8lG/ibM9M=
+- name: 🇬🇧 英国 (United Kingdom) 05 - xiaohe
+  server: 144.24.225.39
+  port: 61312
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: JXVCv3N78Ulr/V2Rsk0UN8DJEzD+yC0cbtWo9zjGTkg=
+- name: 🇬🇧 英国 (United Kingdom) 06 - xiaohe
+  server: 104.17.150.60
+  port: 80
+  udp: true
+  type: vless
+  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 25ec.yubo.qzz.io
+- name: 🇬🇧 英国 (United Kingdom) 07 - xiaohe
+  server: 129.151.66.224
+  port: 61312
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: em25pV7s2EUkWhgDNcKJDRPTc8KBbjReVwoUdeqeQoU=
+- name: 🇬🇧 英国 (United Kingdom) 08 - xiaohe
+  server: 134.65.63.122
+  port: 61312
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 9UzSnfj0gy1JNUBD2L3JgpLLlQieW6AfOJ9vptz0iks=
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,6 +89,10 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 02 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 03 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 04 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 05 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 06 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 07 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -50,5 +102,9 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 02 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 03 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 04 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 05 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 06 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 07 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 08 - xiaohe
 rules:
 - MATCH,PROXIES
