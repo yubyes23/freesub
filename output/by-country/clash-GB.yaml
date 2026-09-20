@@ -5,31 +5,50 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - xiaohe
-  server: 172.67.112.73
-  port: 443
+  server: 134.65.58.197
+  port: 61312
   udp: true
-  type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  tls: true
-  servername: 25ec.yubo.qzz.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 25ec.yubo.qzz.io
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: aKfETv3FnRLG5JBPKBZLrjX42g1rwmCWW9kPwL4jskI=
+- name: 🇬🇧 英国 (United Kingdom) 02 - xiaohe
+  server: 144.24.225.39
+  port: 61312
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: JXVCv3N78Ulr/V2Rsk0UN8DJEzD+yC0cbtWo9zjGTkg=
+- name: 🇬🇧 英国 (United Kingdom) 03 - xiaohe
+  server: 129.151.66.224
+  port: 61312
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: em25pV7s2EUkWhgDNcKJDRPTc8KBbjReVwoUdeqeQoU=
+- name: 🇬🇧 英国 (United Kingdom) 04 - xiaohe
+  server: 144.24.224.187
+  port: 61312
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 76nBYE3i8Fu1GL4LVCy25yAEe8eAPxphDp8lG/ibM9M=
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇬🇧 英国 (United Kingdom) 01 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 02 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 03 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇬🇧 英国 (United Kingdom) 01 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 02 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 03 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 04 - xiaohe
 rules:
 - MATCH,PROXIES

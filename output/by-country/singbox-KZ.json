@@ -4,16 +4,17 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
-      "server": "104.17.152.49",
+      "server": "38.107.234.57",
       "server_port": 80,
-      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
+      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
+      "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/?ed=2048",
+        "path": "/vmess/",
         "headers": {
-          "Host": "c2cc.yuba.xx.kg"
+          "Host": "3h-kazakhstan1.09vpn.com"
         }
       }
     },

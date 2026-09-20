@@ -5,27 +5,42 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - xiaohe
-  server: 104.16.136.46
-  port: 80
+  server: 152.69.221.1
+  port: 56927
   udp: true
-  type: vless
-  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: c2cc.yuba.xx.kg
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: BtRfc5wkVnMKTOR55w5GmEnPpoDs+cm++PGpJvjMHkk=
+- name: 🇸🇬 新加坡 (Singapore) 02 - xiaohe
+  server: 161.118.253.238
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 1027576c-c4df-4277-b3ef-38d3213b6574
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 03 - xiaohe
+  server: 168.107.68.192
+  port: 56927
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 3wYtGhROca1p818RFgftCeodooVes1HaskrJVHZoF3c=
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇬 新加坡 (Singapore) 01 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 02 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇬 新加坡 (Singapore) 01 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 02 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 03 - xiaohe
 rules:
 - MATCH,PROXIES

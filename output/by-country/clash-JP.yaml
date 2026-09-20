@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - xiaohe
-  server: 104.17.149.246
+  server: 104.17.114.78
   port: 443
   udp: true
   type: vless
@@ -20,7 +20,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 02 - xiaohe
-  server: 104.17.55.2
+  server: 104.17.147.56
   port: 443
   udp: true
   type: vless
@@ -35,7 +35,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 03 - xiaohe
-  server: 172.64.158.158
+  server: 104.17.147.58
   port: 443
   udp: true
   type: vless
@@ -50,7 +50,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 04 - xiaohe
-  server: 104.17.170.180
+  server: 104.17.227.52
   port: 443
   udp: true
   type: vless
@@ -65,7 +65,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 05 - xiaohe
-  server: 172.67.112.73
+  server: 104.17.53.105
   port: 443
   udp: true
   type: vless
@@ -80,7 +80,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 06 - xiaohe
-  server: 104.17.149.82
+  server: 162.159.224.43
   port: 443
   udp: true
   type: vless
@@ -95,7 +95,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 07 - xiaohe
-  server: 172.64.158.194
+  server: 172.64.151.65
   port: 443
   udp: true
   type: vless
@@ -110,7 +110,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 08 - xiaohe
-  server: 172.67.172.122
+  server: 104.17.153.44
   port: 443
   udp: true
   type: vless
@@ -125,7 +125,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 09 - xiaohe
-  server: saas.sin.fan
+  server: 172.66.130.150
   port: 443
   udp: true
   type: vless
@@ -140,7 +140,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 10 - xiaohe
-  server: 104.16.136.46
+  server: 104.16.142.51
   port: 443
   udp: true
   type: vless
@@ -155,7 +155,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 11 - xiaohe
-  server: 104.17.152.49
+  server: saas.sin.fan
   port: 443
   udp: true
   type: vless
@@ -170,7 +170,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 12 - xiaohe
-  server: 104.18.43.39
+  server: 104.18.45.238
   port: 443
   udp: true
   type: vless
@@ -185,102 +185,41 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 13 - xiaohe
-  server: 104.17.242.84
-  port: 443
-  udp: true
-  type: vless
-  uuid: f888a23f-acb8-4be2-9b74-e560491619eb
-  tls: true
-  servername: 5656.boye.de5.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5656.boye.de5.net
-- name: 🇯🇵 日本 (Japan) 14 - xiaohe
   server: 149.22.87.240
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 14 - xiaohe
+  server: 104.17.103.220
+  port: 443
+  udp: true
+  type: vless
+  uuid: f888a23f-acb8-4be2-9b74-e560491619eb
+  tls: true
+  servername: 5656.boye.de5.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 15 - xiaohe
-  server: 172.64.158.61
-  port: 443
+  server: 92.113.124.204
+  port: 18443
   udp: true
   type: vless
-  uuid: f888a23f-acb8-4be2-9b74-e560491619eb
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: 5656.boye.de5.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2048
+    path: /directory/ads/news?ed=2560fp=chrome
     headers:
-      Host: 5656.boye.de5.net
-- name: 🇯🇵 日本 (Japan) 16 - xiaohe
-  server: 5656.boye.de5.net
-  port: 443
-  udp: true
-  type: vless
-  uuid: f888a23f-acb8-4be2-9b74-e560491619eb
-  tls: true
-  servername: 5656.boye.de5.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5656.boye.de5.net
-- name: 🇯🇵 日本 (Japan) 17 - xiaohe
-  server: 104.18.37.41
-  port: 443
-  udp: true
-  type: vless
-  uuid: f888a23f-acb8-4be2-9b74-e560491619eb
-  tls: true
-  servername: 5656.boye.de5.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5656.boye.de5.net
-- name: 🇯🇵 日本 (Japan) 18 - xiaohe
-  server: 104.27.99.204
-  port: 443
-  udp: true
-  type: vless
-  uuid: f888a23f-acb8-4be2-9b74-e560491619eb
-  tls: true
-  servername: 5656.boye.de5.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5656.boye.de5.net
-- name: 🇯🇵 日本 (Japan) 19 - xiaohe
-  server: 172.67.156.147
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -301,10 +240,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 13 - xiaohe
   - 🇯🇵 日本 (Japan) 14 - xiaohe
   - 🇯🇵 日本 (Japan) 15 - xiaohe
-  - 🇯🇵 日本 (Japan) 16 - xiaohe
-  - 🇯🇵 日本 (Japan) 17 - xiaohe
-  - 🇯🇵 日本 (Japan) 18 - xiaohe
-  - 🇯🇵 日本 (Japan) 19 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -325,9 +260,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 13 - xiaohe
   - 🇯🇵 日本 (Japan) 14 - xiaohe
   - 🇯🇵 日本 (Japan) 15 - xiaohe
-  - 🇯🇵 日本 (Japan) 16 - xiaohe
-  - 🇯🇵 日本 (Japan) 17 - xiaohe
-  - 🇯🇵 日本 (Japan) 18 - xiaohe
-  - 🇯🇵 日本 (Japan) 19 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -4,25 +4,11 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe",
-      "server": "104.18.37.41",
-      "server_port": 80,
-      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "25ec.yubo.qzz.io"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇦 沙特 (Saudi Arabia) 02 - xiaohe",
-      "server": "cloudflare.182682.xyz",
+      "type": "trojan",
+      "tag": "🇮🇷 IR 01 - xiaohe",
+      "server": "104.18.45.238",
       "server_port": 443,
-      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
+      "password": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
       "tls": {
         "enabled": true,
         "server_name": "25ec.yubo.qzz.io",
@@ -41,20 +27,34 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇮🇷 IR 02 - xiaohe",
+      "server": "104.17.103.220",
+      "server_port": 80,
+      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "25ec.yubo.qzz.io"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe",
-        "🇸🇦 沙特 (Saudi Arabia) 02 - xiaohe"
+        "🇮🇷 IR 01 - xiaohe",
+        "🇮🇷 IR 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe",
-        "🇸🇦 沙特 (Saudi Arabia) 02 - xiaohe"
+        "🇮🇷 IR 01 - xiaohe",
+        "🇮🇷 IR 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

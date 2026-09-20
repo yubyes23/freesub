@@ -4,32 +4,50 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
-      "server": "104.16.136.46",
-      "server_port": 80,
-      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "c2cc.yuba.xx.kg"
-        }
+      "server": "152.69.221.1",
+      "server_port": 56927,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "BtRfc5wkVnMKTOR55w5GmEnPpoDs+cm++PGpJvjMHkk="
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
+      "server": "161.118.253.238",
+      "server_port": 443,
+      "password": "1027576c-c4df-4277-b3ef-38d3213b6574",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
+      "server": "168.107.68.192",
+      "server_port": 56927,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "3wYtGhROca1p818RFgftCeodooVes1HaskrJVHZoF3c="
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇬 新加坡 (Singapore) 01 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
+        "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
+        "🇸🇬 新加坡 (Singapore) 03 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇬 新加坡 (Singapore) 01 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
+        "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
+        "🇸🇬 新加坡 (Singapore) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
