@@ -5,21 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
-  server: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
-  port: 443
+  server: aws-jp.webprovider.top
+  port: 30000
   udp: true
-  type: vmess
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 3180f311-16fb-445c-b129-4d946940c21a
+  flow: xtls-rprx-vision
   tls: true
-  servername: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
+  reality-opts:
+    public-key: Sa-1Yb-Xzwu7BOPL--8Fx0kKvdjJ8bLnR4ISMsR4oRc
+    short-id: a8
+  servername: icloud.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
