@@ -4,26 +4,32 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
-      "server": "144.24.228.69",
-      "server_port": 61312,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "jfj6Bwqjzn3nwcpYTmU46qP+W2o8lzbxIrCMRlbOKuQ="
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 01 - xiaohe",
+      "server": "cnamefuckxxs.yuchen.icu",
+      "server_port": 80,
+      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "25ec.yubo.qzz.io"
+        }
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 英国 (United Kingdom) 01 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 英国 (United Kingdom) 01 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

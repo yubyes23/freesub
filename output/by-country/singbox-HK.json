@@ -5,14 +5,14 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇦🇹 奥地利 (Austria) 01 - xiaohe",
-      "server": "67.159.17.39",
-      "server_port": 30443,
-      "password": "1e6fed5b-5edc-4ddb-a268-79d7fae4365c",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe",
+      "server": "mz.hkychina.com",
+      "server_port": 8443,
+      "password": "HysTeria2026!Proxy",
       "tls": {
         "enabled": true,
-        "server_name": "filesconvert.org",
-        "insecure": true
+        "server_name": "mz.hkychina.com",
+        "insecure": false
       }
     },
     {
@@ -20,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇹 奥地利 (Austria) 01 - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇹 奥地利 (Austria) 01 - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

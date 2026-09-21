@@ -4,8 +4,28 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇫🇷 法国 (France) 01 - xiaohe",
+      "server": "151.247.193.190",
+      "server_port": 443,
+      "uuid": "0dca2cfe-98eb-4f9d-9a47-cf87510c558b",
+      "tls": {
+        "enabled": true,
+        "server_name": "assets-fra.pleiades.codes",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "cdn.v1.AssetService"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇷 法国 (France) 02 - xiaohe",
       "server": "54.36.174.140",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
@@ -13,28 +33,53 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 02 - xiaohe",
-      "server": "62.60.157.56",
+      "tag": "🇫🇷 法国 (France) 03 - xiaohe",
+      "server": "199.232.246.236",
       "server_port": 443,
-      "uuid": "78b898d6-fa2c-47af-a342-dcde483301b0",
-      "flow": "xtls-rprx-vision",
+      "uuid": "8abb648a-b004-42a4-aa05-49cdc2f94d4e",
       "tls": {
         "enabled": true,
-        "server_name": "www.uva.nl",
+        "server_name": "global.fastly.com",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ZPdVCztKOeffv0v4TpdQ8X5LMGmVNxZe1ZC7BFC8118",
-          "short_id": "940dbf5b"
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "teranko.global.ssl.fastly.net"
         }
       }
     },
     {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 04 - xiaohe",
+      "server": "assets-frnl.pleiades.codes",
+      "server_port": 443,
+      "uuid": "0dca2cfe-98eb-4f9d-9a47-cf87510c558b",
+      "tls": {
+        "enabled": true,
+        "server_name": "assets-frnl.pleiades.codes",
+        "insecure": true,
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "cdn.v1.MediaService"
+      }
+    },
+    {
       "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 03 - xiaohe",
+      "tag": "🇫🇷 法国 (France) 05 - xiaohe",
       "server": "188.114.96.3",
       "server_port": 443,
       "password": "humanity",
@@ -58,7 +103,9 @@
         "auto",
         "🇫🇷 法国 (France) 01 - xiaohe",
         "🇫🇷 法国 (France) 02 - xiaohe",
-        "🇫🇷 法国 (France) 03 - xiaohe"
+        "🇫🇷 法国 (France) 03 - xiaohe",
+        "🇫🇷 法国 (France) 04 - xiaohe",
+        "🇫🇷 法国 (France) 05 - xiaohe"
       ]
     },
     {
@@ -67,7 +114,9 @@
       "outbounds": [
         "🇫🇷 法国 (France) 01 - xiaohe",
         "🇫🇷 法国 (France) 02 - xiaohe",
-        "🇫🇷 法国 (France) 03 - xiaohe"
+        "🇫🇷 法国 (France) 03 - xiaohe",
+        "🇫🇷 法国 (France) 04 - xiaohe",
+        "🇫🇷 法国 (France) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

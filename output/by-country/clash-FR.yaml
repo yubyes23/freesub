@@ -5,26 +5,54 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - xiaohe
+  server: 151.247.193.190
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  tls: true
+  servername: assets-fra.pleiades.codes
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
+- name: 🇫🇷 法国 (France) 02 - xiaohe
   server: 54.36.174.140
   port: 443
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: mrs2e9a
-- name: 🇫🇷 法国 (France) 02 - xiaohe
-  server: 62.60.157.56
+- name: 🇫🇷 法国 (France) 03 - xiaohe
+  server: 199.232.246.236
   port: 443
   udp: true
   type: vless
-  uuid: 78b898d6-fa2c-47af-a342-dcde483301b0
-  flow: xtls-rprx-vision
+  uuid: 8abb648a-b004-42a4-aa05-49cdc2f94d4e
   tls: true
-  reality-opts:
-    public-key: ZPdVCztKOeffv0v4TpdQ8X5LMGmVNxZe1ZC7BFC8118
-    short-id: 940dbf5b
-  servername: www.uva.nl
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 03 - xiaohe
+  servername: global.fastly.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: teranko.global.ssl.fastly.net
+- name: 🇫🇷 法国 (France) 04 - xiaohe
+  server: assets-frnl.pleiades.codes
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  tls: true
+  servername: assets-frnl.pleiades.codes
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: cdn.v1.MediaService
+- name: 🇫🇷 法国 (France) 05 - xiaohe
   server: 188.114.96.3
   port: 443
   udp: true
@@ -43,6 +71,8 @@ proxy-groups:
   - 🇫🇷 法国 (France) 01 - xiaohe
   - 🇫🇷 法国 (France) 02 - xiaohe
   - 🇫🇷 法国 (France) 03 - xiaohe
+  - 🇫🇷 法国 (France) 04 - xiaohe
+  - 🇫🇷 法国 (France) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -51,5 +81,7 @@ proxy-groups:
   - 🇫🇷 法国 (France) 01 - xiaohe
   - 🇫🇷 法国 (France) 02 - xiaohe
   - 🇫🇷 法国 (France) 03 - xiaohe
+  - 🇫🇷 法国 (France) 04 - xiaohe
+  - 🇫🇷 法国 (France) 05 - xiaohe
 rules:
 - MATCH,PROXIES

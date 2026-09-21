@@ -4,25 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇹 奥地利 (Austria) 01 - xiaohe
-  server: 67.159.17.39
-  port: 30443
+- name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
+  server: mz.hkychina.com
+  port: 8443
   udp: true
   type: hysteria2
-  password: 1e6fed5b-5edc-4ddb-a268-79d7fae4365c
-  sni: filesconvert.org
-  skip-cert-verify: true
+  password: HysTeria2026!Proxy
+  sni: mz.hkychina.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇹 奥地利 (Austria) 01 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇹 奥地利 (Austria) 01 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
 rules:
 - MATCH,PROXIES
