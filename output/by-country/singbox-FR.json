@@ -12,18 +12,62 @@
       "password": "mrs2e9a"
     },
     {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 02 - xiaohe",
+      "server": "62.60.157.56",
+      "server_port": 443,
+      "uuid": "78b898d6-fa2c-47af-a342-dcde483301b0",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.uva.nl",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ZPdVCztKOeffv0v4TpdQ8X5LMGmVNxZe1ZC7BFC8118",
+          "short_id": "940dbf5b"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇷 法国 (France) 03 - xiaohe",
+      "server": "188.114.96.3",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇷 法国 (France) 01 - xiaohe"
+        "🇫🇷 法国 (France) 01 - xiaohe",
+        "🇫🇷 法国 (France) 02 - xiaohe",
+        "🇫🇷 法国 (France) 03 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇷 法国 (France) 01 - xiaohe"
+        "🇫🇷 法国 (France) 01 - xiaohe",
+        "🇫🇷 法国 (France) 02 - xiaohe",
+        "🇫🇷 法国 (France) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
