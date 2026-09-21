@@ -4,30 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 196.196.206.38
+- name: 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
+  server: 45.9.156.103
   port: 443
   udp: true
   type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  uuid: e633de28-bfc0-4aca-aa67-e2e12e2c9e58
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: YBKHp6R7xp2Ss2kxbvDNMFPpRrf3oh1wQ2dVMukPHmA
-    short-id: d110331f200987ae
-  servername: finkafsb.finiki.lol
-  client-fingerprint: firefox
+    public-key: SARDrN_d46PsugT2k5ILoQAJqaA1eCOZhe1BjKMonj8
+  servername: mzone.bg.3cloudhost.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
 rules:
 - MATCH,PROXIES

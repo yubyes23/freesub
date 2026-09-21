@@ -4,30 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 01 - xiaohe",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
+      "server": "51.170.185.165",
+      "server_port": 45819,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "u1NAK7Sc9gI0zhd9RVIsisY4VVe58lx0Jvn2QV8QMeo="
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 印度 (India) 01 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 印度 (India) 01 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

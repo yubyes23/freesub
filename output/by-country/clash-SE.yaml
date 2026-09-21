@@ -1,0 +1,27 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
+  server: 51.170.185.165
+  port: 45819
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: u1NAK7Sc9gI0zhd9RVIsisY4VVe58lx0Jvn2QV8QMeo=
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
+rules:
+- MATCH,PROXIES

@@ -6,14 +6,23 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - xiaohe",
-      "server": "cf.0sm.com",
-      "server_port": 80,
-      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
+      "server": "104.16.251.221",
+      "server_port": 443,
+      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
+      "tls": {
+        "enabled": true,
+        "server_name": "c2cc.yuba.xx.kg",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/?ed=2048",
         "headers": {
-          "Host": "25ec.yubo.qzz.io"
+          "Host": "c2cc.yuba.xx.kg"
         }
       }
     },

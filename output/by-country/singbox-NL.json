@@ -4,115 +4,52 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇳🇱 荷兰 (Netherlands) 01 - xiaohe",
-      "server": "104.16.151.131",
-      "server_port": 80,
-      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "25ec.yubo.qzz.io"
-        }
-      }
+      "server": "141.148.239.222",
+      "server_port": 45819,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "j/ElfFW5mBIpS9nK1vvCZhZBTKBfyAPIRuP6DxnzRV8="
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇳🇱 荷兰 (Netherlands) 02 - xiaohe",
-      "server": "104.18.33.29",
-      "server_port": 80,
-      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "25ec.yubo.qzz.io"
-        }
-      }
+      "server": "141.148.225.103",
+      "server_port": 45819,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "8RRsprK4nxB5VqKlMGFdXJerGo79K5bKdz4uF4crI8E="
     },
     {
-      "type": "trojan",
+      "type": "shadowsocks",
       "tag": "🇳🇱 荷兰 (Netherlands) 03 - xiaohe",
-      "server": "25ec.yubo.qzz.io",
-      "server_port": 443,
-      "password": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
-      "tls": {
-        "enabled": true,
-        "server_name": "25ec.yubo.qzz.io",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "25ec.yubo.qzz.io"
-        }
-      }
+      "server": "158.101.222.3",
+      "server_port": 45819,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "aXCC+LogUNgffkN9eZuLOIdClpoHAWXvN8GxcmEkkis="
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇳🇱 荷兰 (Netherlands) 04 - xiaohe",
-      "server": "cf.0sm.com",
-      "server_port": 80,
-      "uuid": "3576016a-4b14-4e5f-94f2-73fde6791602",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "5685.bnm.dpdns.org"
-        }
-      }
+      "server": "84.235.189.224",
+      "server_port": 45819,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "0i3oo8WYa6924QprKgDXFRN58xvuJAEVyX/pKWjjcd8="
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇳🇱 荷兰 (Netherlands) 05 - xiaohe",
-      "server": "cf.0sm.com",
-      "server_port": 443,
-      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
-      "tls": {
-        "enabled": true,
-        "server_name": "c2cc.yuba.xx.kg",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "randomized"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "c2cc.yuba.xx.kg"
-        }
-      }
+      "server": "193.29.139.151",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
     },
     {
-      "type": "trojan",
+      "type": "shadowsocks",
       "tag": "🇳🇱 荷兰 (Netherlands) 06 - xiaohe",
-      "server": "cfip.1323123.xyz",
-      "server_port": 443,
-      "password": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
-      "tls": {
-        "enabled": true,
-        "server_name": "25ec.yubo.qzz.io",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "25ec.yubo.qzz.io"
-        }
-      }
+      "server": "152.70.49.160",
+      "server_port": 45819,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "yj6VqkxO2Y6tTUCc/N2TF94a5YR02l5+jm3uE3u8ipo="
     },
     {
       "type": "shadowsocks",
@@ -133,6 +70,14 @@
     {
       "type": "shadowsocks",
       "tag": "🇳🇱 荷兰 (Netherlands) 09 - xiaohe",
+      "server": "158.180.13.225",
+      "server_port": 45819,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "Of7TrBg1GnSUFQJEGoe1K0d9USdAzgjzMlrfKwk0aLM="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇳🇱 荷兰 (Netherlands) 10 - xiaohe",
       "server": "193.29.139.168",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -140,7 +85,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 荷兰 (Netherlands) 10 - xiaohe",
+      "tag": "🇳🇱 荷兰 (Netherlands) 11 - xiaohe",
       "server": "82.38.31.184",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -160,7 +105,8 @@
         "🇳🇱 荷兰 (Netherlands) 07 - xiaohe",
         "🇳🇱 荷兰 (Netherlands) 08 - xiaohe",
         "🇳🇱 荷兰 (Netherlands) 09 - xiaohe",
-        "🇳🇱 荷兰 (Netherlands) 10 - xiaohe"
+        "🇳🇱 荷兰 (Netherlands) 10 - xiaohe",
+        "🇳🇱 荷兰 (Netherlands) 11 - xiaohe"
       ]
     },
     {
@@ -176,7 +122,8 @@
         "🇳🇱 荷兰 (Netherlands) 07 - xiaohe",
         "🇳🇱 荷兰 (Netherlands) 08 - xiaohe",
         "🇳🇱 荷兰 (Netherlands) 09 - xiaohe",
-        "🇳🇱 荷兰 (Netherlands) 10 - xiaohe"
+        "🇳🇱 荷兰 (Netherlands) 10 - xiaohe",
+        "🇳🇱 荷兰 (Netherlands) 11 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
