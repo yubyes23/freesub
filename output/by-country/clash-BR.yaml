@@ -4,9 +4,9 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
-  server: 160.25.75.40
-  port: 443
+- name: 🇧🇷 巴西 (Brazil) 01 - xiaohe
+  server: 5.104.107.80
+  port: 2053
   udp: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -15,30 +15,33 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /html?ed=2560fp=chrome
+    path: /act/clip/directory?ed=2560fp=chrome
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
-  server: mz.hkychina.com
-  port: 8443
+- name: 🇧🇷 巴西 (Brazil) 02 - xiaohe
+  server: cnamefuckxxs.yuchen.icu
+  port: 443
   udp: true
-  type: hysteria2
-  password: HysTeria2026!Proxy
-  sni: mz.hkychina.com
+  type: trojan
+  password: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  sni: 25ec.yubo.qzz.io
   skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 01 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 01 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 02 - xiaohe
 rules:
 - MATCH,PROXIES

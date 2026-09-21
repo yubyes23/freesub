@@ -31,7 +31,7 @@ proxies:
   servername: italia.superbuba.top
   client-fingerprint: firefox
 - name: 🇮🇹 意大利 (Italy) 03 - xiaohe
-  server: 31.76.113.212
+  server: italia.superbuba.top
   port: 443
   udp: true
   type: vless

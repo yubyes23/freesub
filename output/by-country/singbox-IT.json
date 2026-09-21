@@ -48,7 +48,7 @@
     {
       "type": "vless",
       "tag": "🇮🇹 意大利 (Italy) 03 - xiaohe",
-      "server": "31.76.113.212",
+      "server": "italia.superbuba.top",
       "server_port": 443,
       "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
       "flow": "xtls-rprx-vision",

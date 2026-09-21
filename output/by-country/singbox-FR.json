@@ -4,154 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 01 - xiaohe",
-      "server": "13.36.1.52",
-      "server_port": 22224,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 02 - xiaohe",
-      "server": "13.36.1.52",
-      "server_port": 22222,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 03 - xiaohe",
+      "tag": "🇫🇷 法国 (France) 01 - xiaohe",
       "server": "54.36.174.140",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
       "password": "mrs2e9a"
     },
     {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 04 - xiaohe",
-      "server": "45.95.96.236",
-      "server_port": 443,
-      "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "gesmankos.sadiepinki.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs",
-          "short_id": "4fa44664f6a566d3"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 05 - xiaohe",
-      "server": "199.232.78.170",
-      "server_port": 443,
-      "uuid": "XpnTeam-13",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "Appxdn.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 06 - xiaohe",
-      "server": "162.159.244.91",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇫🇷 法国 (France) 07 - xiaohe",
-      "server": "188.114.96.19",
-      "server_port": 80,
-      "uuid": "479526cd-5011-43cf-a788-504da95e07c2",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "google.whatsapp.snapp.torob.basalam.fortresshost.ir."
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 08 - xiaohe",
-      "server": "185.255.179.166",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇷 法国 (France) 01 - xiaohe",
-        "🇫🇷 法国 (France) 02 - xiaohe",
-        "🇫🇷 法国 (France) 03 - xiaohe",
-        "🇫🇷 法国 (France) 04 - xiaohe",
-        "🇫🇷 法国 (France) 05 - xiaohe",
-        "🇫🇷 法国 (France) 06 - xiaohe",
-        "🇫🇷 法国 (France) 07 - xiaohe",
-        "🇫🇷 法国 (France) 08 - xiaohe"
+        "🇫🇷 法国 (France) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇷 法国 (France) 01 - xiaohe",
-        "🇫🇷 法国 (France) 02 - xiaohe",
-        "🇫🇷 法国 (France) 03 - xiaohe",
-        "🇫🇷 法国 (France) 04 - xiaohe",
-        "🇫🇷 法国 (France) 05 - xiaohe",
-        "🇫🇷 法国 (France) 06 - xiaohe",
-        "🇫🇷 法国 (France) 07 - xiaohe",
-        "🇫🇷 法国 (France) 08 - xiaohe"
+        "🇫🇷 法国 (France) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

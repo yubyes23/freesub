@@ -4,9 +4,28 @@
   },
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 01 - xiaohe",
+      "server": "5.104.107.80",
+      "server_port": 2053,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/act/clip/directory?ed=2560fp=chrome",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
       "type": "trojan",
-      "tag": "🇷🇺 俄罗斯 (Russia) 01 - xiaohe",
-      "server": "104.18.222.117",
+      "tag": "🇧🇷 巴西 (Brazil) 02 - xiaohe",
+      "server": "cnamefuckxxs.yuchen.icu",
       "server_port": 443,
       "password": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
       "tls": {
@@ -31,14 +50,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 俄罗斯 (Russia) 01 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 01 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 俄罗斯 (Russia) 01 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 01 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
