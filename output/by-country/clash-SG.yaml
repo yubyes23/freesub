@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - xiaohe
-  server: 104.21.8.201
+  server: 172.67.130.159
   port: 2096
   udp: true
   type: vless
