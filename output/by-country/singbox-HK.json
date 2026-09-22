@@ -6,6 +6,18 @@
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe",
+      "server": "hk2.xiaoliyu.cyou",
+      "server_port": 4433,
+      "password": "19f72087-4591-4d72-930b-2697078ec2be",
+      "tls": {
+        "enabled": true,
+        "server_name": "hk2.xiaoliyu.cyou",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe",
       "server": "mz.hkychina.com",
       "server_port": 8443,
       "password": "HysTeria2026!Proxy",
@@ -17,7 +29,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - xiaohe",
       "server": "104.21.8.201",
       "server_port": 2096,
       "uuid": "ecb9ab47-31aa-4dd9-92eb-191047b353bd",
@@ -44,7 +56,8 @@
       "outbounds": [
         "auto",
         "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 03 - xiaohe"
       ]
     },
     {
@@ -52,7 +65,8 @@
       "tag": "auto",
       "outbounds": [
         "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -6,30 +6,7 @@
     {
       "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
-      "server": "104.16.252.243",
-      "server_port": 443,
-      "uuid": "f888a23f-acb8-4be2-9b74-e560491619eb",
-      "tls": {
-        "enabled": true,
-        "server_name": "5656.boye.de5.net",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "5656.boye.de5.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
-      "server": "172.67.130.159",
+      "server": "104.21.8.201",
       "server_port": 2096,
       "uuid": "832c8f42-7fe1-4aa4-9171-eb9dddbf6fef",
       "tls": {
@@ -54,16 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 02 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 02 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

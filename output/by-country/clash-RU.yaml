@@ -5,22 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 162.159.237.52
-  port: 443
-  udp: true
-  type: vless
-  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
-  tls: true
-  servername: c2cc.yuba.xx.kg
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: c2cc.yuba.xx.kg
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 162.159.95.178
+  server: cdn.tzpro.xyz
   port: 443
   udp: true
   type: vless
@@ -40,13 +25,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -4,20 +4,11 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe",
-      "server": "162.159.237.52",
-      "server_port": 443,
-      "password": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
-      "tls": {
-        "enabled": true,
-        "server_name": "25ec.yubo.qzz.io",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "server": "xn--b6gac.eu.org",
+      "server_port": 80,
+      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
       "transport": {
         "type": "ws",
         "path": "/",
