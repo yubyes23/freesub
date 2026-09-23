@@ -4,25 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
-  server: 85.204.107.184
-  port: 8443
+- name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  server: de.i-love-russia.online
+  port: 443
   udp: true
   type: hysteria2
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
+  password: a6cf39b3-0424-42a2-abf7-b426da69b1a4
+  sni: de.i-love-russia.online
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 01 - xiaohe
 rules:
 - MATCH,PROXIES
