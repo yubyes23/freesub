@@ -4,11 +4,11 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
-      "server": "cloudflare.182682.xyz",
+      "server": "104.17.164.151",
       "server_port": 443,
-      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
+      "password": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
       "tls": {
         "enabled": true,
         "server_name": "25ec.yubo.qzz.io",
@@ -27,17 +27,9 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
-      "server": "129.151.73.227",
-      "server_port": 61312,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "EG7gd6f1FSkm+x/OoWRHzsRT1Jl/tSx0EWxkprEGZSo="
-    },
-    {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 03 - xiaohe",
-      "server": "104.17.198.52",
+      "tag": "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
+      "server": "104.17.157.14",
       "server_port": 80,
       "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
       "transport": {
@@ -49,24 +41,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 04 - xiaohe",
-      "server": "35.189.111.134",
-      "server_port": 443,
-      "uuid": "ed492b33-c6b4-463f-8359-3634b0d44251",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "matDwR2fEV41IhLs23SkP9dS6d6qiaRKS4ndb3uR1lk",
-          "short_id": "89ea42ae375d4933"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 03 - xiaohe",
+      "server": "129.151.73.227",
+      "server_port": 61312,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "EG7gd6f1FSkm+x/OoWRHzsRT1Jl/tSx0EWxkprEGZSo="
     },
     {
       "type": "selector",
@@ -75,8 +55,7 @@
         "auto",
         "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
         "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 03 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 04 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 03 - xiaohe"
       ]
     },
     {
@@ -85,8 +64,7 @@
       "outbounds": [
         "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
         "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 03 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 04 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

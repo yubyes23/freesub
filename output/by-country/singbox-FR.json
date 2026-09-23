@@ -6,26 +6,37 @@
     {
       "type": "vless",
       "tag": "🇫🇷 法国 (France) 01 - xiaohe",
-      "server": "15.188.230.69",
-      "server_port": 22222,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+      "server": "cloudflare.182682.xyz",
+      "server_port": 80,
+      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "25ec.yubo.qzz.io"
+        }
+      }
     },
     {
       "type": "trojan",
       "tag": "🇫🇷 法国 (France) 02 - xiaohe",
-      "server": "188.114.96.3",
+      "server": "104.16.241.75",
       "server_port": 443,
-      "password": "humanity",
+      "password": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
       "tls": {
         "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": true
+        "server_name": "25ec.yubo.qzz.io",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/",
         "headers": {
-          "Host": "www.calmlunch.com"
+          "Host": "25ec.yubo.qzz.io"
         }
       }
     },
