@@ -4,11 +4,11 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
-      "server": "104.17.164.151",
+      "server": "cloudflare-ip.mofashi.ltd",
       "server_port": 443,
-      "password": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
+      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
       "tls": {
         "enabled": true,
         "server_name": "25ec.yubo.qzz.io",
@@ -27,44 +27,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
-      "server": "104.17.157.14",
-      "server_port": 80,
-      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "25ec.yubo.qzz.io"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 03 - xiaohe",
-      "server": "129.151.73.227",
-      "server_port": 61312,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "EG7gd6f1FSkm+x/OoWRHzsRT1Jl/tSx0EWxkprEGZSo="
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 03 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 03 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

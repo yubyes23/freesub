@@ -5,17 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
-  server: 34.96.146.210
+  server: cf.0sm.com
   port: 443
   udp: true
   type: vless
-  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
+  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
   tls: true
-  reality-opts:
-    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
-    short-id: 56d4e7ae4f86fa39
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  servername: c2cc.yuba.xx.kg
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: c2cc.yuba.xx.kg
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
   server: hk2.xiaoliyu.cyou
   port: 4433
