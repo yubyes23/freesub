@@ -5,28 +5,50 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - xiaohe
-  server: pahobac.org
+  server: cloudflare.182682.xyz
   port: 443
   udp: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
   tls: true
-  servername: pahobac.org
+  servername: 25ec.yubo.qzz.io
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /
     headers:
-      Host: pahobac.org
+      Host: 25ec.yubo.qzz.io
 - name: 🇬🇧 英国 (United Kingdom) 02 - xiaohe
-  server: 134.65.56.231
+  server: 129.151.73.227
   port: 61312
   udp: true
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: +v9GwPXdDOfF7rNuBwUv2zztIa8B8jTGzbthZepuyLM=
+  password: EG7gd6f1FSkm+x/OoWRHzsRT1Jl/tSx0EWxkprEGZSo=
+- name: 🇬🇧 英国 (United Kingdom) 03 - xiaohe
+  server: 104.17.198.52
+  port: 80
+  udp: true
+  type: vless
+  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 25ec.yubo.qzz.io
+- name: 🇬🇧 英国 (United Kingdom) 04 - xiaohe
+  server: 35.189.111.134
+  port: 443
+  udp: true
+  type: vless
+  uuid: ed492b33-c6b4-463f-8359-3634b0d44251
+  tls: true
+  reality-opts:
+    public-key: matDwR2fEV41IhLs23SkP9dS6d6qiaRKS4ndb3uR1lk
+    short-id: 89ea42ae375d4933
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -34,6 +56,8 @@ proxy-groups:
   - AUTO
   - 🇬🇧 英国 (United Kingdom) 01 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 02 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 03 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -41,5 +65,7 @@ proxy-groups:
   proxies:
   - 🇬🇧 英国 (United Kingdom) 01 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 02 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 03 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 04 - xiaohe
 rules:
 - MATCH,PROXIES
