@@ -4,8 +4,8 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - xiaohe
-  server: 104.17.105.222
+- name: 🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe
+  server: 104.17.240.107
   port: 80
   udp: true
   type: vless
@@ -15,7 +15,7 @@ proxies:
     path: /
     headers:
       Host: 25ec.yubo.qzz.io
-- name: 🇮🇷 IR 02 - xiaohe
+- name: 🇸🇦 沙特 (Saudi Arabia) 02 - xiaohe
   server: cf.877771.xyz
   port: 443
   udp: true
@@ -31,14 +31,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - xiaohe
-  - 🇮🇷 IR 02 - xiaohe
+  - 🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe
+  - 🇸🇦 沙特 (Saudi Arabia) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - xiaohe
-  - 🇮🇷 IR 02 - xiaohe
+  - 🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe
+  - 🇸🇦 沙特 (Saudi Arabia) 02 - xiaohe
 rules:
 - MATCH,PROXIES
