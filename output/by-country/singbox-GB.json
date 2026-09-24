@@ -4,11 +4,11 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇧🇷 巴西 (Brazil) 01 - xiaohe",
-      "server": "25ec.yubo.qzz.io",
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
+      "server": "104.17.167.210",
       "server_port": 443,
-      "password": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
+      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
       "tls": {
         "enabled": true,
         "server_name": "25ec.yubo.qzz.io",
@@ -27,18 +27,28 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
+      "server": "129.151.78.82",
+      "server_port": 61312,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "bcK5dwAG4V4J89FBGkbbSgMm1Nwbx7IHScCwr7Lode4="
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
+        "🇬🇧 英国 (United Kingdom) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
+        "🇬🇧 英国 (United Kingdom) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

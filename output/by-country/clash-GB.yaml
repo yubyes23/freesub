@@ -4,8 +4,8 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  server: cnamefuckxxs.yuchen.icu
+- name: 🇬🇧 英国 (United Kingdom) 01 - xiaohe
+  server: 104.17.167.210
   port: 443
   udp: true
   type: vless
@@ -19,17 +19,26 @@ proxies:
     path: /
     headers:
       Host: 25ec.yubo.qzz.io
+- name: 🇬🇧 英国 (United Kingdom) 02 - xiaohe
+  server: 129.151.78.82
+  port: 61312
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: bcK5dwAG4V4J89FBGkbbSgMm1Nwbx7IHScCwr7Lode4=
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 01 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 01 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 02 - xiaohe
 rules:
 - MATCH,PROXIES
