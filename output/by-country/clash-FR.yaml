@@ -5,16 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - xiaohe
-  server: 104.17.110.174
-  port: 80
+  server: 188.114.96.3
+  port: 443
   udp: true
-  type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
-    headers:
-      Host: 25ec.yubo.qzz.io
+    path: /assignment
 - name: 🇫🇷 法国 (France) 02 - xiaohe
   server: 62.210.7.139
   port: 60111
@@ -24,13 +24,33 @@ proxies:
   sni: google.com
   skip-cert-verify: true
 - name: 🇫🇷 法国 (France) 03 - xiaohe
-  server: v35.hdacd.com
-  port: 30835
+  server: 77.110.104.125
+  port: 8443
+  udp: true
+  type: vless
+  uuid: e0b9fb0f-1bbd-478b-9580-c2294778338b
+  tls: true
+  reality-opts:
+    public-key: OMlQAFrCMZ3DX0xlnbEZiByLBFzpUE8XJHJsrBzLdlY
+    short-id: 2da4299da566b7
+  servername: maps.apple.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: your-custom-path
+- name: 🇫🇷 法国 (France) 04 - xiaohe
+  server: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+  port: 80
   udp: true
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
+  uuid: 479526cd-5011-43cf-a788-504da95e07c2
+  alterId: 0
   cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +59,7 @@ proxy-groups:
   - 🇫🇷 法国 (France) 01 - xiaohe
   - 🇫🇷 法国 (France) 02 - xiaohe
   - 🇫🇷 法国 (France) 03 - xiaohe
+  - 🇫🇷 法国 (France) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -47,5 +68,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 01 - xiaohe
   - 🇫🇷 法国 (France) 02 - xiaohe
   - 🇫🇷 法国 (France) 03 - xiaohe
+  - 🇫🇷 法国 (France) 04 - xiaohe
 rules:
 - MATCH,PROXIES

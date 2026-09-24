@@ -4,15 +4,17 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-      "server": "de.i-love-russia.online",
-      "server_port": 443,
-      "password": "a6cf39b3-0424-42a2-abf7-b426da69b1a4",
-      "tls": {
-        "enabled": true,
-        "server_name": "de.i-love-russia.online",
-        "insecure": false
+      "type": "vless",
+      "tag": "🇮🇹 意大利 (Italy) 01 - xiaohe",
+      "server": "140.248.189.57",
+      "server_port": 80,
+      "uuid": "8abb648a-b004-42a4-aa05-49cdc2f94d4e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "Tazia.global.ssl.fastly.net"
+        }
       }
     },
     {
@@ -20,14 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 芬兰 (Finland) 01 - xiaohe"
+        "🇮🇹 意大利 (Italy) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 芬兰 (Finland) 01 - xiaohe"
+        "🇮🇹 意大利 (Italy) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

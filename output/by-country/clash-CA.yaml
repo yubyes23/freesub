@@ -4,16 +4,16 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇭 泰国 (Thailand) 01 - xiaohe
-  server: 34.15.176.240
+- name: 🇨🇦 加拿大 (Canada) 01 - xiaohe
+  server: 34.186.193.91
   port: 443
   udp: true
   type: vless
-  uuid: 742dc674-a491-4a42-a551-b3ea6dd2f447
+  uuid: 2ea95ec3-6b09-470e-952a-ebb171b0d666
   tls: true
   reality-opts:
-    public-key: Euq607wb-KZNjbuOMQ1h646C3dm_Q-ntd7yxZ52jj0U
-    short-id: 856c0a3cd1426a5c
+    public-key: 0dSYzX_uvVr-YmiONeKxPt7TdFkaFeYopYfjobxxEC4
+    short-id: 341ec000a90f1ced
   servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
@@ -21,12 +21,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇭 泰国 (Thailand) 01 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇭 泰国 (Thailand) 01 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 01 - xiaohe
 rules:
 - MATCH,PROXIES

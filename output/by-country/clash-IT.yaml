@@ -4,28 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
-  server: 162.159.196.177
+- name: 🇮🇹 意大利 (Italy) 01 - xiaohe
+  server: 140.248.189.57
   port: 80
   udp: true
   type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  uuid: 8abb648a-b004-42a4-aa05-49cdc2f94d4e
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: 25ec.yubo.qzz.io
+      Host: Tazia.global.ssl.fastly.net
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
+  - 🇮🇹 意大利 (Italy) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
+  - 🇮🇹 意大利 (Italy) 01 - xiaohe
 rules:
 - MATCH,PROXIES
