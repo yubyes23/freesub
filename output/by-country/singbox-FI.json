@@ -5,38 +5,48 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
-      "server": "surstreming.vvzzkontaktezzvv.garden",
+      "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
+      "server": "196.196.206.38",
       "server_port": 443,
       "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "surstreming.vvzzkontaktezzvv.garden",
+        "server_name": "finkafsb.finiki.lol",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA",
-          "short_id": "fb442438e2223836"
+          "public_key": "YBKHp6R7xp2Ss2kxbvDNMFPpRrf3oh1wQ2dVMukPHmA",
+          "short_id": "d110331f200987ae"
         }
       }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+      "server": "me6.movieseryalirani.ir",
+      "server_port": 57361,
+      "uuid": "ed815caa-bff1-4419-8c61-1d108eabaf1f",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 瑞典 (Sweden) 01 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 01 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 瑞典 (Sweden) 01 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 01 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
