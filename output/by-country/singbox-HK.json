@@ -4,15 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe",
-      "server": "hk01.kfc-520.com",
-      "server_port": 60001,
-      "password": "8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3",
+      "server": "141.11.238.17",
+      "server_port": 443,
+      "uuid": "596be9d9-0bb9-41bc-bff5-1adb483cbc32",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "hk01.kfc-520.com",
-        "insecure": true
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3xV5ZMHcMyfWXOAD_-FdX5M973QiqUfdCo8OgPcz_k8",
+          "short_id": "8eb5"
+        }
       }
     },
     {
