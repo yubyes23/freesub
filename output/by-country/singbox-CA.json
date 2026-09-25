@@ -4,14 +4,14 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
-      "server": "104.17.118.201",
+      "type": "trojan",
+      "tag": "🇨🇦 加拿大 (Canada) 01 - xiaohe",
+      "server": "25ec.yubo.qzz.io",
       "server_port": 443,
-      "uuid": "f888a23f-acb8-4be2-9b74-e560491619eb",
+      "password": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
       "tls": {
         "enabled": true,
-        "server_name": "5656.boye.de5.net",
+        "server_name": "25ec.yubo.qzz.io",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -20,9 +20,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/?ed=2048",
+        "path": "/",
         "headers": {
-          "Host": "5656.boye.de5.net"
+          "Host": "25ec.yubo.qzz.io"
         }
       }
     },
@@ -31,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
+        "🇨🇦 加拿大 (Canada) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
+        "🇨🇦 加拿大 (Canada) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
