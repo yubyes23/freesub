@@ -4,22 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  server: 172.67.70.155
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  tls: true
-  servername: 5685.bnm.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
   server: ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn
   port: 443
   udp: true
@@ -32,14 +17,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

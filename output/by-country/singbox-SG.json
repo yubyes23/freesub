@@ -6,31 +6,43 @@
     {
       "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
-      "server": "104.25.61.132",
-      "server_port": 80,
-      "uuid": "3576016a-4b14-4e5f-94f2-73fde6791602",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "5685.bnm.dpdns.org"
+      "server": "163.128.99.57",
+      "server_port": 443,
+      "uuid": "1a049739-b873-4242-9a2b-239951eb2dd3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4S52pKhsJA4gK-_MLW8_R8TTeZsS4pH7ef6St-aKVBQ",
+          "short_id": "ab1df8505f6e0072"
         }
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
-      "server": "138.2.89.249",
+      "server": "163.128.99.14",
       "server_port": 443,
-      "password": "d042d150716709bb778cc73889cddb02",
+      "uuid": "bda35755-c838-49c3-a19e-3712f2d54275",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "309502c4a8df10b46fb976d4a8c43f42"
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-LuhwN_cSgNr7nYIfCcu_XAjviKVSGwVGHxmB-s1AD0",
+          "short_id": "e3a4bdfe3d6fd8ec"
+        }
       }
     },
     {

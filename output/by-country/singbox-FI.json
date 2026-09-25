@@ -4,30 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇩🇰 丹麦 (Denmark) 01 - xiaohe",
-      "server": "se.xiaoliyu.cyou",
-      "server_port": 4433,
-      "password": "19f72087-4591-4d72-930b-2697078ec2be",
-      "tls": {
-        "enabled": true,
-        "server_name": "se.xiaoliyu.cyou",
-        "insecure": true
-      }
+      "type": "vmess",
+      "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
+      "server": "me6.movieseryalirani.ir",
+      "server_port": 57361,
+      "uuid": "ed815caa-bff1-4419-8c61-1d108eabaf1f",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇰 丹麦 (Denmark) 01 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇰 丹麦 (Denmark) 01 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -6,9 +6,37 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "104.25.61.132",
-      "server_port": 443,
+      "server": "104.19.151.217",
+      "server_port": 80,
       "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "25ec.yubo.qzz.io"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
+      "server": "104.17.125.9",
+      "server_port": 80,
+      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "25ec.yubo.qzz.io"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇨🇿 捷克 (Czech) 03 - xiaohe",
+      "server": "104.17.179.74",
+      "server_port": 443,
+      "password": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
       "tls": {
         "enabled": true,
         "server_name": "25ec.yubo.qzz.io",
@@ -31,14 +59,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe",
+        "🇨🇿 捷克 (Czech) 02 - xiaohe",
+        "🇨🇿 捷克 (Czech) 03 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe",
+        "🇨🇿 捷克 (Czech) 02 - xiaohe",
+        "🇨🇿 捷克 (Czech) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

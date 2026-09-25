@@ -4,31 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
-      "server": "172.67.70.155",
-      "server_port": 443,
-      "uuid": "3576016a-4b14-4e5f-94f2-73fde6791602",
-      "tls": {
-        "enabled": true,
-        "server_name": "5685.bnm.dpdns.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "randomized"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "5685.bnm.dpdns.org"
-        }
-      }
-    },
-    {
       "type": "anytls",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
       "server": "ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn",
       "server_port": 443,
       "password": "9sK2mP8xQ7vL3nZ6",
@@ -43,16 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
