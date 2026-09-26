@@ -15,7 +15,7 @@ proxies:
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  server: 85.204.107.172
+  server: 85.204.107.184
   port: 8443
   udp: true
   type: hysteria2
