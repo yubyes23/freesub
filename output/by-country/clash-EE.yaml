@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: 144.31.170.72
-  port: 443
-  udp: true
-  type: vless
-  uuid: deea5046-3543-4b1b-a17f-3d08a65db91d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fkZTYNydTBVO-1LSiTvDcyBMx-zBP5Am780jECmUgg0
-  servername: est.bopen.bond
-  client-fingerprint: safari
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   server: 217.60.182.79
   port: 443
   udp: true
@@ -30,13 +18,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
 rules:
 - MATCH,PROXIES
