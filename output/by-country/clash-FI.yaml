@@ -5,13 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: me6.movieseryalirani.ir
-  port: 57361
+  server: fi.snobvpn.online
+  port: 80
   udp: true
-  type: vmess
-  uuid: ed815caa-bff1-4419-8c61-1d108eabaf1f
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  network: ws
+  ws-opts:
+    path: /snob-ws
+    headers:
+      Host: fi.snobvpn.online
 proxy-groups:
 - name: PROXIES
   type: select

@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "13.143.181.220",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
+      "server": "94.176.234.161",
       "server_port": 443,
-      "uuid": "7a8d2c3f-d6dd-0004-81d8-cff23d8364ee",
+      "uuid": "d448490d-4ee6-442f-80e1-5e1c186c4ce1",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "msk1.maxtelemost.com",
+        "server_name": "www.intel.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "QfdR5yEjdbaqSet3-XrkDdVjPO9VTRGlUI-MV-b4p38",
-          "short_id": ""
+          "public_key": "UpI0XKNUsMJ24XawPQ8g7br1faEsO7BOvmIIGg9Wrm8",
+          "short_id": "dbb2ef1c7c"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - xiaohe"
+        "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - xiaohe"
+        "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

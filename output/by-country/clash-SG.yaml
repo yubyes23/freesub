@@ -5,44 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - xiaohe
-  server: 163.128.99.57
+  server: 104.17.28.242
   port: 443
   udp: true
   type: vless
-  uuid: 1a049739-b873-4242-9a2b-239951eb2dd3
-  flow: xtls-rprx-vision
+  uuid: f888a23f-acb8-4be2-9b74-e560491619eb
   tls: true
-  reality-opts:
-    public-key: 4S52pKhsJA4gK-_MLW8_R8TTeZsS4pH7ef6St-aKVBQ
-    short-id: ab1df8505f6e0072
-  servername: www.apple.com
-  client-fingerprint: safari
-- name: 🇸🇬 新加坡 (Singapore) 02 - xiaohe
-  server: 163.128.99.14
-  port: 443
-  udp: true
-  type: vless
-  uuid: bda35755-c838-49c3-a19e-3712f2d54275
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: -LuhwN_cSgNr7nYIfCcu_XAjviKVSGwVGHxmB-s1AD0
-    short-id: e3a4bdfe3d6fd8ec
-  servername: www.apple.com
-  client-fingerprint: safari
+  servername: 5656.boye.de5.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: 5656.boye.de5.net
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇬 新加坡 (Singapore) 01 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇬 新加坡 (Singapore) 01 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 02 - xiaohe
 rules:
 - MATCH,PROXIES

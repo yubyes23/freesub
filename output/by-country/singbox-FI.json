@@ -4,12 +4,18 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-      "server": "me6.movieseryalirani.ir",
-      "server_port": 57361,
-      "uuid": "ed815caa-bff1-4419-8c61-1d108eabaf1f",
-      "security": "auto"
+      "server": "fi.snobvpn.online",
+      "server_port": 80,
+      "uuid": "246b101b-4e4a-451f-8e9c-5e8d3b64b4ef",
+      "transport": {
+        "type": "ws",
+        "path": "/snob-ws",
+        "headers": {
+          "Host": "fi.snobvpn.online"
+        }
+      }
     },
     {
       "type": "selector",

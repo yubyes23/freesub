@@ -4,29 +4,27 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 13.143.181.220
+- name: 🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe
+  server: md-new.failspace.top
   port: 443
   udp: true
   type: vless
-  uuid: 7a8d2c3f-d6dd-0004-81d8-cff23d8364ee
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: QfdR5yEjdbaqSet3-XrkDdVjPO9VTRGlUI-MV-b4p38
-  servername: msk1.maxtelemost.com
-  client-fingerprint: chrome
+  servername: md-new.failspace.top
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 捷克 (Czech) 01 - xiaohe
+  - 🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 捷克 (Czech) 01 - xiaohe
+  - 🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe
 rules:
 - MATCH,PROXIES
