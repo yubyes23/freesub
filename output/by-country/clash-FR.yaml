@@ -5,25 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - xiaohe
-  server: 13.39.231.13
+  server: 15.224.68.85
   port: 22223
   udp: true
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
 - name: 🇫🇷 法国 (France) 02 - xiaohe
-  server: 13.39.231.13
-  port: 22222
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇫🇷 法国 (France) 03 - xiaohe
-  server: 13.39.231.13
+  server: 15.224.68.85
   port: 22224
   udp: true
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇫🇷 法国 (France) 03 - xiaohe
+  server: 15.224.68.85
+  port: 22222
+  udp: true
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
 - name: 🇫🇷 法国 (France) 04 - xiaohe
-  server: 104.17.121.43
+  server: 104.18.8.83
   port: 443
   udp: true
   type: trojan
@@ -45,12 +45,12 @@ proxies:
   ws-opts:
     path: /assignment
 - name: 🇫🇷 法国 (France) 06 - xiaohe
-  server: 62.210.7.139
-  port: 60111
+  server: 173.212.201.85
+  port: 443
   udp: true
   type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: www.bing.com
+  password: gf1:gfhysteria2024
+  sni: www.docker.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES

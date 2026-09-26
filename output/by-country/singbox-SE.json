@@ -6,7 +6,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
-      "server": "51.20.122.188",
+      "server": "13.51.242.39",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -14,7 +14,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
-      "server": "13.51.242.39",
+      "server": "51.20.122.188",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
