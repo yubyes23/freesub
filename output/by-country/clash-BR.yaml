@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 - xiaohe
-  server: 104.25.255.228
+  server: cfip.1323123.xyz
   port: 443
   udp: true
   type: trojan
