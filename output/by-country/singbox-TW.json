@@ -4,19 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 01 - xiaohe",
-      "server": "152.67.75.161",
+      "type": "anytls",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe",
+      "server": "ac7548f3ebe045b39a90288ff1e97526.pnuqcnp.cn",
       "server_port": 443,
-      "password": "3a702d4d1de4949005d8431220e040fb",
+      "password": "9sK2mP8xQ7vL3nZ6",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
+        "server_name": "ac7548f3ebe045b39a90288ff1e97526.lwdnxf.cn",
         "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "c13f29db6a638ad2b211b9ce2669ef27"
       }
     },
     {
@@ -24,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇭 瑞士 (Switzerland) 01 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 瑞士 (Switzerland) 01 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
