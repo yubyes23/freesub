@@ -10,7 +10,7 @@ proxies:
   udp: true
   type: hysteria2
   password: github.com/Alvin9999-newpac/fanqiang
-  sni: www.bing.com
+  sni: google.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
