@@ -12,18 +12,64 @@
       "security": "auto"
     },
     {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 02 - xiaohe",
+      "server": "61.111.247.22",
+      "server_port": 443,
+      "uuid": "82C94E17-B27E-4356-82C1-2F9C79B0CF6D",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "gateway.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "F6Asg31ihdkFCmTdIuGjq_232PMYhLsCH9k3Npaa9VI",
+          "short_id": "0d9954fe36197887"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 03 - xiaohe",
+      "server": "61.111.247.80",
+      "server_port": 443,
+      "uuid": "82C94E17-B27E-4356-82C1-2F9C79B0CF6D",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "gateway.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Cn5_Bic3VFQ2ONvH5_npnbMYZ-oxkl4BxawPKxoRdCQ",
+          "short_id": "f8f2875b3b4cb65b"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 01 - xiaohe",
+        "🇰🇷 韩国 (South Korea) 02 - xiaohe",
+        "🇰🇷 韩国 (South Korea) 03 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 01 - xiaohe",
+        "🇰🇷 韩国 (South Korea) 02 - xiaohe",
+        "🇰🇷 韩国 (South Korea) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

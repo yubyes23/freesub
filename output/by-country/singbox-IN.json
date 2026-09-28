@@ -4,17 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
-      "server": "172.66.194.212",
+      "type": "vmess",
+      "tag": "🇮🇳 印度 (India) 01 - xiaohe",
+      "server": "152.67.8.205",
       "server_port": 80,
-      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
+      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
+      "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "25ec.yubo.qzz.io"
-        }
+        "path": "/"
       }
     },
     {
@@ -22,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe"
+        "🇮🇳 印度 (India) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe"
+        "🇮🇳 印度 (India) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

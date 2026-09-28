@@ -4,25 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇧 英国 (United Kingdom) 01 - xiaohe
-  server: yg.mangshe.xyz
-  port: 2060
+- name: 🇮🇹 意大利 (Italy) 01 - xiaohe
+  server: us4.xiaoliyu.cyou
+  port: 18333
   udp: true
   type: hysteria2
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: yg.mangshe.xyz
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: us4.xiaoliyu.cyou
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇧 英国 (United Kingdom) 01 - xiaohe
+  - 🇮🇹 意大利 (Italy) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 (United Kingdom) 01 - xiaohe
+  - 🇮🇹 意大利 (Italy) 01 - xiaohe
 rules:
 - MATCH,PROXIES
