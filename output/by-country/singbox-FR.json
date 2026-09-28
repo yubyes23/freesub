@@ -4,27 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 01 - xiaohe",
-      "server": "104.18.9.83",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 02 - xiaohe",
+      "tag": "🇫🇷 法国 (France) 01 - xiaohe",
       "server": "vpn-fr-002.fastervpn.world",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -35,23 +16,20 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇫🇷 法国 (France) 03 - xiaohe",
-      "server": "google.whatsapp.snapp.torob.basalam.fortresshost.ir.",
-      "server_port": 80,
-      "uuid": "479526cd-5011-43cf-a788-504da95e07c2",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "google.whatsapp.snapp.torob.basalam.fortresshost.ir."
-        }
+      "type": "hysteria2",
+      "tag": "🇫🇷 法国 (France) 02 - xiaohe",
+      "server": "173.212.201.85",
+      "server_port": 443,
+      "password": "gf1:gfhysteria2024",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.docker.com",
+        "insecure": true
       }
     },
     {
       "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 04 - xiaohe",
+      "tag": "🇫🇷 法国 (France) 03 - xiaohe",
       "server": "185.255.179.166",
       "server_port": 443,
       "password": "humanity",
@@ -70,8 +48,8 @@
     },
     {
       "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 05 - xiaohe",
-      "server": "88.99.189.60",
+      "tag": "🇫🇷 法国 (France) 04 - xiaohe",
+      "server": "104.17.121.71",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -88,15 +66,18 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 06 - xiaohe",
-      "server": "173.212.201.85",
-      "server_port": 443,
-      "password": "gf1:gfhysteria2024",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.docker.com",
-        "insecure": true
+      "type": "vmess",
+      "tag": "🇫🇷 法国 (France) 05 - xiaohe",
+      "server": "google.whatsapp.snapp.torob.basalam.fortresshost.ir.",
+      "server_port": 80,
+      "uuid": "479526cd-5011-43cf-a788-504da95e07c2",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "google.whatsapp.snapp.torob.basalam.fortresshost.ir."
+        }
       }
     },
     {
@@ -108,8 +89,7 @@
         "🇫🇷 法国 (France) 02 - xiaohe",
         "🇫🇷 法国 (France) 03 - xiaohe",
         "🇫🇷 法国 (France) 04 - xiaohe",
-        "🇫🇷 法国 (France) 05 - xiaohe",
-        "🇫🇷 法国 (France) 06 - xiaohe"
+        "🇫🇷 法国 (France) 05 - xiaohe"
       ]
     },
     {
@@ -120,8 +100,7 @@
         "🇫🇷 法国 (France) 02 - xiaohe",
         "🇫🇷 法国 (France) 03 - xiaohe",
         "🇫🇷 法国 (France) 04 - xiaohe",
-        "🇫🇷 法国 (France) 05 - xiaohe",
-        "🇫🇷 法国 (France) 06 - xiaohe"
+        "🇫🇷 法国 (France) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

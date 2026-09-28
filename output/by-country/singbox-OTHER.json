@@ -5,21 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇪 比利时 (Belgium) 01 - xiaohe",
-      "server": "34.79.178.1",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "www.wto.org",
       "server_port": 443,
-      "uuid": "51e493d4-b275-45e0-a714-e014f40b3c32",
+      "uuid": "44ccea3e-41f5-47c4-bcb1-7f651d7b0747",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "php.bou.qzz.io",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "nTLhc6e5HMgO-hpD8RUMp0cd2t6p2_RqHLHM0P39_xA",
-          "short_id": "95ae4a39d3933191"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/44ccea3e-41f5-47c4-bcb1-7f651d7b0747",
+        "headers": {
+          "Host": "php.bou.qzz.io"
         }
       }
     },
@@ -28,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇪 比利时 (Belgium) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇪 比利时 (Belgium) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -6,27 +6,6 @@
     {
       "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
-      "server": "18.140.238.157",
-      "server_port": 31870,
-      "uuid": "d00d9d18-20cf-4191-be76-6f73d43a27ec",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "HEaa9lsAxLy1r13R-eB0nZWYj9n4kwxAeZFLFTKF4kc",
-          "short_id": "2fef6c2f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
       "server": "18.143.191.201",
       "server_port": 21464,
       "uuid": "d00d9d18-20cf-4191-be76-6f73d43a27ec",
@@ -47,7 +26,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
+      "tag": "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
       "server": "91.193.58.57",
       "server_port": 2096,
       "uuid": "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2",
@@ -69,43 +48,15 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
-      "server": "ASaqYIDZa9WDQ9Kq.v.3dns.vip",
-      "server_port": 443,
-      "uuid": "f0b7bbd66aad458aaec0e9acaab768b6",
-      "security": "auto",
+      "type": "hysteria2",
+      "tag": "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
+      "server": "138.2.73.238",
+      "server_port": 50160,
+      "password": "f87376e17da040ed04c9665ce8972930",
       "tls": {
         "enabled": true,
-        "server_name": "ASaqYIDZa9WDQ9Kq.v.3dns.vip",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-vmess",
-        "headers": {
-          "Host": "ASaqYIDZa9WDQ9Kq.v.3dns.vip"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇸🇬 新加坡 (Singapore) 05 - xiaohe",
-      "server": "6JiziO8PxQAXBAtZ.v.3dns.vip",
-      "server_port": 443,
-      "uuid": "f0b7bbd66aad458aaec0e9acaab768b6",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "6JiziO8PxQAXBAtZ.v.3dns.vip",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-vmess",
-        "headers": {
-          "Host": "6JiziO8PxQAXBAtZ.v.3dns.vip"
-        }
+        "server_name": "www.bing.com",
+        "insecure": true
       }
     },
     {
@@ -115,9 +66,7 @@
         "auto",
         "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
         "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 05 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 03 - xiaohe"
       ]
     },
     {
@@ -126,9 +75,7 @@
       "outbounds": [
         "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
         "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 05 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
