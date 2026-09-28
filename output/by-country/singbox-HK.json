@@ -1,0 +1,87 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe",
+      "server": "202.146.222.29",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "202.146.222.29",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe",
+      "server": "aZW0eunYVdvRe73k.v.3dns.vip",
+      "server_port": 443,
+      "uuid": "f0b7bbd66aad458aaec0e9acaab768b6",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "aZW0eunYVdvRe73k.v.3dns.vip",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "aZW0eunYVdvRe73k.v.3dns.vip"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - xiaohe",
+      "server": "syJ2gGUgMwBwQwQx.v.3dns.vip",
+      "server_port": 443,
+      "uuid": "f0b7bbd66aad458aaec0e9acaab768b6",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "syJ2gGUgMwBwQwQx.v.3dns.vip",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "syJ2gGUgMwBwQwQx.v.3dns.vip"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 03 - xiaohe"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 03 - xiaohe"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

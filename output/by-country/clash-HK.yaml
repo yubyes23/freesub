@@ -1,0 +1,64 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.29
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
+  server: aZW0eunYVdvRe73k.v.3dns.vip
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f0b7bbd66aad458aaec0e9acaab768b6
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: aZW0eunYVdvRe73k.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: aZW0eunYVdvRe73k.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+  server: syJ2gGUgMwBwQwQx.v.3dns.vip
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f0b7bbd66aad458aaec0e9acaab768b6
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: syJ2gGUgMwBwQwQx.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: syJ2gGUgMwBwQwQx.v.3dns.vip
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+rules:
+- MATCH,PROXIES

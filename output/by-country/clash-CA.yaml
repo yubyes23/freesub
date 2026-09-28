@@ -1,0 +1,51 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇨🇦 加拿大 (Canada) 01 - xiaohe
+  server: 172.105.17.84
+  port: 50181
+  udp: true
+  type: vless
+  uuid: 24f17960-8b89-48fa-828f-edd2c048ed26
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: JVeVJbl4s1xB7afO1BpIvCsgULTmY3b__2wMxQQmW0s
+    short-id: ae5e3d8a99373629
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 02 - xiaohe
+  server: mygptagent.org
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: mygptagent.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: mygptagent.org
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇨🇦 加拿大 (Canada) 01 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 02 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇦 加拿大 (Canada) 01 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 02 - xiaohe
+rules:
+- MATCH,PROXIES

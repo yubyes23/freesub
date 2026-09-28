@@ -1,0 +1,51 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vmess",
+      "tag": "🇰🇷 韩国 (South Korea) 01 - xiaohe",
+      "server": "8nTzyR5KNivfabaT.v.3dns.vip",
+      "server_port": 443,
+      "uuid": "f0b7bbd66aad458aaec0e9acaab768b6",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "8nTzyR5KNivfabaT.v.3dns.vip",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "8nTzyR5KNivfabaT.v.3dns.vip"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇰🇷 韩国 (South Korea) 01 - xiaohe"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇰🇷 韩国 (South Korea) 01 - xiaohe"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

@@ -4,32 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - xiaohe
-  server: xn--b6gac.eu.org
+- name: 🇮🇱 以色列 (Israel) 01 - xiaohe
+  server: 72.4.65.116
   port: 443
   udp: true
   type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
   tls: true
-  servername: 25ec.yubo.qzz.io
+  servername: assets-de2.pleiades.codes
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 25ec.yubo.qzz.io
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - xiaohe
+  - 🇮🇱 以色列 (Israel) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - xiaohe
+  - 🇮🇱 以色列 (Israel) 01 - xiaohe
 rules:
 - MATCH,PROXIES
