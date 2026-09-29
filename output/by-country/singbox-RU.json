@@ -6,9 +6,23 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - xiaohe",
-      "server": "cdn.tzpro.xyz",
+      "server": "104.17.216.244",
+      "server_port": 80,
+      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "c2cc.yuba.xx.kg"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
+      "server": "cf.0sm.com",
       "server_port": 443,
-      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
+      "password": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
       "tls": {
         "enabled": true,
         "server_name": "25ec.yubo.qzz.io",
@@ -28,21 +42,30 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
-      "server": "xn--b6gac.eu.org",
-      "server_port": 80,
-      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
+      "server": "cloudflare.182682.xyz",
+      "server_port": 443,
+      "uuid": "3576016a-4b14-4e5f-94f2-73fde6791602",
+      "tls": {
+        "enabled": true,
+        "server_name": "5685.bnm.dpdns.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/?ed=2048",
         "headers": {
-          "Host": "25ec.yubo.qzz.io"
+          "Host": "5685.bnm.dpdns.org"
         }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - xiaohe",
       "server": "91.240.86.70",
       "server_port": 22443,
       "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
@@ -50,20 +73,6 @@
         "enabled": true,
         "server_name": "91.240.86.70",
         "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - xiaohe",
-      "server": "cloudflare.182682.xyz",
-      "server_port": 80,
-      "uuid": "3576016a-4b14-4e5f-94f2-73fde6791602",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "5685.bnm.dpdns.org"
-        }
       }
     },
     {
