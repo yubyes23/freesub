@@ -5,18 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - xiaohe
-  server: 104.17.168.145
-  port: 443
+  server: 104.17.125.45
+  port: 80
   udp: true
-  type: trojan
-  password: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  sni: 25ec.yubo.qzz.io
-  skip-cert-verify: false
+  type: vless
+  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: 25ec.yubo.qzz.io
 - name: 🇬🇧 英国 (United Kingdom) 02 - xiaohe
-  server: 172.66.201.178
+  server: cf.090227.xyz
   port: 443
   udp: true
   type: trojan
@@ -27,13 +27,19 @@ proxies:
   ws-opts:
     path: /
 - name: 🇬🇧 英国 (United Kingdom) 03 - xiaohe
-  server: yg.mangshe.xyz
-  port: 2060
+  server: 134.65.60.121
+  port: 61312
   udp: true
-  type: hysteria2
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: yg.mangshe.xyz
-  skip-cert-verify: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: BtbUy0WbUk0zMteivmHloMnVJvH1AXCSV2MPpOzu1os=
+- name: 🇬🇧 英国 (United Kingdom) 04 - xiaohe
+  server: 129.151.93.216
+  port: 61312
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: OLSE823mI1o8K0A56QvU38ZcxIjpyhMayqkmo2vnDIs=
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,6 +48,7 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 01 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 02 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 03 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -50,5 +57,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 01 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 02 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 03 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 04 - xiaohe
 rules:
 - MATCH,PROXIES
