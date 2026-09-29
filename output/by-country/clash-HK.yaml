@@ -13,21 +13,20 @@ proxies:
   sni: xg1.mangshe.xyz
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
-  server: 8.218.184.4
-  port: 443
+  server: 179.255.114.109
+  port: 8443
   udp: true
-  type: vmess
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
   tls: true
-  servername: NYcQg19zkwaCPM1B.v.3dns.vip
+  servername: hk.152568.xyz
   skip-cert-verify: false
+  client-fingerprint: edge
   network: ws
   ws-opts:
-    path: /ws-vmess
+    path: /cdn/packages/runtime-core.tar.gz
     headers:
-      Host: NYcQg19zkwaCPM1B.v.3dns.vip
+      Host: hk.152568.xyz
 proxy-groups:
 - name: PROXIES
   type: select
