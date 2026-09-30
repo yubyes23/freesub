@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇹 立陶宛 (Lithuania) 01 - xiaohe
-  server: 62.77.158.1
+- name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  server: 89.125.114.9
   port: 443
   udp: true
   type: vless
-  uuid: 2eceaf2b-a775-5a9c-9990-dad2b3660fb6
+  uuid: 6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: sVhkyiMXvpofflCdSszxQmsqOXV1kg1Ldxq1a9mOPjs
-    short-id: 6a
-  servername: online.1c.ru
-  client-fingerprint: safari
+    public-key: KEoz-uTjqCGwtNakCD-XewbDk_8Vwm_nFv0zg3c2Syg
+    short-id: 67a4fe46bbf783cc
+  servername: ozone.nl
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇹 立陶宛 (Lithuania) 01 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇹 立陶宛 (Lithuania) 01 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 01 - xiaohe
 rules:
 - MATCH,PROXIES

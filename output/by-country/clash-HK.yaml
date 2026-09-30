@@ -5,8 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
-  server: 85.149.211.28
-  port: 8443
+  server: hk01.kfc-520.com
+  port: 60001
+  udp: true
+  type: hysteria2
+  password: 5ec96249-b753-317a-b065-b67ad66b8185
+  sni: hk01.kfc-520.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
+  server: 45.82.244.40
+  port: 443
   udp: true
   type: vless
   uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
@@ -19,9 +27,9 @@ proxies:
     path: /cdn/packages/runtime-core.tar.gz
     headers:
       Host: hk.152568.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
-  server: 103.71.23.247
-  port: 443
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+  server: 85.149.211.28
+  port: 8443
   udp: true
   type: vless
   uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
@@ -41,6 +49,7 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -48,5 +57,6 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
 rules:
 - MATCH,PROXIES
