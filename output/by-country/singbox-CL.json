@@ -5,22 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-      "server": "89.125.114.9",
+      "tag": "🇨🇱 智利 (Chile) 01 - xiaohe",
+      "server": "34.176.187.219",
       "server_port": 443,
-      "uuid": "6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5",
-      "flow": "xtls-rprx-vision",
+      "uuid": "ad5325f8-f0b3-41c4-a561-113529b60e70",
       "tls": {
         "enabled": true,
-        "server_name": "ozone.nl",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "KEoz-uTjqCGwtNakCD-XewbDk_8Vwm_nFv0zg3c2Syg",
-          "short_id": "67a4fe46bbf783cc"
+          "public_key": "HnHVuSObMrldWGzq1-Eb93fwgu6QQRp6H0_8LX3ikDc",
+          "short_id": "2c2d919f5183d0b7"
         }
       }
     },
@@ -29,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 芬兰 (Finland) 01 - xiaohe"
+        "🇨🇱 智利 (Chile) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 芬兰 (Finland) 01 - xiaohe"
+        "🇨🇱 智利 (Chile) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

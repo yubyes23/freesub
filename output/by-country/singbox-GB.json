@@ -4,26 +4,30 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
-      "server": "51.20.86.152",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
+      "type": "hysteria2",
+      "tag": "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
+      "server": "uk1.xiaoliyu.us",
+      "server_port": 2056,
+      "password": "b8949dae-cb53-4b5a-ad9c-50f58c4656fb",
+      "tls": {
+        "enabled": true,
+        "server_name": "uk1.xiaoliyu.us",
+        "insecure": false
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 瑞典 (Sweden) 01 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 瑞典 (Sweden) 01 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

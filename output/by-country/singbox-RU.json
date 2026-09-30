@@ -4,17 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - xiaohe",
-      "server": "104.21.83.186",
-      "server_port": 80,
-      "uuid": "3576016a-4b14-4e5f-94f2-73fde6791602",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "5685.bnm.dpdns.org"
-        }
+      "server": "srv-17e124.21freedom.net",
+      "server_port": 11592,
+      "password": "41edb44c8e",
+      "tls": {
+        "enabled": true,
+        "server_name": "srv-17e124.21freedom.net",
+        "insecure": true
       }
     },
     {

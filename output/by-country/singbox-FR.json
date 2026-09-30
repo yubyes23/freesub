@@ -4,55 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "hysteria2",
       "tag": "🇫🇷 法国 (France) 01 - xiaohe",
-      "server": "25ec.yubo.qzz.io",
-      "server_port": 443,
-      "password": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
-      "tls": {
-        "enabled": true,
-        "server_name": "25ec.yubo.qzz.io",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "25ec.yubo.qzz.io"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 02 - xiaohe",
-      "server": "vpn-fr-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "127.0.0.1",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 03 - xiaohe",
-      "server": "173.212.201.85",
-      "server_port": 443,
-      "password": "gf1:gfhysteria2024",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.docker.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 04 - xiaohe",
       "server": "62.210.7.139",
       "server_port": 60111,
       "password": "github.com/Alvin9999-newpac/fanqiang",
@@ -64,45 +17,51 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 05 - xiaohe",
-      "server": "ewylr.smartorbitbox-bekhabdg.site",
+      "tag": "🇫🇷 法国 (France) 02 - xiaohe",
+      "server": "34.155.146.201",
       "server_port": 443,
-      "uuid": "bcf89786-1b01-47dc-9a36-a7db03626e53",
+      "uuid": "069a2bbd-3fc9-470f-a251-c836a96ed04a",
       "tls": {
         "enabled": true,
-        "server_name": "ewylr.smartorbitbox-bekhabdg.site",
-        "insecure": false,
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/tigerjoon",
-        "headers": {
-          "Host": "ewylr.smartorbitbox-bekhabdg.site"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SVT2WeXMIrumlh5VG1lbHN6YbqL7-u2iRkv1js8XEU4",
+          "short_id": "3f95392a418ec8fd"
         }
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 06 - xiaohe",
-      "server": "104.18.32.47",
+      "type": "hysteria2",
+      "tag": "🇫🇷 法国 (France) 03 - xiaohe",
+      "server": "vpn-fr-002.fastervpn.world",
       "server_port": 443,
-      "password": "humanity",
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
+        "server_name": "127.0.0.1",
+        "insecure": true
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇷 法国 (France) 04 - xiaohe",
+      "server": "nl-irancell3.xelfona.ir",
+      "server_port": 49548,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "zZ+k8UwdTQ9ZTnxEodTN2YI6KrFKEAcBWgCbLZIVUTE=:LbWEdFyjKcvZcv9agyGttSn0HNap+ecf50/UrlGMBCQ="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇷 法国 (France) 05 - xiaohe",
+      "server": "51.83.6.5",
+      "server_port": 20076,
+      "method": "aes-256-gcm",
+      "password": "dHHIUyBuva3crUBRwpOXCA"
     },
     {
       "type": "selector",
@@ -113,8 +72,7 @@
         "🇫🇷 法国 (France) 02 - xiaohe",
         "🇫🇷 法国 (France) 03 - xiaohe",
         "🇫🇷 法国 (France) 04 - xiaohe",
-        "🇫🇷 法国 (France) 05 - xiaohe",
-        "🇫🇷 法国 (France) 06 - xiaohe"
+        "🇫🇷 法国 (France) 05 - xiaohe"
       ]
     },
     {
@@ -125,8 +83,7 @@
         "🇫🇷 法国 (France) 02 - xiaohe",
         "🇫🇷 法国 (France) 03 - xiaohe",
         "🇫🇷 法国 (France) 04 - xiaohe",
-        "🇫🇷 法国 (France) 05 - xiaohe",
-        "🇫🇷 法国 (France) 06 - xiaohe"
+        "🇫🇷 法国 (France) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

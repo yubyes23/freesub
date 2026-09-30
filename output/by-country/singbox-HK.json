@@ -4,82 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe",
-      "server": "agroup.hk1.ilovegairport.com",
-      "server_port": 443,
-      "uuid": "129e26fe-cee2-4786-9261-b29668337829",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ap-east-1.console.aws.amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wjVcW5OqGoFbeqwEPiQHjf-uQTwRMBsOKlRnl5JmSzA",
-          "short_id": "a05ab5de12"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe",
-      "server": "els.mangshe.xyz",
-      "server_port": 2060,
-      "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
-      "tls": {
-        "enabled": true,
-        "server_name": "els.mangshe.xyz",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - xiaohe",
-      "server": "5.223.51.84",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe",
+      "server": "202.146.222.29",
       "server_port": 443,
-      "uuid": "0250424c-ae75-4b6b-890f-3fe26fae36c3",
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "hk.152568.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/cdn/packages/runtime-core.tar.gz",
-        "headers": {
-          "Host": "hk.152568.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - xiaohe",
-      "server": "85.149.211.28",
-      "server_port": 8443,
-      "uuid": "0250424c-ae75-4b6b-890f-3fe26fae36c3",
-      "tls": {
-        "enabled": true,
-        "server_name": "hk.152568.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/cdn/packages/runtime-core.tar.gz",
-        "headers": {
-          "Host": "hk.152568.xyz"
-        }
+        "server_name": "202.146.222.29",
+        "insecure": true
       }
     },
     {
@@ -87,20 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 03 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 04 - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 03 - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 04 - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
