@@ -7,7 +7,7 @@
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 01 - xiaohe",
       "server": "162.159.43.187",
-      "server_port": 2086,
+      "server_port": 8080,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
@@ -20,37 +20,99 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 02 - xiaohe",
-      "server": "144.31.243.240",
-      "server_port": 443,
-      "uuid": "d72f05b0-b182-4783-a6f2-21cecc7d841a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "dzen.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js",
-          "short_id": "a1b2c3d4e5f67890"
+      "server": "162.159.43.187",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 03 - xiaohe",
-      "server": "us-vpnstore.rovilo.ir",
-      "server_port": 20018,
-      "uuid": "452f869f-7720-47c3-a175-b6673e31d3e8",
+      "server": "104.17.17.28",
+      "server_port": 443,
+      "uuid": "f888a23f-acb8-4be2-9b74-e560491619eb",
+      "tls": {
+        "enabled": true,
+        "server_name": "5656.boye.de5.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
-        "type": "http"
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "5656.boye.de5.net"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 04 - xiaohe",
+      "server": "cg1c02.waimaojd.com",
+      "server_port": 443,
+      "uuid": "332774e5-9371-48bb-b518-1fe56c7268da",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "cg1c02.waimaojd.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/v1/graphql",
+        "headers": {
+          "Host": "cg1c02.waimaojd.com"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 05 - xiaohe",
+      "server": "mg.mangshe.xyz",
+      "server_port": 2060,
+      "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
+      "tls": {
+        "enabled": true,
+        "server_name": "mg.mangshe.xyz",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 06 - xiaohe",
+      "server": "129.101.123.92",
+      "server_port": 443,
+      "uuid": "4abdfe42-aec7-4b66-974d-3f891e2e8184",
+      "tls": {
+        "enabled": true,
+        "server_name": "nlll.gaz-service.shop",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Zl6Fe6WYQuaFe_QNUB4qU7nRkGujy7LqjoQ96GO3jUc",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
       }
     },
     {
       "type": "trojan",
-      "tag": "🇺🇸 美国 (United States) 04 - xiaohe",
+      "tag": "🇺🇸 美国 (United States) 07 - xiaohe",
       "server": "192.236.151.43",
       "server_port": 443,
       "password": "OnHLrkVqZVtZyulTwC4bHrIbW7GyUDttKVNGEYVR12Y=",
@@ -61,24 +123,54 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 05 - xiaohe",
-      "server": "24.233.8.109",
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 08 - xiaohe",
+      "server": "104.21.69.30",
       "server_port": 443,
-      "password": "8294f130408299df8cab08c80bf6f819",
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
+        "server_name": "05agj.gkef.zhs.hh.vavava.kdns.fr",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
-      "obfs": {
-        "type": "salamander",
-        "password": "c8827ab99e316c5bd414e21afa915ddf"
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "05agj.gkef.zhs.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 09 - xiaohe",
+      "server": "104.19.148.20",
+      "server_port": 443,
+      "uuid": "f888a23f-acb8-4be2-9b74-e560491619eb",
+      "tls": {
+        "enabled": true,
+        "server_name": "5656.boye.de5.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "5656.boye.de5.net"
+        }
       }
     },
     {
       "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 06 - xiaohe",
+      "tag": "🇺🇸 美国 (United States) 10 - xiaohe",
       "server": "guanwang.awsno.com",
       "server_port": 443,
       "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
@@ -97,44 +189,22 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 07 - xiaohe",
-      "server": "bgroup.us2.ilovegairport.com",
-      "server_port": 443,
-      "uuid": "8079ccd4-4b4b-44e2-92f0-8f0367ad9c24",
-      "flow": "xtls-rprx-vision",
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 11 - xiaohe",
+      "server": "172.67.167.78",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "us-west-2.console.aws.amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "s8KrYQFpXXkbCvW6ORmVrm4yC5GpVxCHfIoV9Z_FiUY",
-          "short_id": "afe73effea"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 08 - xiaohe",
-      "server": "agroup.us2.ilovegairport.com",
-      "server_port": 443,
-      "uuid": "129e26fe-cee2-4786-9261-b29668337829",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "us-west-2.console.aws.amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zJmgsHKnfBjyqC1tZRrLb7J5CD6vDqq96uYRzAiPWRg",
-          "short_id": "17d299fb0790e7"
+        "server_name": "v2ray1.dozapp.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lMnsZUN4/",
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
         }
       }
     },
@@ -150,7 +220,10 @@
         "🇺🇸 美国 (United States) 05 - xiaohe",
         "🇺🇸 美国 (United States) 06 - xiaohe",
         "🇺🇸 美国 (United States) 07 - xiaohe",
-        "🇺🇸 美国 (United States) 08 - xiaohe"
+        "🇺🇸 美国 (United States) 08 - xiaohe",
+        "🇺🇸 美国 (United States) 09 - xiaohe",
+        "🇺🇸 美国 (United States) 10 - xiaohe",
+        "🇺🇸 美国 (United States) 11 - xiaohe"
       ]
     },
     {
@@ -164,7 +237,10 @@
         "🇺🇸 美国 (United States) 05 - xiaohe",
         "🇺🇸 美国 (United States) 06 - xiaohe",
         "🇺🇸 美国 (United States) 07 - xiaohe",
-        "🇺🇸 美国 (United States) 08 - xiaohe"
+        "🇺🇸 美国 (United States) 08 - xiaohe",
+        "🇺🇸 美国 (United States) 09 - xiaohe",
+        "🇺🇸 美国 (United States) 10 - xiaohe",
+        "🇺🇸 美国 (United States) 11 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

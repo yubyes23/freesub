@@ -4,15 +4,13 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 01 - xiaohe",
-      "server": "82.38.64.237",
-      "server_port": 8443,
-      "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
-      "tls": {
-        "enabled": true,
-        "server_name": "hopp-swizland-new.mysynology.net",
-        "insecure": false
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 01 - xiaohe",
+      "server": "us-vpnstore.rovilo.ir",
+      "server_port": 20018,
+      "uuid": "452f869f-7720-47c3-a175-b6673e31d3e8",
+      "transport": {
+        "type": "http"
       }
     },
     {
@@ -20,14 +18,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇭 瑞士 (Switzerland) 01 - xiaohe"
+        "🇨🇦 加拿大 (Canada) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 瑞士 (Switzerland) 01 - xiaohe"
+        "🇨🇦 加拿大 (Canada) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

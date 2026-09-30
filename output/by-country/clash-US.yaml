@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 - xiaohe
   server: 162.159.43.187
-  port: 2086
+  port: 8080
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -16,29 +16,70 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇺🇸 美国 (United States) 02 - xiaohe
-  server: 144.31.243.240
+  server: 162.159.43.187
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 03 - xiaohe
+  server: 104.17.17.28
   port: 443
   udp: true
   type: vless
-  uuid: d72f05b0-b182-4783-a6f2-21cecc7d841a
-  flow: xtls-rprx-vision
+  uuid: f888a23f-acb8-4be2-9b74-e560491619eb
   tls: true
-  reality-opts:
-    public-key: SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js
-    short-id: a1b2c3d4e5f67890
-  servername: dzen.ru
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 03 - xiaohe
-  server: us-vpnstore.rovilo.ir
-  port: 20018
+  servername: 5656.boye.de5.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: 5656.boye.de5.net
+- name: 🇺🇸 美国 (United States) 04 - xiaohe
+  server: cg1c02.waimaojd.com
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 332774e5-9371-48bb-b518-1fe56c7268da
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: cg1c02.waimaojd.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /api/v1/graphql
+    headers:
+      Host: cg1c02.waimaojd.com
+- name: 🇺🇸 美国 (United States) 05 - xiaohe
+  server: mg.mangshe.xyz
+  port: 2060
+  udp: true
+  type: hysteria2
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: mg.mangshe.xyz
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 06 - xiaohe
+  server: 129.101.123.92
+  port: 443
   udp: true
   type: vless
-  uuid: 452f869f-7720-47c3-a175-b6673e31d3e8
-  network: h2
-  h2-opts:
-    host: []
-    path: /
-- name: 🇺🇸 美国 (United States) 04 - xiaohe
+  uuid: 4abdfe42-aec7-4b66-974d-3f891e2e8184
+  tls: true
+  reality-opts:
+    public-key: Zl6Fe6WYQuaFe_QNUB4qU7nRkGujy7LqjoQ96GO3jUc
+  servername: nlll.gaz-service.shop
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇺🇸 美国 (United States) 07 - xiaohe
   server: 192.236.151.43
   port: 443
   udp: true
@@ -46,17 +87,37 @@ proxies:
   password: OnHLrkVqZVtZyulTwC4bHrIbW7GyUDttKVNGEYVR12Y=
   sni: 192.236.151.43
   skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 05 - xiaohe
-  server: 24.233.8.109
+- name: 🇺🇸 美国 (United States) 08 - xiaohe
+  server: 104.21.69.30
   port: 443
   udp: true
-  type: hysteria2
-  password: 8294f130408299df8cab08c80bf6f819
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: c8827ab99e316c5bd414e21afa915ddf
-- name: 🇺🇸 美国 (United States) 06 - xiaohe
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: true
+  servername: 05agj.gkef.zhs.hh.vavava.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 05agj.gkef.zhs.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 09 - xiaohe
+  server: 104.19.148.20
+  port: 443
+  udp: true
+  type: vless
+  uuid: f888a23f-acb8-4be2-9b74-e560491619eb
+  tls: true
+  servername: 5656.boye.de5.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: 5656.boye.de5.net
+- name: 🇺🇸 美国 (United States) 10 - xiaohe
   server: guanwang.awsno.com
   port: 443
   udp: true
@@ -72,32 +133,22 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
-- name: 🇺🇸 美国 (United States) 07 - xiaohe
-  server: bgroup.us2.ilovegairport.com
-  port: 443
+- name: 🇺🇸 美国 (United States) 11 - xiaohe
+  server: 172.67.167.78
+  port: 8443
   udp: true
-  type: vless
-  uuid: 8079ccd4-4b4b-44e2-92f0-8f0367ad9c24
-  flow: xtls-rprx-vision
+  type: vmess
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
   tls: true
-  reality-opts:
-    public-key: s8KrYQFpXXkbCvW6ORmVrm4yC5GpVxCHfIoV9Z_FiUY
-    short-id: afe73effea
-  servername: us-west-2.console.aws.amazon.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 08 - xiaohe
-  server: agroup.us2.ilovegairport.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 129e26fe-cee2-4786-9261-b29668337829
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zJmgsHKnfBjyqC1tZRrLb7J5CD6vDqq96uYRzAiPWRg
-    short-id: 17d299fb0790e7
-  servername: us-west-2.console.aws.amazon.com
-  client-fingerprint: chrome
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -111,6 +162,9 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 06 - xiaohe
   - 🇺🇸 美国 (United States) 07 - xiaohe
   - 🇺🇸 美国 (United States) 08 - xiaohe
+  - 🇺🇸 美国 (United States) 09 - xiaohe
+  - 🇺🇸 美国 (United States) 10 - xiaohe
+  - 🇺🇸 美国 (United States) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -124,5 +178,8 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 06 - xiaohe
   - 🇺🇸 美国 (United States) 07 - xiaohe
   - 🇺🇸 美国 (United States) 08 - xiaohe
+  - 🇺🇸 美国 (United States) 09 - xiaohe
+  - 🇺🇸 美国 (United States) 10 - xiaohe
+  - 🇺🇸 美国 (United States) 11 - xiaohe
 rules:
 - MATCH,PROXIES
