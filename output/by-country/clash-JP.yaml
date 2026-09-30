@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - xiaohe
-  server: 172.67.68.172
+  server: 172.66.200.32
   port: 443
   udp: true
   type: vless
@@ -20,7 +20,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 02 - xiaohe
-  server: 104.17.98.83
+  server: 162.159.157.181
   port: 443
   udp: true
   type: vless
@@ -35,7 +35,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 03 - xiaohe
-  server: 172.66.213.54
+  server: 104.17.180.176
   port: 443
   udp: true
   type: vless
@@ -50,7 +50,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 04 - xiaohe
-  server: 172.66.134.61
+  server: 104.17.102.95
   port: 443
   udp: true
   type: vless
@@ -65,7 +65,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 05 - xiaohe
-  server: 104.17.138.149
+  server: 104.25.243.242
   port: 443
   udp: true
   type: vless
@@ -80,7 +80,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 06 - xiaohe
-  server: 162.159.156.94
+  server: 104.16.248.40
   port: 443
   udp: true
   type: vless
@@ -95,7 +95,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 07 - xiaohe
-  server: 162.159.237.228
+  server: 162.159.237.99
   port: 443
   udp: true
   type: vless
@@ -110,7 +110,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 08 - xiaohe
-  server: 104.17.149.228
+  server: 5656.boye.de5.net
   port: 443
   udp: true
   type: vless
@@ -125,7 +125,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 09 - xiaohe
-  server: 172.64.79.181
+  server: 104.16.245.19
   port: 443
   udp: true
   type: vless
@@ -140,7 +140,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 10 - xiaohe
-  server: 104.20.29.58
+  server: 162.159.151.33
   port: 443
   udp: true
   type: vless
@@ -155,7 +155,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 11 - xiaohe
-  server: 104.17.20.25
+  server: 172.66.212.236
   port: 443
   udp: true
   type: vless
@@ -189,7 +189,7 @@ proxies:
   servername: www.intel.com
   client-fingerprint: random
 - name: 🇯🇵 日本 (Japan) 14 - xiaohe
-  server: 172.66.192.105
+  server: 104.18.46.233
   port: 443
   udp: true
   type: vless
@@ -203,14 +203,6 @@ proxies:
     path: /?ed=2048
     headers:
       Host: 5656.boye.de5.net
-- name: 🇯🇵 日本 (Japan) 15 - xiaohe
-  server: 43.167.208.94
-  port: 443
-  udp: true
-  type: hysteria2
-  password: RQBXe4kpsRant_2u1PzdneBOPuCSwUSI
-  sni: 43.167.208.94
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -230,7 +222,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 12 - xiaohe
   - 🇯🇵 日本 (Japan) 13 - xiaohe
   - 🇯🇵 日本 (Japan) 14 - xiaohe
-  - 🇯🇵 日本 (Japan) 15 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -250,6 +241,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 12 - xiaohe
   - 🇯🇵 日本 (Japan) 13 - xiaohe
   - 🇯🇵 日本 (Japan) 14 - xiaohe
-  - 🇯🇵 日本 (Japan) 15 - xiaohe
 rules:
 - MATCH,PROXIES

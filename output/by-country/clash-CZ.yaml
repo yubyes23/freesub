@@ -4,8 +4,8 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇧 英国 (United Kingdom) 01 - xiaohe
-  server: 104.17.98.83
+- name: 🇨🇿 捷克 (Czech) 01 - xiaohe
+  server: 162.159.157.181
   port: 443
   udp: true
   type: vless
@@ -19,26 +19,17 @@ proxies:
     path: /
     headers:
       Host: 25ec.yubo.qzz.io
-- name: 🇬🇧 英国 (United Kingdom) 02 - xiaohe
-  server: 129.151.88.107
-  port: 61312
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 633s1MN0Qzgm7kHVMk2MQb9MiOTZ/lEXy31p7RY/LaQ=
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇧 英国 (United Kingdom) 01 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 02 - xiaohe
+  - 🇨🇿 捷克 (Czech) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 (United Kingdom) 01 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 02 - xiaohe
+  - 🇨🇿 捷克 (Czech) 01 - xiaohe
 rules:
 - MATCH,PROXIES

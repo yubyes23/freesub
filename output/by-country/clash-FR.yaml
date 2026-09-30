@@ -5,25 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - xiaohe
-  server: 104.18.32.47
+  server: 25ec.yubo.qzz.io
   port: 443
   udp: true
   type: trojan
-  password: humanity
-  sni: www.calmlunch.com
+  password: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  sni: 25ec.yubo.qzz.io
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /assignment
+    path: /
 - name: 🇫🇷 法国 (France) 02 - xiaohe
-  server: 62.210.7.139
-  port: 60111
-  udp: true
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: t.me
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 03 - xiaohe
   server: vpn-fr-002.fastervpn.world
   port: 443
   udp: true
@@ -31,40 +23,23 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: 127.0.0.1
   skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 03 - xiaohe
+  server: 173.212.201.85
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: www.docker.com
+  skip-cert-verify: true
 - name: 🇫🇷 法国 (France) 04 - xiaohe
-  server: 185.220.100.168
-  port: 443
+  server: 62.210.7.139
+  port: 60111
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: t.me
+  skip-cert-verify: true
 - name: 🇫🇷 法国 (France) 05 - xiaohe
-  server: nl-irancell3.xelfona.ir
-  port: 49548
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: zZ+k8UwdTQ9ZTnxEodTN2YI6KrFKEAcBWgCbLZIVUTE=:LbWEdFyjKcvZcv9agyGttSn0HNap+ecf50/UrlGMBCQ=
-- name: 🇫🇷 法国 (France) 06 - xiaohe
-  server: megariverport-nayab.org
-  port: 443
-  udp: true
-  type: vless
-  uuid: 39abda72-f5a5-4ede-9862-bbb8109aba73
-  tls: true
-  servername: bkkkl.maxsparkbox-bekhabdg.site
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /baran
-    headers:
-      Host: bkkkl.maxsparkbox-bekhabdg.site
-- name: 🇫🇷 法国 (France) 07 - xiaohe
   server: ewylr.smartorbitbox-bekhabdg.site
   port: 443
   udp: true
@@ -79,20 +54,17 @@ proxies:
     path: /tigerjoon
     headers:
       Host: ewylr.smartorbitbox-bekhabdg.site
-- name: 🇫🇷 法国 (France) 08 - xiaohe
-  server: BatManAli.Savfasf.ir
-  port: 41432
-  udp: true
-  type: vless
-  uuid: 79f0aac8-656a-435b-b092-c973a3f85e02
-- name: 🇫🇷 法国 (France) 09 - xiaohe
-  server: 173.212.201.85
+- name: 🇫🇷 法国 (France) 06 - xiaohe
+  server: 104.18.32.47
   port: 443
   udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: www.docker.com
-  skip-cert-verify: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
@@ -104,9 +76,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 04 - xiaohe
   - 🇫🇷 法国 (France) 05 - xiaohe
   - 🇫🇷 法国 (France) 06 - xiaohe
-  - 🇫🇷 法国 (France) 07 - xiaohe
-  - 🇫🇷 法国 (France) 08 - xiaohe
-  - 🇫🇷 法国 (France) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -118,8 +87,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 04 - xiaohe
   - 🇫🇷 法国 (France) 05 - xiaohe
   - 🇫🇷 法国 (France) 06 - xiaohe
-  - 🇫🇷 法国 (France) 07 - xiaohe
-  - 🇫🇷 法国 (France) 08 - xiaohe
-  - 🇫🇷 法国 (France) 09 - xiaohe
 rules:
 - MATCH,PROXIES
