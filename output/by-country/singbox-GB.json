@@ -15,15 +15,14 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
-      "server": "yg.mangshe.xyz",
-      "server_port": 2060,
-      "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
-      "tls": {
-        "enabled": true,
-        "server_name": "yg.mangshe.xyz",
-        "insecure": true
+      "server": "66.90.104.43",
+      "server_port": 2083,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {

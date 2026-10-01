@@ -4,24 +4,32 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 01 - xiaohe",
+      "server": "34.175.107.233",
+      "server_port": 443,
+      "uuid": "c55c9880-2f9c-4ad6-bfc2-5054516bf613",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "lM9EQ1rZH9inQjrZesuqgldsXYN_yfT5-tqhPfbyen4",
+          "short_id": "1c9e101e99bf86bb"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 02 - xiaohe",
       "server": "140.174.184.5",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
       "password": "qItG8SueYQcP"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇪🇸 西班牙 (Spain) 02 - xiaohe",
-      "server": "xby.mangshe.xyz",
-      "server_port": 2060,
-      "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
-      "tls": {
-        "enabled": true,
-        "server_name": "xby.mangshe.xyz",
-        "insecure": true
-      }
     },
     {
       "type": "shadowsocks",
