@@ -11,17 +11,26 @@ proxies:
   type: ss
   cipher: aes-256-gcm
   password: e4FCWrgpkji3QY
+- name: 🇰🇷 韩国 (South Korea) 02 - xiaohe
+  server: 141.164.45.187
+  port: 2376
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 02 - xiaohe
 rules:
 - MATCH,PROXIES

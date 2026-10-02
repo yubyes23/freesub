@@ -5,17 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - xiaohe
-  server: 162.159.38.127
-  port: 2082
+  server: 104.25.248.119
+  port: 443
   udp: true
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: f888a23f-acb8-4be2-9b74-e560491619eb
+  tls: true
+  servername: 5656.boye.de5.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /?ed=2048
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: 5656.boye.de5.net
 - name: 🇸🇬 新加坡 (Singapore) 02 - xiaohe
+  server: 5.223.19.211
+  port: 80
+  udp: true
+  type: vless
+  uuid: 4b8a0930-1c36-4efe-b4fe-21f9ad97905c
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇸🇬 新加坡 (Singapore) 03 - xiaohe
   server: 5.223.41.93
   port: 80
   udp: true
@@ -24,33 +37,16 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇸🇬 新加坡 (Singapore) 03 - xiaohe
-  server: test01.y1static-content-distribution.shop
-  port: 42765
-  udp: true
-  type: anytls
-  password: 3fc0f254-54c3-4cf3-896b-5999a2b4c757
-  sni: jd-xjp237.y1static-content-distribution.shop
-  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 04 - xiaohe
-  server: 45.80.111.45
-  port: 8880
+  server: sg4.dexlos.com
+  port: 20654
   udp: true
-  type: vless
-  uuid: 5ffd914e-9594-4198-8327-145f096f8e4c
-  network: ws
-  ws-opts:
-    path: /cdn/assets/stream
-    headers:
-      Host: cnd.singapure.mygold.stream
-- name: 🇸🇬 新加坡 (Singapore) 05 - xiaohe
-  server: yazhouany02.downapptwo.cc
-  port: 10778
-  udp: true
-  type: anytls
-  password: 3fc0f254-54c3-4cf3-896b-5999a2b4c757
-  sni: xjp20.jdddyy01.cc
-  skip-cert-verify: true
+  type: hysteria2
+  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  sni: sg4.dexlos.com
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: xK9mN2pLq5vR8wB3
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,7 +56,6 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 02 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 03 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 04 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -70,6 +65,5 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 02 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 03 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 04 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 05 - xiaohe
 rules:
 - MATCH,PROXIES

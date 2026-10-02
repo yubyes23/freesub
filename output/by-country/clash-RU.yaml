@@ -5,50 +5,24 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: xn--b6gac.eu.org
-  port: 80
-  udp: true
-  type: vless
-  uuid: 3576016a-4b14-4e5f-94f2-73fde6791602
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5685.bnm.dpdns.org
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 172.66.138.60
-  port: 80
-  udp: true
-  type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 25ec.yubo.qzz.io
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   server: 91.240.86.70
   port: 22443
   udp: true
   type: hysteria2
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: 91.240.86.70
-  skip-cert-verify: true
+  sni: hy.quattro-tech.ru
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
 rules:
 - MATCH,PROXIES

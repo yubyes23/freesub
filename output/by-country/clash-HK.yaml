@@ -5,30 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
-  server: b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
-  port: 443
+  server: 195.58.144.56
+  port: 11907
   udp: true
-  type: hysteria2
-  password: aed1cc24-351d-11ef-ba52-f23c9164ca5d
-  sni: b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
-  skip-cert-verify: true
+  type: vless
+  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
+  tls: true
+  servername: 195.58.144.56
+  skip-cert-verify: false
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
-  server: hk2.xiaoliyu.cyou
-  port: 4433
-  udp: true
-  type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: hk2.xiaoliyu.cyou
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
-  server: yazhouany02.downapptwo.cc
-  port: 25135
-  udp: true
-  type: anytls
-  password: 3fc0f254-54c3-4cf3-896b-5999a2b4c757
-  sni: hk27.pulsarcore.site
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
   server: yg1.ygkkk.dpdns.org
   port: 443
   udp: true
@@ -51,8 +37,6 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,7 +44,5 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
 rules:
 - MATCH,PROXIES

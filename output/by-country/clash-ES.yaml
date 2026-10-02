@@ -18,31 +18,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: WSyL4XTwNsdv
-- name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
-  server: 193.238.154.5
-  port: 443
-  udp: true
-  type: vless
-  uuid: e0b9fb0f-1bbd-478b-9580-c2294778338b
-  tls: true
-  servername: assets-es.pleiades.codes
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: cdn.v1.AssetService
-- name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
-  server: 34.175.107.233
-  port: 443
-  udp: true
-  type: vless
-  uuid: c55c9880-2f9c-4ad6-bfc2-5054516bf613
-  tls: true
-  reality-opts:
-    public-key: lM9EQ1rZH9inQjrZesuqgldsXYN_yfT5-tqhPfbyen4
-    short-id: 1c9e101e99bf86bb
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,8 +25,6 @@ proxy-groups:
   - AUTO
   - 🇪🇸 西班牙 (Spain) 01 - xiaohe
   - 🇪🇸 西班牙 (Spain) 02 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 03 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,7 +32,5 @@ proxy-groups:
   proxies:
   - 🇪🇸 西班牙 (Spain) 01 - xiaohe
   - 🇪🇸 西班牙 (Spain) 02 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 03 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 04 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -11,7 +11,7 @@ proxies:
   type: hysteria2
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
   sni: hy.quattro-tech.ru
-  skip-cert-verify: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
