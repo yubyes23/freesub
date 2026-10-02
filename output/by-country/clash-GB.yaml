@@ -5,15 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - xiaohe
-  server: 66.90.104.42
-  port: 2083
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇬🇧 英国 (United Kingdom) 02 - xiaohe
   server: 66.90.105.211
   port: 2083
   udp: true
@@ -22,6 +13,14 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vless
+- name: 🇬🇧 英国 (United Kingdom) 02 - xiaohe
+  server: yg.mangshe.xyz
+  port: 2060
+  udp: true
+  type: hysteria2
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: yg.mangshe.xyz
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select

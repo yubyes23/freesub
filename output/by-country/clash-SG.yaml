@@ -5,14 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - xiaohe
-  server: 5.223.41.93
-  port: 80
+  server: 104.17.153.75
+  port: 443
   udp: true
   type: vless
-  uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
+  uuid: f888a23f-acb8-4be2-9b74-e560491619eb
+  tls: true
+  servername: 5656.boye.de5.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2048
+    headers:
+      Host: 5656.boye.de5.net
 - name: 🇸🇬 新加坡 (Singapore) 02 - xiaohe
   server: 5.223.19.211
   port: 80
@@ -22,6 +28,27 @@ proxies:
   network: ws
   ws-opts:
     path: /
+- name: 🇸🇬 新加坡 (Singapore) 03 - xiaohe
+  server: 5.223.41.93
+  port: 80
+  udp: true
+  type: vless
+  uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇸🇬 新加坡 (Singapore) 04 - xiaohe
+  server: 172.105.116.246
+  port: 443
+  udp: true
+  type: vless
+  uuid: d90087c3-54f5-4283-a13f-615260c8b0c7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: hTweFDvbSucrGERtiiwDfoqD3vo_Z9cuaqboff3FTXQ
+  servername: googleapis.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -29,6 +56,8 @@ proxy-groups:
   - AUTO
   - 🇸🇬 新加坡 (Singapore) 01 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 02 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 03 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -36,5 +65,7 @@ proxy-groups:
   proxies:
   - 🇸🇬 新加坡 (Singapore) 01 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 02 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 03 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 04 - xiaohe
 rules:
 - MATCH,PROXIES
