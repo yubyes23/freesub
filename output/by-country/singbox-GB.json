@@ -17,12 +17,33 @@
     {
       "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
-      "server": "66.90.104.43",
-      "server_port": 2083,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
+      "server": "95.85.247.62",
+      "server_port": 443,
+      "uuid": "b0490f49-7201-4f8e-b456-f99a4d222f5b",
+      "tls": {
+        "enabled": true,
+        "server_name": "neder.yandex-mul.fun",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "55-Q43xORYP1vJOssALwSj1t07qUaUiES8PurqO7ZWs",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "🇬🇧 英国 (United Kingdom) 03 - xiaohe",
+      "server": "yazhouany02.downapptwo.cc",
+      "server_port": 53991,
+      "password": "3fc0f254-54c3-4cf3-896b-5999a2b4c757",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp03.pulsarcore.site",
+        "insecure": true
       }
     },
     {
@@ -31,7 +52,8 @@
       "outbounds": [
         "auto",
         "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 02 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
+        "🇬🇧 英国 (United Kingdom) 03 - xiaohe"
       ]
     },
     {
@@ -39,7 +61,8 @@
       "tag": "auto",
       "outbounds": [
         "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 02 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
+        "🇬🇧 英国 (United Kingdom) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

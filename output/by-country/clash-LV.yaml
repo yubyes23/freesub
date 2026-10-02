@@ -4,24 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇬 新加坡 (Singapore) 01 (家宽) - xiaohe
-  server: 154.86.30.45
+- name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
+  server: 91.240.86.70
   port: 24443
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: bKgENdAl@8Zx3lAc-HK-BD-20260622
+  type: hysteria2
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  sni: hy.quattro-tech.ru
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇬 新加坡 (Singapore) 01 (家宽) - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 (Singapore) 01 (家宽) - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
 rules:
 - MATCH,PROXIES
