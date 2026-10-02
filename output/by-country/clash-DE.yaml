@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - xiaohe
+  server: 130.61.42.148
+  port: 59924
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: tGXsbUDisR28c/KS0RDOlgQS1gVT7UJ5Sf0/5QvMwR4=
+- name: 🇩🇪 德国 (Germany) 02 - xiaohe
   server: 139.162.149.105
   port: 80
   udp: true
@@ -13,7 +20,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇩🇪 德国 (Germany) 02 - xiaohe
+- name: 🇩🇪 德国 (Germany) 03 - xiaohe
   server: covers.pantera-radio.ru
   port: 443
   udp: true
@@ -21,23 +28,8 @@ proxies:
   password: 0a11d3b4-682c-4bfb-afb0-820b8285cb4b
   sni: covers.pantera-radio.ru
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 03 - xiaohe
-  server: 94.228.171.219
-  port: 8444
-  udp: true
-  type: vless
-  uuid: 9cb2520c-148b-4bbc-a149-9d5a43ff0db3
-  tls: true
-  servername: germany.tofreedom.ru
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /c7f5317cd04691bc
-    headers:
-      Host: germany.tofreedom.ru
 - name: 🇩🇪 德国 (Germany) 04 - xiaohe
-  server: www.wto.org
+  server: www.shopify.com
   port: 443
   udp: true
   type: vless
@@ -51,13 +43,6 @@ proxies:
     path: /44ccea3e-41f5-47c4-bcb1-7f651d7b0747
     headers:
       Host: php.bou.qzz.io
-- name: 🇩🇪 德国 (Germany) 05 - xiaohe
-  server: 130.61.42.148
-  port: 59924
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: tGXsbUDisR28c/KS0RDOlgQS1gVT7UJ5Sf0/5QvMwR4=
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,7 +52,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 02 - xiaohe
   - 🇩🇪 德国 (Germany) 03 - xiaohe
   - 🇩🇪 德国 (Germany) 04 - xiaohe
-  - 🇩🇪 德国 (Germany) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -77,6 +61,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 02 - xiaohe
   - 🇩🇪 德国 (Germany) 03 - xiaohe
   - 🇩🇪 德国 (Germany) 04 - xiaohe
-  - 🇩🇪 德国 (Germany) 05 - xiaohe
 rules:
 - MATCH,PROXIES
