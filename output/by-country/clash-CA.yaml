@@ -19,19 +19,26 @@ proxies:
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
 - name: 🇨🇦 加拿大 (Canada) 03 - xiaohe
-  server: 51.79.85.185
-  port: 8118
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-- name: 🇨🇦 加拿大 (Canada) 04 - xiaohe
   server: 51.79.64.198
   port: 8119
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: cdBIDV42DCwnfIN
+- name: 🇨🇦 加拿大 (Canada) 04 - xiaohe
+  server: 51.79.85.185
+  port: 8118
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇨🇦 加拿大 (Canada) 05 - xiaohe
+  server: 51.222.12.127
+  port: 445
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,6 +48,7 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 02 - xiaohe
   - 🇨🇦 加拿大 (Canada) 03 - xiaohe
   - 🇨🇦 加拿大 (Canada) 04 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -50,5 +58,6 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 02 - xiaohe
   - 🇨🇦 加拿大 (Canada) 03 - xiaohe
   - 🇨🇦 加拿大 (Canada) 04 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 05 - xiaohe
 rules:
 - MATCH,PROXIES

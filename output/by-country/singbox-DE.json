@@ -15,24 +15,58 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "trojan",
       "tag": "🇩🇪 德国 (Germany) 02 - xiaohe",
+      "server": "pleased-albacore.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "pleased-albacore.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇩🇪 德国 (Germany) 03 - xiaohe",
       "server": "64.188.119.177",
       "server_port": 28015,
       "password": "e19b5aa3-16c9-435a-8bc9-76f2f6ddff43",
       "tls": {
         "enabled": true,
         "server_name": "api-test-udp-trf.kaneki.cfd",
-        "insecure": true
+        "insecure": false
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 03 - xiaohe",
-      "server": "31.76.11.83",
-      "server_port": 11750,
-      "method": "chacha20-ietf-poly1305",
-      "password": "iku/Gfrt9YeEUUleXr2Ptf3uvs0hszCR0JHPqGSjs+c="
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 04 - xiaohe",
+      "server": "www.wto.org",
+      "server_port": 443,
+      "uuid": "44ccea3e-41f5-47c4-bcb1-7f651d7b0747",
+      "tls": {
+        "enabled": true,
+        "server_name": "php.bou.qzz.io",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/44ccea3e-41f5-47c4-bcb1-7f651d7b0747",
+        "headers": {
+          "Host": "php.bou.qzz.io"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 05 - xiaohe",
+      "server": "178.83.46.216",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
     {
       "type": "selector",
@@ -41,7 +75,9 @@
         "auto",
         "🇩🇪 德国 (Germany) 01 - xiaohe",
         "🇩🇪 德国 (Germany) 02 - xiaohe",
-        "🇩🇪 德国 (Germany) 03 - xiaohe"
+        "🇩🇪 德国 (Germany) 03 - xiaohe",
+        "🇩🇪 德国 (Germany) 04 - xiaohe",
+        "🇩🇪 德国 (Germany) 05 - xiaohe"
       ]
     },
     {
@@ -50,7 +86,9 @@
       "outbounds": [
         "🇩🇪 德国 (Germany) 01 - xiaohe",
         "🇩🇪 德国 (Germany) 02 - xiaohe",
-        "🇩🇪 德国 (Germany) 03 - xiaohe"
+        "🇩🇪 德国 (Germany) 03 - xiaohe",
+        "🇩🇪 德国 (Germany) 04 - xiaohe",
+        "🇩🇪 德国 (Germany) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
