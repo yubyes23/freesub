@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
-      "server": "104.18.121.237",
+      "server": "104.17.122.184",
       "server_port": 443,
       "uuid": "f888a23f-acb8-4be2-9b74-e560491619eb",
       "tls": {
@@ -38,8 +38,40 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
+      "server": "35.185.179.62",
+      "server_port": 443,
+      "uuid": "5567cac6-2a32-4318-83cd-7df3a9eebbd7",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4",
+          "short_id": "eb97ce837da2f6ad"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
+      "server": "real-cardinal.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "real-cardinal.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇬 新加坡 (Singapore) 05 - xiaohe",
       "server": "glowing-marmoset.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
@@ -50,13 +82,56 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇸🇬 新加坡 (Singapore) 06 - xiaohe",
+      "server": "desired-boxer.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "desired-boxer.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 07 - xiaohe",
+      "server": "support.zoom.us",
+      "server_port": 80,
+      "uuid": "9b0025a3-3a36-4915-b4e1-89c5cd65c9cb",
+      "transport": {
+        "type": "ws",
+        "path": "/shalana",
+        "headers": {
+          "Host": "onhit.shalana.shop"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇬 新加坡 (Singapore) 08 - xiaohe",
+      "server": "138.2.73.238",
+      "server_port": 50160,
+      "password": "f87376e17da040ed04c9665ce8972930",
+      "tls": {
+        "enabled": true,
+        "server_name": "138.2.73.238",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
         "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 03 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
+        "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
+        "🇸🇬 新加坡 (Singapore) 05 - xiaohe",
+        "🇸🇬 新加坡 (Singapore) 06 - xiaohe",
+        "🇸🇬 新加坡 (Singapore) 07 - xiaohe",
+        "🇸🇬 新加坡 (Singapore) 08 - xiaohe"
       ]
     },
     {
@@ -65,7 +140,12 @@
       "outbounds": [
         "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
         "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 03 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
+        "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
+        "🇸🇬 新加坡 (Singapore) 05 - xiaohe",
+        "🇸🇬 新加坡 (Singapore) 06 - xiaohe",
+        "🇸🇬 新加坡 (Singapore) 07 - xiaohe",
+        "🇸🇬 新加坡 (Singapore) 08 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

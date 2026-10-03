@@ -5,18 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.16.72.41
+  server: store.ubi.com
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
+  type: vless
+  uuid: 44ccea3e-41f5-47c4-bcb1-7f651d7b0747
+  tls: true
+  servername: php.bou.qzz.io
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /assignment
+    path: /44ccea3e-41f5-47c4-bcb1-7f651d7b0747
+    headers:
+      Host: php.bou.qzz.io
 - name: 🌐 其他地区 (Other) 02 - xiaohe
-  server: www.shopify.com
+  server: time.is
   port: 443
   udp: true
   type: vless

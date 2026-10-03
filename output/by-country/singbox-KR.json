@@ -4,16 +4,68 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "trojan",
       "tag": "🇰🇷 韩国 (South Korea) 01 - xiaohe",
-      "server": "141.164.45.187",
-      "server_port": 8119,
-      "method": "aes-256-gcm",
-      "password": "cdBIDV42DCwnfIN"
+      "server": "kind-stork.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "kind-stork.rooster465.autos",
+        "insecure": true
+      }
     },
     {
       "type": "trojan",
       "tag": "🇰🇷 韩国 (South Korea) 02 - xiaohe",
+      "server": "noted-cougar.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "noted-cougar.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 03 - xiaohe",
+      "server": "evolving-ewe.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "evolving-ewe.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 04 - xiaohe",
+      "server": "liked-eft.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "liked-eft.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 05 - xiaohe",
+      "server": "optimum-snapper.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "optimum-snapper.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 06 - xiaohe",
       "server": "engaging-toucan.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
@@ -25,19 +77,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 03 - xiaohe",
-      "server": "balanced-stag.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "balanced-stag.rooster465.autos",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 04 - xiaohe",
+      "tag": "🇰🇷 韩国 (South Korea) 07 - xiaohe",
       "server": "main-fawn.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
@@ -49,7 +89,19 @@
     },
     {
       "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 05 - xiaohe",
+      "tag": "🇰🇷 韩国 (South Korea) 08 - xiaohe",
+      "server": "balanced-stag.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "balanced-stag.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 09 - xiaohe",
       "server": "pretty-rat.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
@@ -68,7 +120,11 @@
         "🇰🇷 韩国 (South Korea) 02 - xiaohe",
         "🇰🇷 韩国 (South Korea) 03 - xiaohe",
         "🇰🇷 韩国 (South Korea) 04 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 05 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 05 - xiaohe",
+        "🇰🇷 韩国 (South Korea) 06 - xiaohe",
+        "🇰🇷 韩国 (South Korea) 07 - xiaohe",
+        "🇰🇷 韩国 (South Korea) 08 - xiaohe",
+        "🇰🇷 韩国 (South Korea) 09 - xiaohe"
       ]
     },
     {
@@ -79,7 +135,11 @@
         "🇰🇷 韩国 (South Korea) 02 - xiaohe",
         "🇰🇷 韩国 (South Korea) 03 - xiaohe",
         "🇰🇷 韩国 (South Korea) 04 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 05 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 05 - xiaohe",
+        "🇰🇷 韩国 (South Korea) 06 - xiaohe",
+        "🇰🇷 韩国 (South Korea) 07 - xiaohe",
+        "🇰🇷 韩国 (South Korea) 08 - xiaohe",
+        "🇰🇷 韩国 (South Korea) 09 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

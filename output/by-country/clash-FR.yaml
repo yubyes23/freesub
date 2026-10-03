@@ -30,7 +30,7 @@ proxies:
   udp: true
   type: hysteria2
   password: github.com/Alvin9999-newpac/fanqiang
-  sni: t.me
+  sni: 62.210.7.139
   skip-cert-verify: true
 - name: 🇫🇷 法国 (France) 04 - xiaohe
   server: 51.255.13.232
@@ -40,8 +40,8 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: BqnqToih0PbU
 - name: 🇫🇷 法国 (France) 05 - xiaohe
-  server: 185.220.100.168
-  port: 443
+  server: 185.114.72.31
+  port: 2053
   udp: true
   type: trojan
   password: humanity
@@ -51,8 +51,52 @@ proxies:
   ws-opts:
     path: /assignment
 - name: 🇫🇷 法国 (France) 06 - xiaohe
-  server: 185.114.72.31
-  port: 2053
+  server: 45.87.41.18
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 07 - xiaohe
+  server: 185.225.68.232
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 08 - xiaohe
+  server: 185.255.179.166
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 09 - xiaohe
+  server: www.calmlunch.com
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 10 - xiaohe
+  server: 185.220.100.168
+  port: 443
   udp: true
   type: trojan
   password: humanity
@@ -72,6 +116,10 @@ proxy-groups:
   - 🇫🇷 法国 (France) 04 - xiaohe
   - 🇫🇷 法国 (France) 05 - xiaohe
   - 🇫🇷 法国 (France) 06 - xiaohe
+  - 🇫🇷 法国 (France) 07 - xiaohe
+  - 🇫🇷 法国 (France) 08 - xiaohe
+  - 🇫🇷 法国 (France) 09 - xiaohe
+  - 🇫🇷 法国 (France) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -83,5 +131,9 @@ proxy-groups:
   - 🇫🇷 法国 (France) 04 - xiaohe
   - 🇫🇷 法国 (France) 05 - xiaohe
   - 🇫🇷 法国 (France) 06 - xiaohe
+  - 🇫🇷 法国 (France) 07 - xiaohe
+  - 🇫🇷 法国 (France) 08 - xiaohe
+  - 🇫🇷 法国 (France) 09 - xiaohe
+  - 🇫🇷 法国 (France) 10 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -14,6 +14,14 @@
     {
       "type": "shadowsocks",
       "tag": "🇨🇦 加拿大 (Canada) 02 - xiaohe",
+      "server": "yyz-ca-01.blncvpn4u.cc",
+      "server_port": 9443,
+      "method": "aes-256-gcm",
+      "password": "eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 03 - xiaohe",
       "server": "51.222.200.165",
       "server_port": 5000,
       "method": "aes-256-gcm",
@@ -21,27 +29,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 03 - xiaohe",
-      "server": "51.79.64.198",
-      "server_port": 8119,
-      "method": "aes-256-gcm",
-      "password": "cdBIDV42DCwnfIN"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇨🇦 加拿大 (Canada) 04 - xiaohe",
-      "server": "51.79.85.185",
-      "server_port": 8118,
+      "server": "51.222.136.236",
+      "server_port": 8882,
       "method": "aes-256-gcm",
-      "password": "cdBIDV42DCwnfIN"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 05 - xiaohe",
-      "server": "51.222.12.127",
-      "server_port": 445,
-      "method": "aes-256-gcm",
-      "password": "zDNVedRFPQexG9v"
+      "password": "kDWvXYZoTBcGkC4"
     },
     {
       "type": "selector",
@@ -51,8 +43,7 @@
         "🇨🇦 加拿大 (Canada) 01 - xiaohe",
         "🇨🇦 加拿大 (Canada) 02 - xiaohe",
         "🇨🇦 加拿大 (Canada) 03 - xiaohe",
-        "🇨🇦 加拿大 (Canada) 04 - xiaohe",
-        "🇨🇦 加拿大 (Canada) 05 - xiaohe"
+        "🇨🇦 加拿大 (Canada) 04 - xiaohe"
       ]
     },
     {
@@ -62,8 +53,7 @@
         "🇨🇦 加拿大 (Canada) 01 - xiaohe",
         "🇨🇦 加拿大 (Canada) 02 - xiaohe",
         "🇨🇦 加拿大 (Canada) 03 - xiaohe",
-        "🇨🇦 加拿大 (Canada) 04 - xiaohe",
-        "🇨🇦 加拿大 (Canada) 05 - xiaohe"
+        "🇨🇦 加拿大 (Canada) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

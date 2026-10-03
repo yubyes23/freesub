@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - xiaohe
+  server: pleased-albacore.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: pleased-albacore.rooster465.autos
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 02 - xiaohe
   server: 139.162.149.105
   port: 80
   udp: true
@@ -13,14 +21,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇩🇪 德国 (Germany) 02 - xiaohe
-  server: pleased-albacore.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: pleased-albacore.rooster465.autos
-  skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 03 - xiaohe
   server: 64.188.119.177
   port: 28015
@@ -44,12 +44,6 @@ proxies:
     path: /44ccea3e-41f5-47c4-bcb1-7f651d7b0747
     headers:
       Host: php.bou.qzz.io
-- name: 🇩🇪 德国 (Germany) 05 - xiaohe
-  server: 178.83.46.216
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,7 +53,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 02 - xiaohe
   - 🇩🇪 德国 (Germany) 03 - xiaohe
   - 🇩🇪 德国 (Germany) 04 - xiaohe
-  - 🇩🇪 德国 (Germany) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -69,6 +62,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 02 - xiaohe
   - 🇩🇪 德国 (Germany) 03 - xiaohe
   - 🇩🇪 德国 (Germany) 04 - xiaohe
-  - 🇩🇪 德国 (Germany) 05 - xiaohe
 rules:
 - MATCH,PROXIES
