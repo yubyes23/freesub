@@ -4,30 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
-  server: 140.245.120.16
+- name: 🇮🇱 以色列 (Israel) 01 - xiaohe
+  server: 34.165.56.30
   port: 443
   udp: true
   type: vless
-  uuid: 92d67828-4c56-4795-af5a-f387651380dc
+  uuid: 0c40bce9-8710-4820-8f22-0742b61df999
   tls: true
-  servername: trackydev.site
-  skip-cert-verify: false
+  reality-opts:
+    public-key: AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc
+    short-id: fffff8acddadcac3
+  servername: www.cloudflare.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
+  - 🇮🇱 以色列 (Israel) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
+  - 🇮🇱 以色列 (Israel) 01 - xiaohe
 rules:
 - MATCH,PROXIES

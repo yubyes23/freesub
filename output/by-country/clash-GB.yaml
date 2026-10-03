@@ -5,36 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - xiaohe
-  server: cf.0sm.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  tls: true
-  servername: 25ec.yubo.qzz.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 25ec.yubo.qzz.io
-- name: 🇬🇧 英国 (United Kingdom) 02 - xiaohe
-  server: 104.17.153.226
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  tls: true
-  servername: 25ec.yubo.qzz.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 25ec.yubo.qzz.io
-- name: 🇬🇧 英国 (United Kingdom) 03 - xiaohe
   server: 66.90.104.43
   port: 2083
   udp: true
@@ -43,7 +13,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vless
-- name: 🇬🇧 英国 (United Kingdom) 04 - xiaohe
+- name: 🇬🇧 英国 (United Kingdom) 02 - xiaohe
   server: 66.90.105.211
   port: 2083
   udp: true
@@ -52,14 +22,16 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vless
-- name: 🇬🇧 英国 (United Kingdom) 05 - xiaohe
-  server: yg.mangshe.xyz
-  port: 2060
+- name: 🇬🇧 英国 (United Kingdom) 03 - xiaohe
+  server: 186.190.211.188
+  port: 443
   udp: true
-  type: hysteria2
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: yg.mangshe.xyz
+  type: vless
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  tls: true
+  servername: 186.190.211.188
   skip-cert-verify: true
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -68,8 +40,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 01 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 02 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 03 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 04 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -78,7 +48,5 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 01 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 02 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 03 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 04 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 05 - xiaohe
 rules:
 - MATCH,PROXIES

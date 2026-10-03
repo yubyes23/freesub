@@ -5,25 +5,25 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 01 - xiaohe",
-      "server": "141.164.45.187",
-      "server_port": 9101,
+      "tag": "🇲🇽 墨西哥 (Mexico) 01 - xiaohe",
+      "server": "64.177.90.30",
+      "server_port": 8388,
       "method": "aes-256-gcm",
-      "password": "e4FCWrgpkji3QY"
+      "password": "BWyPPTusFKhGgzKh"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 - xiaohe"
+        "🇲🇽 墨西哥 (Mexico) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 - xiaohe"
+        "🇲🇽 墨西哥 (Mexico) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
