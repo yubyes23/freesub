@@ -6,18 +6,42 @@
     {
       "type": "trojan",
       "tag": "🇩🇪 德国 (Germany) 01 - xiaohe",
-      "server": "pleased-albacore.rooster465.autos",
+      "server": "167.82.76.7",
       "server_port": 443,
-      "password": "UX82473651",
+      "password": "mitivpn",
       "tls": {
         "enabled": true,
-        "server_name": "pleased-albacore.rooster465.autos",
-        "insecure": true
+        "server_name": "ssl.fastly.com",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "mitivpn---deb--s---mitivpn-4.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 02 - xiaohe",
+      "server": "139.162.149.105",
+      "server_port": 80,
+      "uuid": "5aae7d2d-c152-42cc-afb6-fe805fb94531",
+      "transport": {
+        "type": "ws",
+        "path": "/"
       }
     },
     {
       "type": "trojan",
-      "tag": "🇩🇪 德国 (Germany) 02 - xiaohe",
+      "tag": "🇩🇪 德国 (Germany) 03 - xiaohe",
       "server": "31.77.168.33",
       "server_port": 443,
       "password": "MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo",
@@ -36,7 +60,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇩🇪 德国 (Germany) 03 - xiaohe",
+      "tag": "🇩🇪 德国 (Germany) 04 - xiaohe",
       "server": "meet-goshawk.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
@@ -47,14 +71,82 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇩🇪 德国 (Germany) 05 - xiaohe",
+      "server": "pleased-albacore.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "pleased-albacore.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 04 - xiaohe",
-      "server": "139.162.149.105",
-      "server_port": 80,
-      "uuid": "5aae7d2d-c152-42cc-afb6-fe805fb94531",
+      "tag": "🇩🇪 德国 (Germany) 06 - xiaohe",
+      "server": "www.shopify.com",
+      "server_port": 443,
+      "uuid": "44ccea3e-41f5-47c4-bcb1-7f651d7b0747",
+      "tls": {
+        "enabled": true,
+        "server_name": "php.bou.qzz.io",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/"
+        "path": "/44ccea3e-41f5-47c4-bcb1-7f651d7b0747",
+        "headers": {
+          "Host": "php.bou.qzz.io"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 07 - xiaohe",
+      "server": "store.ubi.com",
+      "server_port": 443,
+      "uuid": "44ccea3e-41f5-47c4-bcb1-7f651d7b0747",
+      "tls": {
+        "enabled": true,
+        "server_name": "php.bou.qzz.io",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/44ccea3e-41f5-47c4-bcb1-7f651d7b0747",
+        "headers": {
+          "Host": "php.bou.qzz.io"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇩🇪 德国 (Germany) 08 - xiaohe",
+      "server": "v33.hdacd.com",
+      "server_port": 30833,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "security": "auto",
+      "alter_id": 2
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇩🇪 德国 (Germany) 09 - xiaohe",
+      "server": "de1.xiaoliyu.cyou",
+      "server_port": 4433,
+      "password": "6a3fe9d0-0d68-4f29-ae99-5771d4217a45",
+      "tls": {
+        "enabled": true,
+        "server_name": "127.0.0.1",
+        "insecure": true
       }
     },
     {
@@ -65,7 +157,12 @@
         "🇩🇪 德国 (Germany) 01 - xiaohe",
         "🇩🇪 德国 (Germany) 02 - xiaohe",
         "🇩🇪 德国 (Germany) 03 - xiaohe",
-        "🇩🇪 德国 (Germany) 04 - xiaohe"
+        "🇩🇪 德国 (Germany) 04 - xiaohe",
+        "🇩🇪 德国 (Germany) 05 - xiaohe",
+        "🇩🇪 德国 (Germany) 06 - xiaohe",
+        "🇩🇪 德国 (Germany) 07 - xiaohe",
+        "🇩🇪 德国 (Germany) 08 - xiaohe",
+        "🇩🇪 德国 (Germany) 09 - xiaohe"
       ]
     },
     {
@@ -75,7 +172,12 @@
         "🇩🇪 德国 (Germany) 01 - xiaohe",
         "🇩🇪 德国 (Germany) 02 - xiaohe",
         "🇩🇪 德国 (Germany) 03 - xiaohe",
-        "🇩🇪 德国 (Germany) 04 - xiaohe"
+        "🇩🇪 德国 (Germany) 04 - xiaohe",
+        "🇩🇪 德国 (Germany) 05 - xiaohe",
+        "🇩🇪 德国 (Germany) 06 - xiaohe",
+        "🇩🇪 德国 (Germany) 07 - xiaohe",
+        "🇩🇪 德国 (Germany) 08 - xiaohe",
+        "🇩🇪 德国 (Germany) 09 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

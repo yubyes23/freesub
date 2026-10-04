@@ -6,6 +6,46 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
+      "server": "poland-good.failspace.top",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "poland-good.failspace.top",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
+      "server": "pol-pol-poland.failspace.top",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "pol-pol-poland.failspace.top",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 03 - xiaohe",
       "server": "polkadotnewone.failspace.top",
       "server_port": 443,
       "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
@@ -24,24 +64,13 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
-      "server": "pl.tronsg.com",
-      "server_port": 443,
-      "password": "Trojan@82164024",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl.tronsg.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇵🇱 波兰 (Poland) 01 - xiaohe",
-        "🇵🇱 波兰 (Poland) 02 - xiaohe"
+        "🇵🇱 波兰 (Poland) 02 - xiaohe",
+        "🇵🇱 波兰 (Poland) 03 - xiaohe"
       ]
     },
     {
@@ -49,7 +78,8 @@
       "tag": "auto",
       "outbounds": [
         "🇵🇱 波兰 (Poland) 01 - xiaohe",
-        "🇵🇱 波兰 (Poland) 02 - xiaohe"
+        "🇵🇱 波兰 (Poland) 02 - xiaohe",
+        "🇵🇱 波兰 (Poland) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

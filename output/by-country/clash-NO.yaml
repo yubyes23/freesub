@@ -4,23 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇱 以色列 (Israel) 01 - xiaohe
-  server: s11.shahankhan.ir
-  port: 8080
+- name: 🇳🇴 挪威 (Norway) 01 - xiaohe
+  server: 185.213.23.63
+  port: 990
   udp: true
-  type: vless
-  uuid: 6fddf57a-313c-4d4a-8ae1-939b207a1588
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇱 以色列 (Israel) 01 - xiaohe
+  - 🇳🇴 挪威 (Norway) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇱 以色列 (Israel) 01 - xiaohe
+  - 🇳🇴 挪威 (Norway) 01 - xiaohe
 rules:
 - MATCH,PROXIES

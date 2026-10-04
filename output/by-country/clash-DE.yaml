@@ -5,14 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - xiaohe
-  server: pleased-albacore.rooster465.autos
+  server: 167.82.76.7
   port: 443
   udp: true
   type: trojan
-  password: UX82473651
-  sni: pleased-albacore.rooster465.autos
-  skip-cert-verify: true
+  password: mitivpn
+  sni: ssl.fastly.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
 - name: 🇩🇪 德国 (Germany) 02 - xiaohe
+  server: 139.162.149.105
+  port: 80
+  udp: true
+  type: vless
+  uuid: 5aae7d2d-c152-42cc-afb6-fe805fb94531
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 德国 (Germany) 03 - xiaohe
   server: 31.77.168.33
   port: 443
   udp: true
@@ -23,7 +35,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: ajv
-- name: 🇩🇪 德国 (Germany) 03 - xiaohe
+- name: 🇩🇪 德国 (Germany) 04 - xiaohe
   server: meet-goshawk.rooster465.autos
   port: 443
   udp: true
@@ -31,15 +43,60 @@ proxies:
   password: UX82473651
   sni: meet-goshawk.rooster465.autos
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 04 - xiaohe
-  server: 139.162.149.105
-  port: 80
+- name: 🇩🇪 德国 (Germany) 05 - xiaohe
+  server: pleased-albacore.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: pleased-albacore.rooster465.autos
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 06 - xiaohe
+  server: www.shopify.com
+  port: 443
   udp: true
   type: vless
-  uuid: 5aae7d2d-c152-42cc-afb6-fe805fb94531
+  uuid: 44ccea3e-41f5-47c4-bcb1-7f651d7b0747
+  tls: true
+  servername: php.bou.qzz.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /44ccea3e-41f5-47c4-bcb1-7f651d7b0747
+    headers:
+      Host: php.bou.qzz.io
+- name: 🇩🇪 德国 (Germany) 07 - xiaohe
+  server: store.ubi.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 44ccea3e-41f5-47c4-bcb1-7f651d7b0747
+  tls: true
+  servername: php.bou.qzz.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /44ccea3e-41f5-47c4-bcb1-7f651d7b0747
+    headers:
+      Host: php.bou.qzz.io
+- name: 🇩🇪 德国 (Germany) 08 - xiaohe
+  server: v33.hdacd.com
+  port: 30833
+  udp: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+- name: 🇩🇪 德国 (Germany) 09 - xiaohe
+  server: de1.xiaoliyu.cyou
+  port: 4433
+  udp: true
+  type: hysteria2
+  password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
+  sni: 127.0.0.1
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -49,6 +106,11 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 02 - xiaohe
   - 🇩🇪 德国 (Germany) 03 - xiaohe
   - 🇩🇪 德国 (Germany) 04 - xiaohe
+  - 🇩🇪 德国 (Germany) 05 - xiaohe
+  - 🇩🇪 德国 (Germany) 06 - xiaohe
+  - 🇩🇪 德国 (Germany) 07 - xiaohe
+  - 🇩🇪 德国 (Germany) 08 - xiaohe
+  - 🇩🇪 德国 (Germany) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,5 +120,10 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 02 - xiaohe
   - 🇩🇪 德国 (Germany) 03 - xiaohe
   - 🇩🇪 德国 (Germany) 04 - xiaohe
+  - 🇩🇪 德国 (Germany) 05 - xiaohe
+  - 🇩🇪 德国 (Germany) 06 - xiaohe
+  - 🇩🇪 德国 (Germany) 07 - xiaohe
+  - 🇩🇪 德国 (Germany) 08 - xiaohe
+  - 🇩🇪 德国 (Germany) 09 - xiaohe
 rules:
 - MATCH,PROXIES

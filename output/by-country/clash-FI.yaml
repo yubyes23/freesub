@@ -12,17 +12,26 @@ proxies:
   password: cf83b611-6cba-4535-adcb-8da06c6a9146
   sni: vps155-edge.kermemehori.ru
   skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  server: 45.149.114.171
+  port: 777
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 02 - xiaohe
 rules:
 - MATCH,PROXIES

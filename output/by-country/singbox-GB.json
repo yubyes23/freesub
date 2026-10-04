@@ -14,12 +14,20 @@
     {
       "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
-      "server": "66.90.105.211",
-      "server_port": 2083,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
+      "server": "186.190.211.188",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "tls": {
+        "enabled": true,
+        "server_name": "186.190.211.188",
+        "insecure": true,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -36,20 +44,12 @@
     {
       "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 04 - xiaohe",
-      "server": "186.190.211.188",
-      "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "tls": {
-        "enabled": true,
-        "server_name": "186.190.211.188",
-        "insecure": true,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+      "server": "66.90.105.211",
+      "server_port": 2083,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {
