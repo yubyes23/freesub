@@ -6,13 +6,23 @@
     {
       "type": "trojan",
       "tag": "🇩🇪 德国 (Germany) 01 - xiaohe",
-      "server": "pleased-albacore.rooster465.autos",
+      "server": "104.21.70.21",
       "server_port": 443,
-      "password": "UX82473651",
+      "password": "Telegram_healer_config",
       "tls": {
         "enabled": true,
-        "server_name": "pleased-albacore.rooster465.autos",
-        "insecure": true
+        "server_name": "bjsa2ygfitzjtho8ucze29xf2m2q9c.g3fiajpf0erm9k3x6ww-yegzl2.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tr/J6IJuAAWkqyiEt8UkeRnVdLlkLIGukLr?ed=2560",
+        "headers": {
+          "Host": "bjsa2ygfitzjtho8ucze29xf2m2q9c.g3fiajpf0erm9k3x6ww-yegzl2.workers.dev"
+        }
       }
     },
     {
@@ -27,8 +37,80 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "trojan",
       "tag": "🇩🇪 德国 (Germany) 03 - xiaohe",
+      "server": "31.77.168.33",
+      "server_port": 443,
+      "password": "MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo",
+      "tls": {
+        "enabled": true,
+        "server_name": "d3-de2.cloud-cdn.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "ajv"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇩🇪 德国 (Germany) 04 - xiaohe",
+      "server": "meet-goshawk.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "meet-goshawk.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇩🇪 德国 (Germany) 05 - xiaohe",
+      "server": "31.77.168.35",
+      "server_port": 443,
+      "password": "MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo",
+      "tls": {
+        "enabled": true,
+        "server_name": "d3-de2.cloud-cdn.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "ajv"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇩🇪 德国 (Germany) 06 - xiaohe",
+      "server": "pleased-albacore.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "pleased-albacore.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇩🇪 德国 (Germany) 07 - xiaohe",
+      "server": "31.77.168.21",
+      "server_port": 443,
+      "password": "MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo",
+      "tls": {
+        "enabled": true,
+        "server_name": "d3-de2.cloud-cdn.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "ajv"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇩🇪 德国 (Germany) 08 - xiaohe",
       "server": "64.188.119.177",
       "server_port": 28015,
       "password": "e19b5aa3-16c9-435a-8bc9-76f2f6ddff43",
@@ -40,7 +122,68 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 04 - xiaohe",
+      "tag": "🇩🇪 德国 (Germany) 09 - xiaohe",
+      "server": "ghatem.color-shop.ir",
+      "server_port": 443,
+      "uuid": "fdc1206a-9d2e-42b7-b615-9ccea8cf70ee",
+      "tls": {
+        "enabled": true,
+        "server_name": "vox-cdn.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PeS4xF85yQ_eE-gqFBQnq2ylysTtQIx5D6HZNyQJS1w",
+          "short_id": "9f5a01a37505cf29"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 10 - xiaohe",
+      "server": "lcxngh.gomqiro.ir",
+      "server_port": 4000,
+      "uuid": "83db8840-0d41-4a23-9ec3-682380924eb5",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.googleapis.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "gNJZix6GHGuB246_yD6n0EQQY-6Vb1zXg3ipjnubawE",
+          "short_id": "6d66b2bd572f34fb"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 11 - xiaohe",
+      "server": "31.77.109.35",
+      "server_port": 443,
+      "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "d3-de1.cloud-cdn.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SPyieysl8w1lo950icthB72kn_ElyJXkpCdKqmnjGEY",
+          "short_id": "494afdc75f8c2fa8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 12 - xiaohe",
       "server": "www.wto.org",
       "server_port": 443,
       "uuid": "44ccea3e-41f5-47c4-bcb1-7f651d7b0747",
@@ -69,7 +212,15 @@
         "🇩🇪 德国 (Germany) 01 - xiaohe",
         "🇩🇪 德国 (Germany) 02 - xiaohe",
         "🇩🇪 德国 (Germany) 03 - xiaohe",
-        "🇩🇪 德国 (Germany) 04 - xiaohe"
+        "🇩🇪 德国 (Germany) 04 - xiaohe",
+        "🇩🇪 德国 (Germany) 05 - xiaohe",
+        "🇩🇪 德国 (Germany) 06 - xiaohe",
+        "🇩🇪 德国 (Germany) 07 - xiaohe",
+        "🇩🇪 德国 (Germany) 08 - xiaohe",
+        "🇩🇪 德国 (Germany) 09 - xiaohe",
+        "🇩🇪 德国 (Germany) 10 - xiaohe",
+        "🇩🇪 德国 (Germany) 11 - xiaohe",
+        "🇩🇪 德国 (Germany) 12 - xiaohe"
       ]
     },
     {
@@ -79,7 +230,15 @@
         "🇩🇪 德国 (Germany) 01 - xiaohe",
         "🇩🇪 德国 (Germany) 02 - xiaohe",
         "🇩🇪 德国 (Germany) 03 - xiaohe",
-        "🇩🇪 德国 (Germany) 04 - xiaohe"
+        "🇩🇪 德国 (Germany) 04 - xiaohe",
+        "🇩🇪 德国 (Germany) 05 - xiaohe",
+        "🇩🇪 德国 (Germany) 06 - xiaohe",
+        "🇩🇪 德国 (Germany) 07 - xiaohe",
+        "🇩🇪 德国 (Germany) 08 - xiaohe",
+        "🇩🇪 德国 (Germany) 09 - xiaohe",
+        "🇩🇪 德国 (Germany) 10 - xiaohe",
+        "🇩🇪 德国 (Germany) 11 - xiaohe",
+        "🇩🇪 德国 (Germany) 12 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

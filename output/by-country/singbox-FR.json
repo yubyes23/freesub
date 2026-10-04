@@ -4,20 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇫🇷 法国 (France) 01 - xiaohe",
-      "server": "143.246.208.113",
+      "server": "52.47.133.105",
       "server_port": 443,
-      "uuid": "0dca2cfe-98eb-4f9d-9a47-cf87510c558b",
-      "tls": {
-        "enabled": true,
-        "server_name": "assets-fr4.pleiades.codes",
-        "insecure": false
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "cdn.v1.AssetService"
-      }
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     },
     {
       "type": "hysteria2",
@@ -32,15 +24,19 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇫🇷 法国 (France) 03 - xiaohe",
-      "server": "62.210.7.139",
-      "server_port": 60111,
-      "password": "github.com/Alvin9999-newpac/fanqiang",
+      "server": "143.246.208.113",
+      "server_port": 443,
+      "uuid": "0dca2cfe-98eb-4f9d-9a47-cf87510c558b",
       "tls": {
         "enabled": true,
-        "server_name": "62.210.7.139",
-        "insecure": true
+        "server_name": "assets-fr4.pleiades.codes",
+        "insecure": false
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "cdn.v1.AssetService"
       }
     },
     {
@@ -52,22 +48,15 @@
       "password": "BqnqToih0PbU"
     },
     {
-      "type": "trojan",
+      "type": "hysteria2",
       "tag": "🇫🇷 法国 (France) 05 - xiaohe",
-      "server": "185.114.72.31",
-      "server_port": 2053,
-      "password": "humanity",
+      "server": "62.210.7.139",
+      "server_port": 60111,
+      "password": "github.com/Alvin9999-newpac/fanqiang",
       "tls": {
         "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
+        "server_name": "62.210.7.139",
+        "insecure": true
       }
     },
     {
@@ -92,8 +81,8 @@
     {
       "type": "trojan",
       "tag": "🇫🇷 法国 (France) 07 - xiaohe",
-      "server": "185.225.68.232",
-      "server_port": 443,
+      "server": "185.114.72.31",
+      "server_port": 2053,
       "password": "humanity",
       "tls": {
         "enabled": true,
@@ -130,7 +119,7 @@
     {
       "type": "trojan",
       "tag": "🇫🇷 法国 (France) 09 - xiaohe",
-      "server": "www.calmlunch.com",
+      "server": "185.225.68.232",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -149,13 +138,35 @@
     {
       "type": "trojan",
       "tag": "🇫🇷 法国 (France) 10 - xiaohe",
-      "server": "185.220.100.168",
+      "server": "188.114.96.3",
       "server_port": 443,
       "password": "humanity",
       "tls": {
         "enabled": true,
         "server_name": "www.calmlunch.com",
-        "insecure": false
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇷 法国 (France) 11 - xiaohe",
+      "server": "212.227.144.37",
+      "server_port": 8443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false,
+        "alpn": [
+          "v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus"
+        ]
       },
       "transport": {
         "type": "ws",
@@ -179,7 +190,8 @@
         "🇫🇷 法国 (France) 07 - xiaohe",
         "🇫🇷 法国 (France) 08 - xiaohe",
         "🇫🇷 法国 (France) 09 - xiaohe",
-        "🇫🇷 法国 (France) 10 - xiaohe"
+        "🇫🇷 法国 (France) 10 - xiaohe",
+        "🇫🇷 法国 (France) 11 - xiaohe"
       ]
     },
     {
@@ -195,7 +207,8 @@
         "🇫🇷 法国 (France) 07 - xiaohe",
         "🇫🇷 法国 (France) 08 - xiaohe",
         "🇫🇷 法国 (France) 09 - xiaohe",
-        "🇫🇷 法国 (France) 10 - xiaohe"
+        "🇫🇷 法国 (France) 10 - xiaohe",
+        "🇫🇷 法国 (France) 11 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

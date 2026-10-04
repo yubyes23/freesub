@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - xiaohe
-  server: 104.17.122.184
-  port: 443
-  udp: true
-  type: vless
-  uuid: f888a23f-acb8-4be2-9b74-e560491619eb
-  tls: true
-  servername: 5656.boye.de5.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5656.boye.de5.net
-- name: 🇸🇬 新加坡 (Singapore) 02 - xiaohe
   server: 5.223.41.93
   port: 80
   udp: true
@@ -28,27 +13,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇸🇬 新加坡 (Singapore) 03 - xiaohe
-  server: 35.185.179.62
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
-  tls: true
-  reality-opts:
-    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
-    short-id: eb97ce837da2f6ad
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 04 - xiaohe
-  server: real-cardinal.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: real-cardinal.rooster465.autos
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 05 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 02 - xiaohe
   server: glowing-marmoset.rooster465.autos
   port: 443
   udp: true
@@ -56,33 +21,83 @@ proxies:
   password: UX82473651
   sni: glowing-marmoset.rooster465.autos
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 06 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 03 - xiaohe
+  server: holy-lamb.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: holy-lamb.rooster465.autos
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 04 - xiaohe
+  server: inviting-ferret.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: inviting-ferret.rooster465.autos
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 05 - xiaohe
   server: desired-boxer.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: desired-boxer.rooster465.autos
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 06 - xiaohe
+  server: real-cardinal.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: real-cardinal.rooster465.autos
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 07 - xiaohe
-  server: support.zoom.us
-  port: 80
+  server: gsg192i.zxom.eu.org
+  port: 20008
+  udp: true
+  type: trojan
+  password: 5b140fc6a0a74e7f
+  sni: gsg192i.zxom.eu.org
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 08 - xiaohe
+  server: 45.80.111.45
+  port: 8880
   udp: true
   type: vless
-  uuid: 9b0025a3-3a36-4915-b4e1-89c5cd65c9cb
+  uuid: 5ffd914e-9594-4198-8327-145f096f8e4c
   network: ws
   ws-opts:
-    path: /shalana
+    path: /cdn/assets/stream
     headers:
-      Host: onhit.shalana.shop
-- name: 🇸🇬 新加坡 (Singapore) 08 - xiaohe
-  server: 138.2.73.238
-  port: 50160
+      Host: cnd.singapure.mygold.stream
+- name: 🇸🇬 新加坡 (Singapore) 09 - xiaohe
+  server: jumpernode.site
+  port: 443
   udp: true
-  type: hysteria2
-  password: f87376e17da040ed04c9665ce8972930
-  sni: 138.2.73.238
-  skip-cert-verify: true
+  type: vless
+  uuid: 440f986b-9469-4d80-adf0-01ba37af73c5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: sDKrtAJk2VP_w1w7cFi2O86RdlvQ2E2An5xsRdJlgGE
+    short-id: 6d962e8d8a0dce
+  servername: shop.business.amazon.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 10 - xiaohe
+  server: sin-a-02.auuas.com
+  port: 1891
+  udp: true
+  type: vless
+  uuid: 81c4547b-e5d8-4af8-baf0-91c5c0c05a9b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: YJLHQBNzHQ7sOeKbj-EkHo1Ym0asUyZKxj4l_thzyGA
+    short-id: 8378f267
+  servername: www.npmjs.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -96,6 +111,8 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 06 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 07 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 08 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 09 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -109,5 +126,7 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 06 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 07 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 08 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 09 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 10 - xiaohe
 rules:
 - MATCH,PROXIES
