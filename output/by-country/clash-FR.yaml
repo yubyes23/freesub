@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - xiaohe
+  server: 52.47.133.105
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇫🇷 法国 (France) 02 - xiaohe
   server: 143.246.208.113
   port: 443
   udp: true
@@ -13,17 +20,9 @@ proxies:
   tls: true
   servername: assets-fr4.pleiades.codes
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: cdn.v1.AssetService
-- name: 🇫🇷 法国 (France) 02 - xiaohe
-  server: 51.255.13.232
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
 - name: 🇫🇷 法国 (France) 03 - xiaohe
   server: 62.210.147.2
   port: 43115
@@ -33,13 +32,12 @@ proxies:
   sni: www.microsoft.com
   skip-cert-verify: true
 - name: 🇫🇷 法国 (France) 04 - xiaohe
-  server: 62.210.7.139
-  port: 60111
+  server: 51.255.13.232
+  port: 8388
   udp: true
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: 62.210.7.139
-  skip-cert-verify: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
 proxy-groups:
 - name: PROXIES
   type: select

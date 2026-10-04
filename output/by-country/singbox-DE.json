@@ -4,17 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇩🇪 德国 (Germany) 01 - xiaohe",
-      "server": "104.25.194.196",
-      "server_port": 2086,
-      "uuid": "e3c7c198-2b02-42c2-b78f-22dfc078219c",
-      "transport": {
-        "type": "ws",
-        "path": "/vl/3k4QnDlh2r3IPLPNFGLAeMJ5df?ed=2560",
-        "headers": {
-          "Host": "uj-kn9gcgkzl0wmmy5wrkmalvhzdw62z.soltannatlos.workers.dev"
-        }
+      "server": "pleased-albacore.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "pleased-albacore.rooster465.autos",
+        "insecure": true
       }
     },
     {
@@ -60,74 +58,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 05 - xiaohe",
-      "server": "31.77.109.35",
-      "server_port": 443,
-      "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "d3-de1.cloud-cdn.xyz",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SPyieysl8w1lo950icthB72kn_ElyJXkpCdKqmnjGEY",
-          "short_id": "494afdc75f8c2fa8"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇩🇪 德国 (Germany) 06 - xiaohe",
-      "server": "pleased-albacore.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "pleased-albacore.rooster465.autos",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 07 - xiaohe",
-      "server": "www.wto.org",
-      "server_port": 443,
-      "uuid": "44ccea3e-41f5-47c4-bcb1-7f651d7b0747",
-      "tls": {
-        "enabled": true,
-        "server_name": "php.bou.qzz.io",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/44ccea3e-41f5-47c4-bcb1-7f651d7b0747",
-        "headers": {
-          "Host": "php.bou.qzz.io"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇩🇪 德国 (Germany) 08 - xiaohe",
-      "server": "de1.xiaoliyu.cyou",
-      "server_port": 4433,
-      "password": "6a3fe9d0-0d68-4f29-ae99-5771d4217a45",
-      "tls": {
-        "enabled": true,
-        "server_name": "de1.xiaoliyu.cyou",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -135,11 +65,7 @@
         "🇩🇪 德国 (Germany) 01 - xiaohe",
         "🇩🇪 德国 (Germany) 02 - xiaohe",
         "🇩🇪 德国 (Germany) 03 - xiaohe",
-        "🇩🇪 德国 (Germany) 04 - xiaohe",
-        "🇩🇪 德国 (Germany) 05 - xiaohe",
-        "🇩🇪 德国 (Germany) 06 - xiaohe",
-        "🇩🇪 德国 (Germany) 07 - xiaohe",
-        "🇩🇪 德国 (Germany) 08 - xiaohe"
+        "🇩🇪 德国 (Germany) 04 - xiaohe"
       ]
     },
     {
@@ -149,11 +75,7 @@
         "🇩🇪 德国 (Germany) 01 - xiaohe",
         "🇩🇪 德国 (Germany) 02 - xiaohe",
         "🇩🇪 德国 (Germany) 03 - xiaohe",
-        "🇩🇪 德国 (Germany) 04 - xiaohe",
-        "🇩🇪 德国 (Germany) 05 - xiaohe",
-        "🇩🇪 德国 (Germany) 06 - xiaohe",
-        "🇩🇪 德国 (Germany) 07 - xiaohe",
-        "🇩🇪 德国 (Germany) 08 - xiaohe"
+        "🇩🇪 德国 (Germany) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
