@@ -12,12 +12,13 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇫🇷 法国 (France) 02 - xiaohe
-  server: 52.47.133.105
-  port: 443
+  server: 62.210.147.2
+  port: 43115
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: www.microsoft.com
+  skip-cert-verify: true
 - name: 🇫🇷 法国 (France) 03 - xiaohe
   server: 143.246.208.113
   port: 443
@@ -38,20 +39,22 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇫🇷 法国 (France) 05 - xiaohe
-  server: 62.210.147.2
-  port: 43115
-  udp: true
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 06 - xiaohe
   server: 51.255.13.232
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: BqnqToih0PbU
+- name: 🇫🇷 法国 (France) 06 - xiaohe
+  server: 155.94.134.183
+  port: 11592
+  udp: true
+  type: hysteria2
+  password: ca78f919e6
+  sni: srv-3fc7c9.21freedom.net
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: ec66908dbc46e6920143d9b684adf277
 - name: 🇫🇷 法国 (France) 07 - xiaohe
   server: 62.210.7.139
   port: 60111
@@ -60,6 +63,114 @@ proxies:
   password: github.com/Alvin9999-newpac/fanqiang
   sni: 62.210.7.139
   skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 08 - xiaohe
+  server: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 479526cd-5011-43cf-a788-504da95e07c2
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+- name: 🇫🇷 法国 (France) 09 - xiaohe
+  server: 185.114.72.31
+  port: 2053
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 10 - xiaohe
+  server: 166.1.36.83
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 11 - xiaohe
+  server: 45.87.41.18
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 12 - xiaohe
+  server: 212.227.144.37
+  port: 8443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 13 - xiaohe
+  server: 185.225.68.232
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 14 - xiaohe
+  server: 185.220.100.168
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 15 - xiaohe
+  server: 185.255.179.166
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 16 - xiaohe
+  server: 88.99.189.60
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 17 - xiaohe
+  server: 52.47.133.105
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,6 +183,16 @@ proxy-groups:
   - 🇫🇷 法国 (France) 05 - xiaohe
   - 🇫🇷 法国 (France) 06 - xiaohe
   - 🇫🇷 法国 (France) 07 - xiaohe
+  - 🇫🇷 法国 (France) 08 - xiaohe
+  - 🇫🇷 法国 (France) 09 - xiaohe
+  - 🇫🇷 法国 (France) 10 - xiaohe
+  - 🇫🇷 法国 (France) 11 - xiaohe
+  - 🇫🇷 法国 (France) 12 - xiaohe
+  - 🇫🇷 法国 (France) 13 - xiaohe
+  - 🇫🇷 法国 (France) 14 - xiaohe
+  - 🇫🇷 法国 (France) 15 - xiaohe
+  - 🇫🇷 法国 (France) 16 - xiaohe
+  - 🇫🇷 法国 (France) 17 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -84,5 +205,15 @@ proxy-groups:
   - 🇫🇷 法国 (France) 05 - xiaohe
   - 🇫🇷 法国 (France) 06 - xiaohe
   - 🇫🇷 法国 (France) 07 - xiaohe
+  - 🇫🇷 法国 (France) 08 - xiaohe
+  - 🇫🇷 法国 (France) 09 - xiaohe
+  - 🇫🇷 法国 (France) 10 - xiaohe
+  - 🇫🇷 法国 (France) 11 - xiaohe
+  - 🇫🇷 法国 (France) 12 - xiaohe
+  - 🇫🇷 法国 (France) 13 - xiaohe
+  - 🇫🇷 法国 (France) 14 - xiaohe
+  - 🇫🇷 法国 (France) 15 - xiaohe
+  - 🇫🇷 法国 (France) 16 - xiaohe
+  - 🇫🇷 法国 (France) 17 - xiaohe
 rules:
 - MATCH,PROXIES

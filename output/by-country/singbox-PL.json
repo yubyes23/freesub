@@ -6,6 +6,29 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
+      "server": "70.34.252.154",
+      "server_port": 80,
+      "uuid": "d9c7ec1f-5aa3-469a-b860-760c686806b0",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
+      "server": "cheerful-swan.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "cheerful-swan.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 03 - xiaohe",
       "server": "poland-good.failspace.top",
       "server_port": 443,
       "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
@@ -25,7 +48,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
+      "tag": "🇵🇱 波兰 (Poland) 04 - xiaohe",
+      "server": "iiproxy8.iiproxy.com",
+      "server_port": 8443,
+      "uuid": "806fa224-44f7-4c1b-b7a3-05bfdfdfbf87",
+      "tls": {
+        "enabled": true,
+        "server_name": "iiproxy8.iiproxy.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 05 - xiaohe",
       "server": "pol-pol-poland.failspace.top",
       "server_port": 443,
       "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
@@ -44,8 +82,23 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇵🇱 波兰 (Poland) 06 - xiaohe",
+      "server": "188.114.96.19",
+      "server_port": 80,
+      "uuid": "aed88e79-5762-4d2f-86fa-f438f32a7654",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
+        }
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 03 - xiaohe",
+      "tag": "🇵🇱 波兰 (Poland) 07 - xiaohe",
       "server": "polkadotnewone.failspace.top",
       "server_port": 443,
       "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
@@ -70,7 +123,11 @@
         "auto",
         "🇵🇱 波兰 (Poland) 01 - xiaohe",
         "🇵🇱 波兰 (Poland) 02 - xiaohe",
-        "🇵🇱 波兰 (Poland) 03 - xiaohe"
+        "🇵🇱 波兰 (Poland) 03 - xiaohe",
+        "🇵🇱 波兰 (Poland) 04 - xiaohe",
+        "🇵🇱 波兰 (Poland) 05 - xiaohe",
+        "🇵🇱 波兰 (Poland) 06 - xiaohe",
+        "🇵🇱 波兰 (Poland) 07 - xiaohe"
       ]
     },
     {
@@ -79,7 +136,11 @@
       "outbounds": [
         "🇵🇱 波兰 (Poland) 01 - xiaohe",
         "🇵🇱 波兰 (Poland) 02 - xiaohe",
-        "🇵🇱 波兰 (Poland) 03 - xiaohe"
+        "🇵🇱 波兰 (Poland) 03 - xiaohe",
+        "🇵🇱 波兰 (Poland) 04 - xiaohe",
+        "🇵🇱 波兰 (Poland) 05 - xiaohe",
+        "🇵🇱 波兰 (Poland) 06 - xiaohe",
+        "🇵🇱 波兰 (Poland) 07 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

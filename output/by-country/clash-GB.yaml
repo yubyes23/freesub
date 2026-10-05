@@ -12,6 +12,15 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
 - name: 🇬🇧 英国 (United Kingdom) 02 - xiaohe
+  server: 66.90.105.211
+  port: 2083
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇬🇧 英国 (United Kingdom) 03 - xiaohe
   server: 186.190.211.188
   port: 443
   udp: true
@@ -21,24 +30,22 @@ proxies:
   servername: 186.190.211.188
   skip-cert-verify: true
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 03 - xiaohe
-  server: 66.90.104.43
-  port: 2083
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
 - name: 🇬🇧 英国 (United Kingdom) 04 - xiaohe
-  server: 66.90.105.211
-  port: 2083
+  server: 186.190.211.67
+  port: 443
   udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: pahobac.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: pahobac.org
 proxy-groups:
 - name: PROXIES
   type: select

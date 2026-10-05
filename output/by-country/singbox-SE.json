@@ -1,0 +1,45 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
+      "server": "psf-2.weedly.top",
+      "server_port": 80,
+      "uuid": "33016f3d-8509-493c-bd8b-d26447d48135",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "stigmata.ir"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇸🇪 瑞典 (Sweden) 01 - xiaohe"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇸🇪 瑞典 (Sweden) 01 - xiaohe"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

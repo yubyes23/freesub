@@ -14,6 +14,17 @@
     {
       "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
+      "server": "66.90.105.211",
+      "server_port": 2083,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 03 - xiaohe",
       "server": "186.190.211.188",
       "server_port": 443,
       "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
@@ -31,25 +42,23 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 03 - xiaohe",
-      "server": "66.90.104.43",
-      "server_port": 2083,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇬🇧 英国 (United Kingdom) 04 - xiaohe",
-      "server": "66.90.105.211",
-      "server_port": 2083,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "server": "186.190.211.67",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "pahobac.org",
+        "insecure": false
+      },
       "transport": {
-        "type": "grpc",
-        "service_name": "vless"
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "pahobac.org"
+        }
       }
     },
     {

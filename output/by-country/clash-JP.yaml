@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - xiaohe
-  server: 104.17.219.207
+  server: 104.17.130.103
   port: 443
   udp: true
   type: vless
@@ -20,7 +20,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 02 - xiaohe
-  server: 162.159.148.180
+  server: 104.20.18.163
   port: 443
   udp: true
   type: vless
@@ -35,7 +35,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 03 - xiaohe
-  server: 104.17.150.204
+  server: 104.17.128.35
   port: 443
   udp: true
   type: vless
@@ -50,7 +50,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 04 - xiaohe
-  server: 162.159.132.241
+  server: 172.64.79.192
   port: 443
   udp: true
   type: vless
@@ -65,7 +65,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 05 - xiaohe
-  server: saas.sin.fan
+  server: 104.16.153.190
   port: 443
   udp: true
   type: vless
@@ -80,7 +80,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 06 - xiaohe
-  server: 172.66.202.142
+  server: 162.159.131.235
   port: 443
   udp: true
   type: vless
@@ -95,7 +95,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 07 - xiaohe
-  server: 172.64.158.77
+  server: 104.26.9.190
   port: 443
   udp: true
   type: vless
@@ -110,7 +110,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 08 - xiaohe
-  server: 104.17.134.192
+  server: 162.159.130.30
   port: 443
   udp: true
   type: vless
@@ -125,7 +125,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 09 - xiaohe
-  server: 5656.boye.de5.net
+  server: 104.17.190.117
   port: 443
   udp: true
   type: vless
@@ -140,7 +140,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 10 - xiaohe
-  server: 104.17.159.190
+  server: 104.17.139.79
   port: 443
   udp: true
   type: vless
@@ -155,7 +155,7 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 11 - xiaohe
-  server: 104.17.147.31
+  server: 162.159.145.242
   port: 443
   udp: true
   type: vless
@@ -170,32 +170,20 @@ proxies:
     headers:
       Host: 5656.boye.de5.net
 - name: 🇯🇵 日本 (Japan) 12 - xiaohe
-  server: 149.22.87.240
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 13 - xiaohe
   server: 149.22.87.204
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 14 - xiaohe
-  server: 152.69.192.144
-  port: 20802
-  udp: true
-  type: vless
-  uuid: ac76a374-7447-4dab-bfa9-b7f83a7a7946
-- name: 🇯🇵 日本 (Japan) 15 - xiaohe
-  server: 137.220.221.179
+- name: 🇯🇵 日本 (Japan) 13 - xiaohe
+  server: 149.22.87.240
   port: 443
   udp: true
-  type: vless
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-- name: 🇯🇵 日本 (Japan) 16 - xiaohe
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 14 - xiaohe
   server: musical-terrier.rooster465.autos
   port: 443
   udp: true
@@ -203,6 +191,21 @@ proxies:
   password: UX82473651
   sni: musical-terrier.rooster465.autos
   skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 15 - xiaohe
+  server: obliging-louse.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: obliging-louse.rooster465.autos
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 16 - xiaohe
+  server: 84.247.155.196
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
 - name: 🇯🇵 日本 (Japan) 17 - xiaohe
   server: fancy-javelin.rooster465.autos
   port: 443
@@ -212,54 +215,6 @@ proxies:
   sni: fancy-javelin.rooster465.autos
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 18 - xiaohe
-  server: comic-poodle.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: comic-poodle.rooster465.autos
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 19 - xiaohe
-  server: winning-marten.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: winning-marten.rooster465.autos
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 20 - xiaohe
-  server: obliging-louse.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: obliging-louse.rooster465.autos
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 21 - xiaohe
-  server: evolving-platypus.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: evolving-platypus.rooster465.autos
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 22 - xiaohe
-  server: intense-sole.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: intense-sole.rooster465.autos
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 23 - xiaohe
-  server: promoted-rattler.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: promoted-rattler.rooster465.autos
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 24 - xiaohe
   server: accurate-frog.rooster465.autos
   port: 443
   udp: true
@@ -267,15 +222,86 @@ proxies:
   password: UX82473651
   sni: accurate-frog.rooster465.autos
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 25 - xiaohe
-  server: dynamic-imp.rooster465.autos
+- name: 🇯🇵 日本 (Japan) 19 - xiaohe
+  server: comic-poodle.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: dynamic-imp.rooster465.autos
+  sni: comic-poodle.rooster465.autos
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 20 - xiaohe
+  server: organic-caribou.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: organic-caribou.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 21 - xiaohe
+  server: 168.138.43.75
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 168.138.43.75
+- name: 🇯🇵 日本 (Japan) 22 - xiaohe
+  server: 178.239.117.167
+  port: 44002
+  udp: true
+  type: vmess
+  uuid: f3d55fea-10fc-4790-be8f-d49c49e1b1bc
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: f3d55fea-10fc-4790-be8f-d49c49e1b1bc-vm
+    headers:
+      Host: www.bing.com
+- name: 🇯🇵 日本 (Japan) 23 - xiaohe
+  server: bgroup.jp3.ilovegairport.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: f354744d-21d9-4836-9934-4989e1c4d877
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: TDbVu9oeQc6rjrsBcHuMs0tybjKy2EQQdZalmLvwSk0
+    short-id: 8ea105393d
+  servername: ap-northeast-1.console.aws.amazon.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 24 - xiaohe
+  server: promoted-rattler.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: promoted-rattler.rooster465.autos
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 25 - xiaohe
+  server: evolving-platypus.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: evolving-platypus.rooster465.autos
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 26 - xiaohe
+  server: intense-sole.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: intense-sole.rooster465.autos
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 27 - xiaohe
   server: integral-rodent.rooster465.autos
   port: 443
   udp: true
@@ -283,37 +309,30 @@ proxies:
   password: UX82473651
   sni: integral-rodent.rooster465.autos
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 27 - xiaohe
-  server: concrete-aardvark.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: concrete-aardvark.rooster465.autos
-  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 28 - xiaohe
-  server: organic-caribou.rooster465.autos
+  server: dynamic-imp.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: organic-caribou.rooster465.autos
+  sni: dynamic-imp.rooster465.autos
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 29 - xiaohe
+  server: prime-corgi.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: prime-corgi.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 30 - xiaohe
   server: assuring-skink.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: assuring-skink.rooster465.autos
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 30 - xiaohe
-  server: 84.247.155.196
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
+  skip-cert-verify: false
 - name: 🇯🇵 日本 (Japan) 31 - xiaohe
   server: brief-glider.rooster465.autos
   port: 443
@@ -323,13 +342,27 @@ proxies:
   sni: brief-glider.rooster465.autos
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 32 - xiaohe
-  server: prime-corgi.rooster465.autos
+  server: concrete-aardvark.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: prime-corgi.rooster465.autos
+  sni: concrete-aardvark.rooster465.autos
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 33 - xiaohe
+  server: winning-marten.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: winning-marten.rooster465.autos
   skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 34 - xiaohe
+  server: 152.69.192.144
+  port: 20802
+  udp: true
+  type: vless
+  uuid: ac76a374-7447-4dab-bfa9-b7f83a7a7946
 proxy-groups:
 - name: PROXIES
   type: select
@@ -367,6 +400,8 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 30 - xiaohe
   - 🇯🇵 日本 (Japan) 31 - xiaohe
   - 🇯🇵 日本 (Japan) 32 - xiaohe
+  - 🇯🇵 日本 (Japan) 33 - xiaohe
+  - 🇯🇵 日本 (Japan) 34 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -404,5 +439,7 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 30 - xiaohe
   - 🇯🇵 日本 (Japan) 31 - xiaohe
   - 🇯🇵 日本 (Japan) 32 - xiaohe
+  - 🇯🇵 日本 (Japan) 33 - xiaohe
+  - 🇯🇵 日本 (Japan) 34 - xiaohe
 rules:
 - MATCH,PROXIES

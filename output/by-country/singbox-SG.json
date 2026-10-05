@@ -4,77 +4,28 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
-      "server": "172.64.229.170",
-      "server_port": 2095,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
-      "server": "104.17.160.144",
-      "server_port": 443,
-      "uuid": "f888a23f-acb8-4be2-9b74-e560491619eb",
-      "tls": {
-        "enabled": true,
-        "server_name": "5656.boye.de5.net",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "5656.boye.de5.net"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
+      "tag": "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
       "server": "139.180.220.175",
       "server_port": 8388,
       "method": "aes-256-gcm",
       "password": "qpSevKaUXYQKvSjp"
     },
     {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
-      "server": "129.150.51.127",
-      "server_port": 34249,
-      "uuid": "0590ab38-cb22-41d3-8312-6f396a5cec58",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇸🇬 新加坡 (Singapore) 05 - xiaohe",
+      "tag": "🇸🇬 新加坡 (Singapore) 02 - xiaohe",
       "server": "glowing-marmoset.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
         "enabled": true,
         "server_name": "glowing-marmoset.rooster465.autos",
-        "insecure": true
+        "insecure": false
       }
     },
     {
       "type": "trojan",
-      "tag": "🇸🇬 新加坡 (Singapore) 06 - xiaohe",
+      "tag": "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
       "server": "desired-boxer.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
@@ -82,6 +33,42 @@
         "enabled": true,
         "server_name": "desired-boxer.rooster465.autos",
         "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
+      "server": "pet-antelope.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "pet-antelope.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇬 新加坡 (Singapore) 05 - xiaohe",
+      "server": "holy-lamb.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "holy-lamb.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇬 新加坡 (Singapore) 06 - xiaohe",
+      "server": "inviting-ferret.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "inviting-ferret.rooster465.autos",
+        "insecure": false
       }
     },
     {
@@ -97,64 +84,29 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 08 - xiaohe",
-      "server": "pet-antelope.rooster465.autos",
+      "server": "bgroup.sg1.ilovegairport.com",
       "server_port": 443,
-      "password": "UX82473651",
+      "uuid": "f354744d-21d9-4836-9934-4989e1c4d877",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pet-antelope.rooster465.autos",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇸🇬 新加坡 (Singapore) 09 - xiaohe",
-      "server": "holy-lamb.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "holy-lamb.rooster465.autos",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 10 - xiaohe",
-      "server": "138.2.89.249",
-      "server_port": 443,
-      "password": "d042d150716709bb778cc73889cddb02",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "309502c4a8df10b46fb976d4a8c43f42"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 11 - xiaohe",
-      "server": "sg4.dexlos.com",
-      "server_port": 20654,
-      "password": "8A9905B7-801B-41AF-BFC9-2034212770F6",
-      "tls": {
-        "enabled": true,
-        "server_name": "sg4.dexlos.com",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "xK9mN2pLq5vR8wB3"
+        "server_name": "ap-southeast-1.console.aws.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3QQxF4eV_tdOD8Z5lU4PBIWFmU-pRZBvBxNTNCZBpEU",
+          "short_id": "aaf565ccdea967"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 12 - xiaohe",
+      "tag": "🇸🇬 新加坡 (Singapore) 09 - xiaohe",
       "server": "support.zoom.us",
       "server_port": 80,
       "uuid": "9b0025a3-3a36-4915-b4e1-89c5cd65c9cb",
@@ -168,49 +120,32 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 13 - xiaohe",
-      "server": "141.193.213.21",
-      "server_port": 8443,
-      "uuid": "29c3dd6b-b164-40ca-a0d5-f06aca52a8b2",
-      "tls": {
-        "enabled": true,
-        "server_name": "u.srilankangrill.online",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "tag": "🇸🇬 新加坡 (Singapore) 10 - xiaohe",
+      "server": "45.80.111.45",
+      "server_port": 8880,
+      "uuid": "5ffd914e-9594-4198-8327-145f096f8e4c",
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/cdn/assets/stream",
         "headers": {
-          "Host": "u.srilankangrill.online"
+          "Host": "cnd.singapure.mygold.stream"
         }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇸🇬 新加坡 (Singapore) 14 - xiaohe",
-      "server": "inviting-ferret.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "inviting-ferret.rooster465.autos",
-        "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 15 - xiaohe",
-      "server": "54.169.17.236",
+      "tag": "🇸🇬 新加坡 (Singapore) 11 - xiaohe",
+      "server": "138.2.89.249",
       "server_port": 443,
-      "password": "7e68e32f-8015-4f37-9082-70e8b0b58043",
+      "password": "d042d150716709bb778cc73889cddb02",
       "tls": {
         "enabled": true,
         "server_name": "www.bing.com",
         "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "309502c4a8df10b46fb976d4a8c43f42"
       }
     },
     {
@@ -228,11 +163,7 @@
         "🇸🇬 新加坡 (Singapore) 08 - xiaohe",
         "🇸🇬 新加坡 (Singapore) 09 - xiaohe",
         "🇸🇬 新加坡 (Singapore) 10 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 11 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 12 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 13 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 14 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 15 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 11 - xiaohe"
       ]
     },
     {
@@ -249,11 +180,7 @@
         "🇸🇬 新加坡 (Singapore) 08 - xiaohe",
         "🇸🇬 新加坡 (Singapore) 09 - xiaohe",
         "🇸🇬 新加坡 (Singapore) 10 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 11 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 12 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 13 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 14 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 15 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 11 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
