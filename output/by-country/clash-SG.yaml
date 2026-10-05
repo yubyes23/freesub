@@ -5,45 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - xiaohe
-  server: 139.180.220.175
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: qpSevKaUXYQKvSjp
-- name: 🇸🇬 新加坡 (Singapore) 02 - xiaohe
-  server: glowing-marmoset.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: glowing-marmoset.rooster465.autos
-  skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 03 - xiaohe
-  server: desired-boxer.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: desired-boxer.rooster465.autos
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 04 - xiaohe
-  server: pet-antelope.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: pet-antelope.rooster465.autos
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 05 - xiaohe
-  server: holy-lamb.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: holy-lamb.rooster465.autos
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 06 - xiaohe
   server: inviting-ferret.rooster465.autos
   port: 443
   udp: true
@@ -51,28 +12,15 @@ proxies:
   password: UX82473651
   sni: inviting-ferret.rooster465.autos
   skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 07 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 02 - xiaohe
   server: real-cardinal.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: real-cardinal.rooster465.autos
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 08 - xiaohe
-  server: bgroup.sg1.ilovegairport.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: f354744d-21d9-4836-9934-4989e1c4d877
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 3QQxF4eV_tdOD8Z5lU4PBIWFmU-pRZBvBxNTNCZBpEU
-    short-id: aaf565ccdea967
-  servername: ap-southeast-1.console.aws.amazon.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 09 - xiaohe
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 03 - xiaohe
   server: support.zoom.us
   port: 80
   udp: true
@@ -83,27 +31,22 @@ proxies:
     path: /shalana
     headers:
       Host: onhit.shalana.shop
-- name: 🇸🇬 新加坡 (Singapore) 10 - xiaohe
-  server: 45.80.111.45
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 5ffd914e-9594-4198-8327-145f096f8e4c
-  network: ws
-  ws-opts:
-    path: /cdn/assets/stream
-    headers:
-      Host: cnd.singapure.mygold.stream
-- name: 🇸🇬 新加坡 (Singapore) 11 - xiaohe
-  server: 138.2.89.249
+- name: 🇸🇬 新加坡 (Singapore) 04 - xiaohe
+  server: pet-antelope.rooster465.autos
   port: 443
   udp: true
-  type: hysteria2
-  password: d042d150716709bb778cc73889cddb02
-  sni: www.bing.com
+  type: trojan
+  password: UX82473651
+  sni: pet-antelope.rooster465.autos
   skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 309502c4a8df10b46fb976d4a8c43f42
+- name: 🇸🇬 新加坡 (Singapore) 05 - xiaohe
+  server: glowing-marmoset.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: glowing-marmoset.rooster465.autos
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -114,12 +57,6 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 03 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 04 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 05 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 06 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 07 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 08 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 09 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 10 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -130,11 +67,5 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 03 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 04 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 05 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 06 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 07 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 08 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 09 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 10 - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 11 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -5,29 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
-  server: kayoor.hivaphone.ir
-  port: 2045
-  udp: true
-  type: vless
-  uuid: d7e99010-e7c3-4978-9d30-2e63882dcfbe
-  network: h2
-  h2-opts:
-    host: []
-    path: /
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
   server: telegram.khp25.com
   port: 1080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: pno0e2keji2gsfea
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
-  server: strong-haddock.rooster465.autos
-  port: 443
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
+  server: xg1.mangshe.xyz
+  port: 2060
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: strong-haddock.rooster465.autos
+  type: hysteria2
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: xg1.mangshe.xyz
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+  server: hk2.xiaoliyu.cyou
+  port: 4433
+  udp: true
+  type: hysteria2
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: hk2.xiaoliyu.cyou
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
   server: telegramx.khp25.com
@@ -37,22 +35,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: m5nsedvdczx6x06e
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
-  server: hk2.xiaoliyu.cyou
-  port: 4433
-  udp: true
-  type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: hk2.xiaoliyu.cyou
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
-  server: ru1.xiaoliyu.cyou
-  port: 18333
-  udp: true
-  type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: ru1.xiaoliyu.cyou
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
   server: yg1.ygkkk.dpdns.org
   port: 443
   udp: true
@@ -78,8 +60,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -90,7 +70,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
 rules:
 - MATCH,PROXIES

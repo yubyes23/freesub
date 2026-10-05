@@ -4,17 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "cookie.wookshop.ir",
-      "server_port": 43233,
-      "uuid": "568bcbbc-7a90-4164-8b5d-1c0bbeccfa38",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "cookie.wookshop.ir"
-        }
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
+      "server": "vpn-au-001.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-au-001.fastervpn.world",
+        "insecure": true
       }
     },
     {
@@ -22,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
