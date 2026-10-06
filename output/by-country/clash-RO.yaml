@@ -13,7 +13,7 @@ proxies:
   sni: grape-test-italy.dynuddns.net
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  server: 103.126.51.49
+  server: 103.126.51.50
   port: 8443
   udp: true
   type: hysteria2

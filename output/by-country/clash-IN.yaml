@@ -5,37 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - xiaohe
-  server: 152.67.8.205
-  port: 80
+  server: 45.149.114.171
+  port: 777
   udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇮🇳 印度 (India) 02 - xiaohe
-  server: 211.20.156.191
-  port: 28163
-  udp: true
-  type: trojan
-  password: i99Cef
-  sni: ctldl.windowsupdate.com
-  skip-cert-verify: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇳 印度 (India) 01 - xiaohe
-  - 🇮🇳 印度 (India) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇳 印度 (India) 01 - xiaohe
-  - 🇮🇳 印度 (India) 02 - xiaohe
 rules:
 - MATCH,PROXIES

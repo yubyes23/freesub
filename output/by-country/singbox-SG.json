@@ -6,13 +6,13 @@
     {
       "type": "trojan",
       "tag": "🇸🇬 新加坡 (Singapore) 01 - xiaohe",
-      "server": "inviting-ferret.rooster465.autos",
+      "server": "glowing-marmoset.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
         "enabled": true,
-        "server_name": "inviting-ferret.rooster465.autos",
-        "insecure": false
+        "server_name": "glowing-marmoset.rooster465.autos",
+        "insecure": true
       }
     },
     {
@@ -30,62 +30,44 @@
     {
       "type": "trojan",
       "tag": "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
-      "server": "desired-boxer.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "desired-boxer.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
-      "server": "pet-antelope.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "pet-antelope.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇸🇬 新加坡 (Singapore) 05 - xiaohe",
       "server": "real-cardinal.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
         "enabled": true,
         "server_name": "real-cardinal.rooster465.autos",
-        "insecure": true
+        "insecure": false
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 06 - xiaohe",
-      "server": "45.80.111.45",
-      "server_port": 8880,
-      "uuid": "5ffd914e-9594-4198-8327-145f096f8e4c",
-      "transport": {
-        "type": "ws",
-        "path": "/cdn/assets/stream",
-        "headers": {
-          "Host": "cnd.singapure.mygold.stream"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
+      "server": "gw.lydwan.com",
+      "server_port": 35601,
+      "method": "chacha20-ietf-poly1305",
+      "password": "4c8fced0-8987-4504-b8cf-15aca9cbb82e"
     },
     {
       "type": "trojan",
-      "tag": "🇸🇬 新加坡 (Singapore) 07 - xiaohe",
-      "server": "glowing-marmoset.rooster465.autos",
+      "tag": "🇸🇬 新加坡 (Singapore) 05 - xiaohe",
+      "server": "pet-antelope.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
         "enabled": true,
-        "server_name": "glowing-marmoset.rooster465.autos",
+        "server_name": "pet-antelope.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇬 新加坡 (Singapore) 06 - xiaohe",
+      "server": "desired-boxer.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "desired-boxer.rooster465.autos",
         "insecure": true
       }
     },
@@ -99,8 +81,7 @@
         "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
         "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
         "🇸🇬 新加坡 (Singapore) 05 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 06 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 07 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 06 - xiaohe"
       ]
     },
     {
@@ -112,8 +93,7 @@
         "🇸🇬 新加坡 (Singapore) 03 - xiaohe",
         "🇸🇬 新加坡 (Singapore) 04 - xiaohe",
         "🇸🇬 新加坡 (Singapore) 05 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 06 - xiaohe",
-        "🇸🇬 新加坡 (Singapore) 07 - xiaohe"
+        "🇸🇬 新加坡 (Singapore) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

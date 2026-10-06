@@ -6,18 +6,18 @@
     {
       "type": "shadowsocks",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe",
-      "server": "telegram.khp25.com",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "pno0e2keji2gsfea"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe",
       "server": "telegramx.khp25.com",
       "server_port": 1080,
       "method": "chacha20-ietf-poly1305",
       "password": "m5nsedvdczx6x06e"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe",
+      "server": "telegram.khp25.com",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "pno0e2keji2gsfea"
     },
     {
       "type": "vmess",
