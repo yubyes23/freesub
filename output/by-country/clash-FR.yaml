@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - xiaohe
-  server: 15.224.203.210
+  server: 13.38.79.223
   port: 443
   udp: true
   type: ss
@@ -19,13 +19,12 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇫🇷 法国 (France) 03 - xiaohe
-  server: 62.210.7.139
-  port: 60111
+  server: 35.181.55.52
+  port: 443
   udp: true
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: 62.210.7.139
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇫🇷 法国 (France) 04 - xiaohe
   server: 51.255.13.232
   port: 8388
@@ -34,6 +33,21 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: BqnqToih0PbU
 - name: 🇫🇷 法国 (France) 05 - xiaohe
+  server: 62.210.7.139
+  port: 60111
+  udp: true
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: 62.210.7.139
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 06 - xiaohe
+  server: ay6axoz5ad92.unfixablity.com
+  port: 40973
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: hZycIr9ffe++4mxk+rkZHPgFXY1nmfb23fIeZNS3HeI=:HNUZ1NG1sNLqEe6v7XAY39JLPBTA2vAB9PGvS9VZGEA=
+- name: 🇫🇷 法国 (France) 07 - xiaohe
   server: 104.21.13.204
   port: 443
   udp: true
@@ -44,29 +58,6 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇫🇷 法国 (France) 06 - xiaohe
-  server: 155.94.134.183
-  port: 11592
-  udp: true
-  type: hysteria2
-  password: ca78f919e6
-  sni: srv-3fc7c9.21freedom.net
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: ec66908dbc46e6920143d9b684adf277
-- name: 🇫🇷 法国 (France) 07 - xiaohe
-  server: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 479526cd-5011-43cf-a788-504da95e07c2
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
 - name: 🇫🇷 法国 (France) 08 - xiaohe
   server: e3k67dwms3-51255166202-direct.tavafog.com
   port: 443
@@ -101,8 +92,8 @@ proxies:
   ws-opts:
     path: /assignment
 - name: 🇫🇷 法国 (France) 11 - xiaohe
-  server: 185.114.72.31
-  port: 2053
+  server: 185.220.100.168
+  port: 443
   udp: true
   type: trojan
   password: humanity
@@ -112,7 +103,7 @@ proxies:
   ws-opts:
     path: /assignment
 - name: 🇫🇷 法国 (France) 12 - xiaohe
-  server: 185.255.179.166
+  server: 88.99.189.60
   port: 443
   udp: true
   type: trojan
@@ -123,7 +114,7 @@ proxies:
   ws-opts:
     path: /assignment
 - name: 🇫🇷 法国 (France) 13 - xiaohe
-  server: 88.99.189.60
+  server: 185.255.179.166
   port: 443
   udp: true
   type: trojan
@@ -145,17 +136,26 @@ proxies:
   ws-opts:
     path: /assignment
 - name: 🇫🇷 法国 (France) 15 - xiaohe
-  server: 185.220.100.168
+  server: 15.224.203.210
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇫🇷 法国 (France) 16 - xiaohe
+  server: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 479526cd-5011-43cf-a788-504da95e07c2
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 16 - xiaohe
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+- name: 🇫🇷 法国 (France) 17 - xiaohe
   server: www.large-files.info
   port: 8443
   udp: true
@@ -191,6 +191,7 @@ proxy-groups:
   - 🇫🇷 法国 (France) 14 - xiaohe
   - 🇫🇷 法国 (France) 15 - xiaohe
   - 🇫🇷 法国 (France) 16 - xiaohe
+  - 🇫🇷 法国 (France) 17 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -212,5 +213,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 14 - xiaohe
   - 🇫🇷 法国 (France) 15 - xiaohe
   - 🇫🇷 法国 (France) 16 - xiaohe
+  - 🇫🇷 法国 (France) 17 - xiaohe
 rules:
 - MATCH,PROXIES
