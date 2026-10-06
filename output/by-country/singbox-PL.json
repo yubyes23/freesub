@@ -4,8 +4,19 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
+      "server": "70.34.252.154",
+      "server_port": 80,
+      "uuid": "d9c7ec1f-5aa3-469a-b860-760c686806b0",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
       "server": "streambox.wwwinternetvideo.click",
       "server_port": 443,
       "password": "865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01",
@@ -13,17 +24,6 @@
         "enabled": true,
         "server_name": "streambox.wwwinternetvideo.click",
         "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
-      "server": "70.34.252.154",
-      "server_port": 80,
-      "uuid": "d9c7ec1f-5aa3-469a-b860-760c686806b0",
-      "transport": {
-        "type": "ws",
-        "path": "/"
       }
     },
     {

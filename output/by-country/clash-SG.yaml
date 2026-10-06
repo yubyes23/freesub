@@ -5,22 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - xiaohe
+  server: 129.150.51.127
+  port: 34249
+  udp: true
+  type: vless
+  uuid: 0590ab38-cb22-41d3-8312-6f396a5cec58
+  tls: true
+  servername: www.microsoft.com
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 02 - xiaohe
+  server: desired-boxer.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: desired-boxer.rooster465.autos
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 03 - xiaohe
   server: glowing-marmoset.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: glowing-marmoset.rooster465.autos
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 02 - xiaohe
-  server: holy-lamb.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: holy-lamb.rooster465.autos
   skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 03 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 04 - xiaohe
   server: real-cardinal.rooster465.autos
   port: 443
   udp: true
@@ -28,14 +37,15 @@ proxies:
   password: UX82473651
   sni: real-cardinal.rooster465.autos
   skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 04 - xiaohe
-  server: gw.lydwan.com
-  port: 35601
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 4c8fced0-8987-4504-b8cf-15aca9cbb82e
 - name: 🇸🇬 新加坡 (Singapore) 05 - xiaohe
+  server: inviting-ferret.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: inviting-ferret.rooster465.autos
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 06 - xiaohe
   server: pet-antelope.rooster465.autos
   port: 443
   udp: true
@@ -43,14 +53,14 @@ proxies:
   password: UX82473651
   sni: pet-antelope.rooster465.autos
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 06 - xiaohe
-  server: desired-boxer.rooster465.autos
+- name: 🇸🇬 新加坡 (Singapore) 07 - xiaohe
+  server: holy-lamb.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: desired-boxer.rooster465.autos
-  skip-cert-verify: true
+  sni: holy-lamb.rooster465.autos
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,6 +72,7 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 04 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 05 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 06 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -73,5 +84,6 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 04 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 05 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 06 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 07 - xiaohe
 rules:
 - MATCH,PROXIES
