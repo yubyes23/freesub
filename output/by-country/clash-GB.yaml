@@ -5,41 +5,43 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - xiaohe
-  server: 158.173.24.73
+  server: cdn.tzpro.xyz
   port: 443
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
+  type: vless
+  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  tls: true
+  servername: 25ec.yubo.qzz.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 25ec.yubo.qzz.io
 - name: 🇬🇧 英国 (United Kingdom) 02 - xiaohe
-  server: 149.102.132.184
+  server: cf.0sm.com
   port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
+  type: vless
+  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  tls: true
+  servername: 25ec.yubo.qzz.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 25ec.yubo.qzz.io
 - name: 🇬🇧 英国 (United Kingdom) 03 - xiaohe
-  server: 149.102.149.207
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
-- name: 🇬🇧 英国 (United Kingdom) 04 - xiaohe
-  server: 149.102.149.207
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
-- name: 🇬🇧 英国 (United Kingdom) 05 - xiaohe
   server: 149.102.132.184
   port: 80
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: g5h5jleTRSyO3Rk4
-- name: 🇬🇧 英国 (United Kingdom) 06 - xiaohe
+- name: 🇬🇧 英国 (United Kingdom) 04 - xiaohe
   server: 186.190.211.188
   port: 443
   udp: true
@@ -49,6 +51,34 @@ proxies:
   servername: 186.190.211.188
   skip-cert-verify: true
   client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 05 - xiaohe
+  server: 149.102.149.207
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
+- name: 🇬🇧 英国 (United Kingdom) 06 - xiaohe
+  server: 94.156.250.148
+  port: 7001
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇬🇧 英国 (United Kingdom) 07 - xiaohe
+  server: 149.102.149.207
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
+- name: 🇬🇧 英国 (United Kingdom) 08 - xiaohe
+  server: 149.102.132.184
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,6 +90,8 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 04 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 05 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 06 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 07 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -71,5 +103,7 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 04 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 05 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 06 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 07 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 08 - xiaohe
 rules:
 - MATCH,PROXIES

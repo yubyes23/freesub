@@ -18,6 +18,18 @@
     {
       "type": "trojan",
       "tag": "🇰🇷 韩国 (South Korea) 02 - xiaohe",
+      "server": "delicate-buck.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "delicate-buck.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 03 - xiaohe",
       "server": "pretty-rat.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
@@ -29,7 +41,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 03 - xiaohe",
+      "tag": "🇰🇷 韩国 (South Korea) 04 - xiaohe",
       "server": "optimum-snapper.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
@@ -41,7 +53,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 04 - xiaohe",
+      "tag": "🇰🇷 韩国 (South Korea) 05 - xiaohe",
       "server": "kind-stork.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
@@ -53,7 +65,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 05 - xiaohe",
+      "tag": "🇰🇷 韩国 (South Korea) 06 - xiaohe",
       "server": "noted-cougar.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
@@ -65,37 +77,25 @@
     },
     {
       "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 06 - xiaohe",
-      "server": "balanced-stag.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "balanced-stag.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
       "tag": "🇰🇷 韩国 (South Korea) 07 - xiaohe",
-      "server": "main-fawn.rooster465.autos",
+      "server": "amazing-peacock.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
         "enabled": true,
-        "server_name": "main-fawn.rooster465.autos",
+        "server_name": "amazing-peacock.rooster465.autos",
         "insecure": false
       }
     },
     {
       "type": "trojan",
       "tag": "🇰🇷 韩国 (South Korea) 08 - xiaohe",
-      "server": "delicate-buck.rooster465.autos",
+      "server": "main-fawn.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
         "enabled": true,
-        "server_name": "delicate-buck.rooster465.autos",
+        "server_name": "main-fawn.rooster465.autos",
         "insecure": false
       }
     },
@@ -112,30 +112,6 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 10 - xiaohe",
-      "server": "kr.tronsg.com",
-      "server_port": 443,
-      "password": "Trojan@82164024",
-      "tls": {
-        "enabled": true,
-        "server_name": "kr.tronsg.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 11 - xiaohe",
-      "server": "amazing-peacock.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "amazing-peacock.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -148,9 +124,7 @@
         "🇰🇷 韩国 (South Korea) 06 - xiaohe",
         "🇰🇷 韩国 (South Korea) 07 - xiaohe",
         "🇰🇷 韩国 (South Korea) 08 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 09 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 10 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 11 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 09 - xiaohe"
       ]
     },
     {
@@ -165,9 +139,7 @@
         "🇰🇷 韩国 (South Korea) 06 - xiaohe",
         "🇰🇷 韩国 (South Korea) 07 - xiaohe",
         "🇰🇷 韩国 (South Korea) 08 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 09 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 10 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 11 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 09 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
