@@ -1,0 +1,70 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇰🇬 KG 01 - xiaohe",
+      "server": "104.20.24.90",
+      "server_port": 80,
+      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "c2cc.yuba.xx.kg"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇬 KG 02 - xiaohe",
+      "server": "c2cc.yuba.xx.kg",
+      "server_port": 443,
+      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
+      "tls": {
+        "enabled": true,
+        "server_name": "c2cc.yuba.xx.kg",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "c2cc.yuba.xx.kg"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇰🇬 KG 01 - xiaohe",
+        "🇰🇬 KG 02 - xiaohe"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇰🇬 KG 01 - xiaohe",
+        "🇰🇬 KG 02 - xiaohe"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

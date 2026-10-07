@@ -6,14 +6,20 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "cookie.wookshop.ir",
-      "server_port": 43233,
-      "uuid": "568bcbbc-7a90-4164-8b5d-1c0bbeccfa38",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "cookie.wookshop.ir"
+      "server": "ststictr.hamiramkemax.ir",
+      "server_port": 1081,
+      "uuid": "250865f0-4a0f-4e2e-8d14-4c39a25d0bef",
+      "tls": {
+        "enabled": true,
+        "server_name": "www12.gameservice-iramn3.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_UlBf1BRa52KM89xxvfbSHuLZWrvWuGuhvbsL3gx01A",
+          "short_id": "daa22fbb023ab4a2"
         }
       }
     },

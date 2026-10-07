@@ -15,15 +15,45 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
-      "server": "streambox.wwwinternetvideo.click",
+      "server": "177.1.192.72",
       "server_port": 443,
-      "password": "865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01",
+      "uuid": "4d852af3-a121-41aa-9aed-4ca40a6f7b4d",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "streambox.wwwinternetvideo.click",
-        "insecure": true
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM",
+          "short_id": "46455ff0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 03 - xiaohe",
+      "server": "pl-waw.dontblockmepls.com",
+      "server_port": 2063,
+      "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "rusbid.de",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM",
+          "short_id": ""
+        }
       }
     },
     {
@@ -32,7 +62,8 @@
       "outbounds": [
         "auto",
         "🇵🇱 波兰 (Poland) 01 - xiaohe",
-        "🇵🇱 波兰 (Poland) 02 - xiaohe"
+        "🇵🇱 波兰 (Poland) 02 - xiaohe",
+        "🇵🇱 波兰 (Poland) 03 - xiaohe"
       ]
     },
     {
@@ -40,7 +71,8 @@
       "tag": "auto",
       "outbounds": [
         "🇵🇱 波兰 (Poland) 01 - xiaohe",
-        "🇵🇱 波兰 (Poland) 02 - xiaohe"
+        "🇵🇱 波兰 (Poland) 02 - xiaohe",
+        "🇵🇱 波兰 (Poland) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
