@@ -5,28 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - xiaohe
-  server: neutral-quail.rooster465.autos
-  port: 443
+  server: 141.164.45.187
+  port: 6679
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: neutral-quail.rooster465.autos
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
 - name: 🇰🇷 韩国 (South Korea) 02 - xiaohe
-  server: delicate-buck.rooster465.autos
-  port: 443
+  server: 141.164.45.187
+  port: 9101
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: delicate-buck.rooster465.autos
-  skip-cert-verify: false
+  type: ss
+  cipher: aes-256-gcm
+  password: e4FCWrgpkji3QY
 - name: 🇰🇷 韩国 (South Korea) 03 - xiaohe
-  server: pretty-rat.rooster465.autos
+  server: noted-cougar.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: pretty-rat.rooster465.autos
+  sni: noted-cougar.rooster465.autos
   skip-cert-verify: false
 - name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
   server: optimum-snapper.rooster465.autos
@@ -37,30 +35,22 @@ proxies:
   sni: optimum-snapper.rooster465.autos
   skip-cert-verify: false
 - name: 🇰🇷 韩国 (South Korea) 05 - xiaohe
-  server: kind-stork.rooster465.autos
+  server: delicate-buck.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: kind-stork.rooster465.autos
+  sni: delicate-buck.rooster465.autos
   skip-cert-verify: false
 - name: 🇰🇷 韩国 (South Korea) 06 - xiaohe
-  server: noted-cougar.rooster465.autos
+  server: pretty-rat.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: noted-cougar.rooster465.autos
+  sni: pretty-rat.rooster465.autos
   skip-cert-verify: false
 - name: 🇰🇷 韩国 (South Korea) 07 - xiaohe
-  server: amazing-peacock.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: amazing-peacock.rooster465.autos
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 08 - xiaohe
   server: main-fawn.rooster465.autos
   port: 443
   udp: true
@@ -68,7 +58,23 @@ proxies:
   password: UX82473651
   sni: main-fawn.rooster465.autos
   skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 08 - xiaohe
+  server: kind-stork.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: kind-stork.rooster465.autos
+  skip-cert-verify: false
 - name: 🇰🇷 韩国 (South Korea) 09 - xiaohe
+  server: amazing-peacock.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: amazing-peacock.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 10 - xiaohe
   server: engaging-toucan.rooster465.autos
   port: 443
   udp: true
@@ -90,6 +96,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 07 - xiaohe
   - 🇰🇷 韩国 (South Korea) 08 - xiaohe
   - 🇰🇷 韩国 (South Korea) 09 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -104,5 +111,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 07 - xiaohe
   - 🇰🇷 韩国 (South Korea) 08 - xiaohe
   - 🇰🇷 韩国 (South Korea) 09 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 10 - xiaohe
 rules:
 - MATCH,PROXIES
