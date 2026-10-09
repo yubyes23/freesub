@@ -6,30 +6,6 @@
     {
       "type": "trojan",
       "tag": "🇰🇷 韩国 (South Korea) 01 - xiaohe",
-      "server": "full-egret.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "full-egret.rooster465.autos",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 02 - xiaohe",
-      "server": "working-tomcat.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "working-tomcat.rooster465.autos",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 03 - xiaohe",
       "server": "central-jawfish.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
@@ -41,7 +17,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 04 - xiaohe",
+      "tag": "🇰🇷 韩国 (South Korea) 02 - xiaohe",
       "server": "optimum-snapper.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
@@ -52,8 +28,52 @@
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 03 - xiaohe",
+      "server": "inviting-rabbit.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "inviting-rabbit.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 04 - xiaohe",
+      "server": "full-egret.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "full-egret.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
       "tag": "🇰🇷 韩国 (South Korea) 05 - xiaohe",
+      "server": "working-tomcat.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "working-tomcat.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 06 - xiaohe",
+      "server": "141.164.45.187",
+      "server_port": 8000,
+      "method": "aes-256-gcm",
+      "password": "KixLvKzwjekG00rm"
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 07 - xiaohe",
       "server": "64.176.231.183",
       "server_port": 443,
       "uuid": "583cc910-b57c-4dd0-a4a7-cea51a30b032",
@@ -74,19 +94,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 06 - xiaohe",
-      "server": "main-fawn.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "main-fawn.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 07 - xiaohe",
+      "tag": "🇰🇷 韩国 (South Korea) 08 - xiaohe",
       "server": "kind-stork.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
@@ -98,31 +106,31 @@
     },
     {
       "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 08 - xiaohe",
-      "server": "delicate-buck.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "delicate-buck.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
       "tag": "🇰🇷 韩国 (South Korea) 09 - xiaohe",
-      "server": "pretty-rat.rooster465.autos",
+      "server": "main-fawn.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
         "enabled": true,
-        "server_name": "pretty-rat.rooster465.autos",
+        "server_name": "main-fawn.rooster465.autos",
         "insecure": false
       }
     },
     {
       "type": "trojan",
       "tag": "🇰🇷 韩国 (South Korea) 10 - xiaohe",
+      "server": "noted-cougar.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "noted-cougar.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 11 - xiaohe",
       "server": "engaging-toucan.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
@@ -134,13 +142,25 @@
     },
     {
       "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 11 - xiaohe",
-      "server": "noted-cougar.rooster465.autos",
+      "tag": "🇰🇷 韩国 (South Korea) 12 - xiaohe",
+      "server": "pretty-rat.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
         "enabled": true,
-        "server_name": "noted-cougar.rooster465.autos",
+        "server_name": "pretty-rat.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 13 - xiaohe",
+      "server": "delicate-buck.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "delicate-buck.rooster465.autos",
         "insecure": false
       }
     },
@@ -159,7 +179,9 @@
         "🇰🇷 韩国 (South Korea) 08 - xiaohe",
         "🇰🇷 韩国 (South Korea) 09 - xiaohe",
         "🇰🇷 韩国 (South Korea) 10 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 11 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 11 - xiaohe",
+        "🇰🇷 韩国 (South Korea) 12 - xiaohe",
+        "🇰🇷 韩国 (South Korea) 13 - xiaohe"
       ]
     },
     {
@@ -176,7 +198,9 @@
         "🇰🇷 韩国 (South Korea) 08 - xiaohe",
         "🇰🇷 韩国 (South Korea) 09 - xiaohe",
         "🇰🇷 韩国 (South Korea) 10 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 11 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 11 - xiaohe",
+        "🇰🇷 韩国 (South Korea) 12 - xiaohe",
+        "🇰🇷 韩国 (South Korea) 13 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

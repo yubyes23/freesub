@@ -5,6 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - xiaohe
+  server: c2cc.yuba.xx.kg
+  port: 80
+  udp: true
+  type: vless
+  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: c2cc.yuba.xx.kg
+- name: 🇸🇬 新加坡 (Singapore) 02 - xiaohe
+  server: moral-basilisk.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: moral-basilisk.rooster465.autos
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 03 - xiaohe
   server: present-ram.rooster465.autos
   port: 443
   udp: true
@@ -12,7 +31,23 @@ proxies:
   password: UX82473651
   sni: present-ram.rooster465.autos
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 02 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 04 - xiaohe
+  server: 43.156.36.253
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: WvH8ooM9hom4KOOJHFJz1x5umE0aV4R0
+  sni: 43.156.36.253
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 05 - xiaohe
+  server: glorious-glider.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: glorious-glider.rooster465.autos
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 06 - xiaohe
   server: 139.180.146.200
   port: 8886
   udp: true
@@ -20,7 +55,15 @@ proxies:
   password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
   sni: 139.180.146.200
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 03 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 07 - xiaohe
+  server: rested-seahorse.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: rested-seahorse.rooster465.autos
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 08 - xiaohe
   server: real-werewolf.rooster465.autos
   port: 443
   udp: true
@@ -28,15 +71,15 @@ proxies:
   password: UX82473651
   sni: real-werewolf.rooster465.autos
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 04 - xiaohe
-  server: 138.2.73.238
-  port: 50160
+- name: 🇸🇬 新加坡 (Singapore) 09 - xiaohe
+  server: glowing-marmoset.rooster465.autos
+  port: 443
   udp: true
-  type: hysteria2
-  password: f87376e17da040ed04c9665ce8972930
-  sni: 138.2.73.238
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 05 - xiaohe
+  type: trojan
+  password: UX82473651
+  sni: glowing-marmoset.rooster465.autos
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 10 - xiaohe
   server: real-cardinal.rooster465.autos
   port: 443
   udp: true
@@ -44,34 +87,7 @@ proxies:
   password: UX82473651
   sni: real-cardinal.rooster465.autos
   skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 06 - xiaohe
-  server: 45.80.111.45
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 5ffd914e-9594-4198-8327-145f096f8e4c
-  network: ws
-  ws-opts:
-    path: /cdn/assets/stream
-    headers:
-      Host: cnd.singapure.mygold.stream
-- name: 🇸🇬 新加坡 (Singapore) 07 - xiaohe
-  server: 18.143.92.167
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: glowing-marmoset.rooster465.autos
-  skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 08 - xiaohe
-  server: pet-antelope.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: pet-antelope.rooster465.autos
-  skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 09 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 11 - xiaohe
   server: holy-lamb.rooster465.autos
   port: 443
   udp: true
@@ -79,7 +95,15 @@ proxies:
   password: UX82473651
   sni: holy-lamb.rooster465.autos
   skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 10 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 12 - xiaohe
+  server: pet-antelope.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: pet-antelope.rooster465.autos
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 13 - xiaohe
   server: inviting-ferret.rooster465.autos
   port: 443
   udp: true
@@ -87,6 +111,14 @@ proxies:
   password: UX82473651
   sni: inviting-ferret.rooster465.autos
   skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 14 - xiaohe
+  server: 138.2.73.238
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: f87376e17da040ed04c9665ce8972930
+  sni: 138.2.73.238
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -102,6 +134,10 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 08 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 09 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 10 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 11 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 12 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 13 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 14 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -117,5 +153,9 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 08 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 09 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 10 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 11 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 12 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 13 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 14 - xiaohe
 rules:
 - MATCH,PROXIES
