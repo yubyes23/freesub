@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - xiaohe
-  server: 104.19.49.27
+  server: xn--b6gac.eu.org
   port: 80
   udp: true
   type: vless
@@ -16,32 +16,31 @@ proxies:
     headers:
       Host: 25ec.yubo.qzz.io
 - name: 🇫🇷 法国 (France) 02 - xiaohe
-  server: 104.17.31.49
+  server: 104.17.177.45
   port: 443
   udp: true
-  type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  tls: true
-  servername: 25ec.yubo.qzz.io
+  type: trojan
+  password: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  sni: 25ec.yubo.qzz.io
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: 25ec.yubo.qzz.io
 - name: 🇫🇷 法国 (France) 03 - xiaohe
-  server: e3k67dwms3-51255166202-direct.tavafog.com
+  server: 52.47.99.71
   port: 443
   udp: true
-  type: vless
-  uuid: e3k67dwms3
-  flow: xtls-rprx-vision
-  tls: true
-  servername: e3k67dwms3-51255166202-direct.tavafog.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇫🇷 法国 (France) 04 - xiaohe
+  server: 51.44.86.16
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇫🇷 法国 (France) 05 - xiaohe
   server: tyxyrytyro-51255165170-direct.araghchy.com
   port: 443
   udp: true
@@ -52,15 +51,19 @@ proxies:
   servername: tyxyrytyro-51255165170-direct.araghchy.com
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 05 - xiaohe
-  server: 51.255.13.232
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
 - name: 🇫🇷 法国 (France) 06 - xiaohe
-  server: 212.183.88.136
+  server: e3k67dwms3-51255166202-direct.tavafog.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: e3k67dwms3
+  flow: xtls-rprx-vision
+  tls: true
+  servername: e3k67dwms3-51255166202-direct.tavafog.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 07 - xiaohe
+  server: www.calmlunch.com
   port: 443
   udp: true
   type: trojan
@@ -70,7 +73,7 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇫🇷 法国 (France) 07 - xiaohe
+- name: 🇫🇷 法国 (France) 08 - xiaohe
   server: 185.114.72.31
   port: 2053
   udp: true
@@ -81,7 +84,29 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇫🇷 法国 (France) 08 - xiaohe
+- name: 🇫🇷 法国 (France) 09 - xiaohe
+  server: 185.220.100.168
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 10 - xiaohe
+  server: 212.227.144.37
+  port: 8443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 11 - xiaohe
   server: 62.210.147.2
   port: 43115
   udp: true
@@ -89,7 +114,7 @@ proxies:
   password: github.com/Alvin9999-newpac/fanqiang
   sni: www.microsoft.com
   skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 09 - xiaohe
+- name: 🇫🇷 法国 (France) 12 - xiaohe
   server: 45.87.41.18
   port: 443
   udp: true
@@ -100,6 +125,13 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
+- name: 🇫🇷 法国 (France) 13 - xiaohe
+  server: 51.255.13.232
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
 proxy-groups:
 - name: PROXIES
   type: select
@@ -114,6 +146,10 @@ proxy-groups:
   - 🇫🇷 法国 (France) 07 - xiaohe
   - 🇫🇷 法国 (France) 08 - xiaohe
   - 🇫🇷 法国 (France) 09 - xiaohe
+  - 🇫🇷 法国 (France) 10 - xiaohe
+  - 🇫🇷 法国 (France) 11 - xiaohe
+  - 🇫🇷 法国 (France) 12 - xiaohe
+  - 🇫🇷 法国 (France) 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -128,5 +164,9 @@ proxy-groups:
   - 🇫🇷 法国 (France) 07 - xiaohe
   - 🇫🇷 法国 (France) 08 - xiaohe
   - 🇫🇷 法国 (France) 09 - xiaohe
+  - 🇫🇷 法国 (France) 10 - xiaohe
+  - 🇫🇷 法国 (France) 11 - xiaohe
+  - 🇫🇷 法国 (France) 12 - xiaohe
+  - 🇫🇷 法国 (France) 13 - xiaohe
 rules:
 - MATCH,PROXIES
