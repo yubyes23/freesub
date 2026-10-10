@@ -5,12 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - xiaohe
-  server: 51.255.13.232
-  port: 8388
+  server: e3k67dwms3-51255166202-direct.tavafog.com
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
+  type: vless
+  uuid: e3k67dwms3
+  flow: xtls-rprx-vision
+  tls: true
+  servername: e3k67dwms3-51255166202-direct.tavafog.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 02 - xiaohe
   server: rgiw5k0gg5-1492025789-direct.kheibarr.com
   port: 443
@@ -23,71 +27,20 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 03 - xiaohe
-  server: 104.18.32.47
-  port: 443
+  server: 51.255.13.232
+  port: 8388
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
 - name: 🇫🇷 法国 (France) 04 - xiaohe
-  server: 45.87.41.18
-  port: 443
+  server: v35.hdacd.com
+  port: 30835
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 05 - xiaohe
-  server: e3k67dwms3-51255166202-direct.tavafog.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: e3k67dwms3
-  flow: xtls-rprx-vision
-  tls: true
-  servername: e3k67dwms3-51255166202-direct.tavafog.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 06 - xiaohe
-  server: 185.220.100.168
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 07 - xiaohe
-  server: 185.114.72.31
-  port: 2053
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 08 - xiaohe
-  server: 185.255.179.166
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -97,10 +50,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 02 - xiaohe
   - 🇫🇷 法国 (France) 03 - xiaohe
   - 🇫🇷 法国 (France) 04 - xiaohe
-  - 🇫🇷 法国 (France) 05 - xiaohe
-  - 🇫🇷 法国 (France) 06 - xiaohe
-  - 🇫🇷 法国 (France) 07 - xiaohe
-  - 🇫🇷 法国 (France) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -110,9 +59,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 02 - xiaohe
   - 🇫🇷 法国 (France) 03 - xiaohe
   - 🇫🇷 法国 (France) 04 - xiaohe
-  - 🇫🇷 法国 (France) 05 - xiaohe
-  - 🇫🇷 法国 (France) 06 - xiaohe
-  - 🇫🇷 法国 (France) 07 - xiaohe
-  - 🇫🇷 法国 (France) 08 - xiaohe
 rules:
 - MATCH,PROXIES

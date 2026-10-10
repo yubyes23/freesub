@@ -4,8 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe",
+      "server": "cf.877771.xyz",
+      "server_port": 80,
+      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "c2cc.yuba.xx.kg"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe",
       "server": "full-ox.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
@@ -20,14 +34,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

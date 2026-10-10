@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
+  server: cf.877771.xyz
+  port: 80
+  udp: true
+  type: vless
+  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: c2cc.yuba.xx.kg
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
   server: full-ox.rooster465.autos
   port: 443
   udp: true
@@ -18,11 +29,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
 rules:
 - MATCH,PROXIES

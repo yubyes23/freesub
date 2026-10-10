@@ -4,12 +4,27 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇨🇭 瑞士 (Switzerland) 01 - xiaohe",
-      "server": "132.243.175.144",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
+      "server": "104.17.127.194",
+      "server_port": 443,
+      "uuid": "f888a23f-acb8-4be2-9b74-e560491619eb",
+      "tls": {
+        "enabled": true,
+        "server_name": "5656.boye.de5.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "5656.boye.de5.net"
+        }
+      }
     },
     {
       "type": "hysteria2",
