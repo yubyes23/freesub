@@ -4,25 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
-      "server": "104.17.22.136",
+      "type": "vless",
+      "tag": "🇬🇷 希腊 (Greece) 01 - xiaohe",
+      "server": "157.228.160.166",
       "server_port": 443,
-      "password": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
+      "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "25ec.yubo.qzz.io",
-        "insecure": false,
+        "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "25ec.yubo.qzz.io"
+          "fingerprint": "randomized"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M",
+          "short_id": "3cef317b"
         }
       }
     },
@@ -31,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe"
+        "🇬🇷 希腊 (Greece) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe"
+        "🇬🇷 希腊 (Greece) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

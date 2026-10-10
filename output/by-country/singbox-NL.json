@@ -4,45 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇳🇱 荷兰 (Netherlands) 01 - xiaohe",
-      "server": "104.21.95.223",
-      "server_port": 80,
-      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "25ec.yubo.qzz.io"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇳🇱 荷兰 (Netherlands) 02 - xiaohe",
-      "server": "104.18.173.204",
-      "server_port": 443,
-      "password": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
-      "tls": {
-        "enabled": true,
-        "server_name": "25ec.yubo.qzz.io",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "25ec.yubo.qzz.io"
-        }
-      }
+      "server": "82.38.31.199",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 荷兰 (Netherlands) 03 - xiaohe",
+      "tag": "🇳🇱 荷兰 (Netherlands) 02 - xiaohe",
       "server": "82.38.31.35",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -50,15 +21,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 荷兰 (Netherlands) 04 - xiaohe",
-      "server": "193.29.139.151",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 荷兰 (Netherlands) 05 - xiaohe",
+      "tag": "🇳🇱 荷兰 (Netherlands) 03 - xiaohe",
       "server": "82.38.31.170",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
@@ -66,23 +29,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 荷兰 (Netherlands) 06 - xiaohe",
-      "server": "82.38.31.171",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 荷兰 (Netherlands) 07 - xiaohe",
-      "server": "82.38.31.159",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 荷兰 (Netherlands) 08 - xiaohe",
+      "tag": "🇳🇱 荷兰 (Netherlands) 04 - xiaohe",
       "server": "82.38.31.184",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
@@ -90,11 +37,49 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱 荷兰 (Netherlands) 09 - xiaohe",
-      "server": "82.38.31.199",
+      "tag": "🇳🇱 荷兰 (Netherlands) 05 - xiaohe",
+      "server": "82.38.31.159",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇳🇱 荷兰 (Netherlands) 06 - xiaohe",
+      "server": "104.18.35.86",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.volumerOot.coM.",
+        "insecure": true,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.volumerOot.coM."
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇳🇱 荷兰 (Netherlands) 07 - xiaohe",
+      "server": "193.29.139.151",
       "server_port": 8080,
       "method": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇳🇱 荷兰 (Netherlands) 08 - xiaohe",
+      "server": "c3.nastuh.link",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "y7KeRTzmH0vXT2kp"
     },
     {
       "type": "selector",
@@ -108,8 +93,7 @@
         "🇳🇱 荷兰 (Netherlands) 05 - xiaohe",
         "🇳🇱 荷兰 (Netherlands) 06 - xiaohe",
         "🇳🇱 荷兰 (Netherlands) 07 - xiaohe",
-        "🇳🇱 荷兰 (Netherlands) 08 - xiaohe",
-        "🇳🇱 荷兰 (Netherlands) 09 - xiaohe"
+        "🇳🇱 荷兰 (Netherlands) 08 - xiaohe"
       ]
     },
     {
@@ -123,8 +107,7 @@
         "🇳🇱 荷兰 (Netherlands) 05 - xiaohe",
         "🇳🇱 荷兰 (Netherlands) 06 - xiaohe",
         "🇳🇱 荷兰 (Netherlands) 07 - xiaohe",
-        "🇳🇱 荷兰 (Netherlands) 08 - xiaohe",
-        "🇳🇱 荷兰 (Netherlands) 09 - xiaohe"
+        "🇳🇱 荷兰 (Netherlands) 08 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
