@@ -13,13 +13,13 @@ proxies:
   sni: msk.frkn.org
   skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 139.28.168.126
-  port: 8080
+  server: alb1337.zaebalsanoproxyklinus.lol
+  port: 28152
   udp: true
   type: hysteria2
-  password: we_9m92rJZ93_m9Cj3KXB_mC9AS7Nx
-  sni: hopp-honkong-new.roxa.org
-  skip-cert-verify: true
+  password: 8bd04756-3beb-4348-82c9-d35453df50ce
+  sni: alb1337.zaebalsanoproxyklinus.lol
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
