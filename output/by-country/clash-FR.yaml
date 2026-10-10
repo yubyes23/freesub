@@ -12,7 +12,18 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: BqnqToih0PbU
 - name: 🇫🇷 法国 (France) 02 - xiaohe
-  server: 212.183.88.136
+  server: rgiw5k0gg5-1492025789-direct.kheibarr.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: rgiw5k0gg5
+  flow: xtls-rprx-vision
+  tls: true
+  servername: rgiw5k0gg5-1492025789-direct.kheibarr.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 03 - xiaohe
+  server: 104.18.32.47
   port: 443
   udp: true
   type: trojan
@@ -22,29 +33,7 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇫🇷 法国 (France) 03 - xiaohe
-  server: tyxyrytyro-51255165170-direct.araghchy.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: tyxyrytyro
-  flow: xtls-rprx-vision
-  tls: true
-  servername: tyxyrytyro-51255165170-direct.araghchy.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 04 - xiaohe
-  server: e3k67dwms3-51255166202-direct.tavafog.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: e3k67dwms3
-  flow: xtls-rprx-vision
-  tls: true
-  servername: e3k67dwms3-51255166202-direct.tavafog.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 05 - xiaohe
   server: 45.87.41.18
   port: 443
   udp: true
@@ -55,9 +44,20 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
+- name: 🇫🇷 法国 (France) 05 - xiaohe
+  server: e3k67dwms3-51255166202-direct.tavafog.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: e3k67dwms3
+  flow: xtls-rprx-vision
+  tls: true
+  servername: e3k67dwms3-51255166202-direct.tavafog.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 06 - xiaohe
-  server: 185.114.72.31
-  port: 2053
+  server: 185.220.100.168
+  port: 443
   udp: true
   type: trojan
   password: humanity
@@ -67,8 +67,8 @@ proxies:
   ws-opts:
     path: /assignment
 - name: 🇫🇷 法国 (France) 07 - xiaohe
-  server: 185.220.100.168
-  port: 443
+  server: 185.114.72.31
+  port: 2053
   udp: true
   type: trojan
   password: humanity
