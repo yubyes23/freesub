@@ -6,18 +6,42 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
-      "server": "pl.flen-vpn.xyz",
-      "server_port": 8443,
-      "uuid": "51a1fd52-fd88-4905-a976-35e44be28e4b",
+      "server": "95.85.253.241",
+      "server_port": 2053,
+      "uuid": "ee0a38e3-d148-48ac-ba99-5133446c2377",
       "tls": {
         "enabled": true,
-        "server_name": "pl.flen-vpn.xyz",
-        "insecure": false
+        "server_name": "95.85.253.241",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
+      "server": "pl-1-1.unturned-rust-dead.lol",
+      "server_port": 443,
+      "uuid": "c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl-1-1.unturned-rust-dead.lol",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 03 - xiaohe",
       "server": "77.110.105.122",
       "server_port": 443,
       "uuid": "019fbe0f-2d9f-4b89-9f81-e1e36129892a",
@@ -33,15 +57,15 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇵🇱 波兰 (Poland) 03 - xiaohe",
-      "server": "144.31.49.47",
-      "server_port": 443,
-      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 04 - xiaohe",
+      "server": "pl.flen-vpn.xyz",
+      "server_port": 8443,
+      "uuid": "51a1fd52-fd88-4905-a976-35e44be28e4b",
       "tls": {
         "enabled": true,
-        "server_name": "admin.wwwinternetvideo.click",
-        "insecure": true
+        "server_name": "pl.flen-vpn.xyz",
+        "insecure": false
       }
     },
     {
@@ -51,7 +75,8 @@
         "auto",
         "🇵🇱 波兰 (Poland) 01 - xiaohe",
         "🇵🇱 波兰 (Poland) 02 - xiaohe",
-        "🇵🇱 波兰 (Poland) 03 - xiaohe"
+        "🇵🇱 波兰 (Poland) 03 - xiaohe",
+        "🇵🇱 波兰 (Poland) 04 - xiaohe"
       ]
     },
     {
@@ -60,7 +85,8 @@
       "outbounds": [
         "🇵🇱 波兰 (Poland) 01 - xiaohe",
         "🇵🇱 波兰 (Poland) 02 - xiaohe",
-        "🇵🇱 波兰 (Poland) 03 - xiaohe"
+        "🇵🇱 波兰 (Poland) 03 - xiaohe",
+        "🇵🇱 波兰 (Poland) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,15 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: pl.flen-vpn.xyz
-  port: 8443
+  server: 95.85.253.241
+  port: 2053
   udp: true
   type: vless
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
   tls: true
-  servername: pl.flen-vpn.xyz
+  servername: 95.85.253.241
   skip-cert-verify: false
+  client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  server: pl-1-1.unturned-rust-dead.lol
+  port: 443
+  udp: true
+  type: vless
+  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
+  tls: true
+  reality-opts:
+    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
+  servername: pl-1-1.unturned-rust-dead.lol
+  client-fingerprint: random
+- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
   server: 77.110.105.122
   port: 443
   udp: true
@@ -24,14 +36,15 @@ proxies:
   servername: co-pl.speedtec.ru
   skip-cert-verify: false
   client-fingerprint: random
-- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: 144.31.49.47
-  port: 443
+- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+  server: pl.flen-vpn.xyz
+  port: 8443
   udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: true
+  type: vless
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  tls: true
+  servername: pl.flen-vpn.xyz
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -40,6 +53,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
+  - 🇵🇱 波兰 (Poland) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -48,5 +62,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
+  - 🇵🇱 波兰 (Poland) 04 - xiaohe
 rules:
 - MATCH,PROXIES

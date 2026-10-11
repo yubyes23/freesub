@@ -4,8 +4,61 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 01 - xiaohe",
+      "server": "104.25.214.105",
+      "server_port": 80,
+      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "25ec.yubo.qzz.io"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
+      "server": "104.18.224.181",
+      "server_port": 443,
+      "password": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
+      "tls": {
+        "enabled": true,
+        "server_name": "25ec.yubo.qzz.io",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "25ec.yubo.qzz.io"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 03 - xiaohe",
+      "server": "149.102.132.184",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "g5h5jleTRSyO3Rk4"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 04 - xiaohe",
+      "server": "149.102.132.184",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "g5h5jleTRSyO3Rk4"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 05 - xiaohe",
       "server": "51.77.225.200",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
@@ -13,29 +66,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
-      "server": "149.102.149.207",
-      "server_port": 80,
+      "tag": "🇬🇧 英国 (United Kingdom) 06 - xiaohe",
+      "server": "94.156.250.148",
+      "server_port": 7001,
       "method": "aes-256-gcm",
-      "password": "LXchLsIwtCeUAUgu"
+      "password": "RexnBgU7EV5ADxG"
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 03 - xiaohe",
-      "server": "57.129.132.223",
-      "server_port": 80,
-      "uuid": "9e20b04d-5a81-4e16-b421-01e502f0aac6",
-      "transport": {
-        "type": "ws",
-        "path": "/vless/",
-        "headers": {
-          "Host": "google.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 04 - xiaohe",
+      "tag": "🇬🇧 英国 (United Kingdom) 07 - xiaohe",
       "server": "186.190.211.188",
       "server_port": 443,
       "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
@@ -53,14 +92,6 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 05 - xiaohe",
-      "server": "149.102.132.184",
-      "server_port": 80,
-      "method": "aes-256-gcm",
-      "password": "g5h5jleTRSyO3Rk4"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -69,7 +100,9 @@
         "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
         "🇬🇧 英国 (United Kingdom) 03 - xiaohe",
         "🇬🇧 英国 (United Kingdom) 04 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 05 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 05 - xiaohe",
+        "🇬🇧 英国 (United Kingdom) 06 - xiaohe",
+        "🇬🇧 英国 (United Kingdom) 07 - xiaohe"
       ]
     },
     {
@@ -80,7 +113,9 @@
         "🇬🇧 英国 (United Kingdom) 02 - xiaohe",
         "🇬🇧 英国 (United Kingdom) 03 - xiaohe",
         "🇬🇧 英国 (United Kingdom) 04 - xiaohe",
-        "🇬🇧 英国 (United Kingdom) 05 - xiaohe"
+        "🇬🇧 英国 (United Kingdom) 05 - xiaohe",
+        "🇬🇧 英国 (United Kingdom) 06 - xiaohe",
+        "🇬🇧 英国 (United Kingdom) 07 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
