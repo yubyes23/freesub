@@ -6,13 +6,13 @@
     {
       "type": "trojan",
       "tag": "🇫🇷 法国 (France) 01 - xiaohe",
-      "server": "104.19.229.21",
+      "server": "45.80.111.7",
       "server_port": 443,
       "password": "humanity",
       "tls": {
         "enabled": true,
         "server_name": "www.calmlunch.com",
-        "insecure": false
+        "insecure": true
       },
       "transport": {
         "type": "ws",
@@ -33,52 +33,6 @@
     {
       "type": "vless",
       "tag": "🇫🇷 法国 (France) 03 - xiaohe",
-      "server": "tyxyrytyro-51255165170-direct.araghchy.com",
-      "server_port": 443,
-      "uuid": "tyxyrytyro",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "tyxyrytyro-51255165170-direct.araghchy.com",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 04 - xiaohe",
-      "server": "140.248.186.45",
-      "server_port": 443,
-      "uuid": "XpnTeam-11",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "Appxdn.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 05 - xiaohe",
       "server": "e3k67dwms3-51255166202-direct.tavafog.com",
       "server_port": 443,
       "uuid": "e3k67dwms3",
@@ -98,15 +52,18 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 06 - xiaohe",
-      "server": "rgiw5k0gg5-1492025789-direct.kheibarr.com",
+      "tag": "🇫🇷 法国 (France) 04 - xiaohe",
+      "server": "tyxyrytyro-51255165170-direct.araghchy.com",
       "server_port": 443,
-      "uuid": "rgiw5k0gg5",
+      "uuid": "tyxyrytyro",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "rgiw5k0gg5-1492025789-direct.kheibarr.com",
+        "server_name": "tyxyrytyro-51255165170-direct.araghchy.com",
         "insecure": false,
+        "alpn": [
+          "h2"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -115,7 +72,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 07 - xiaohe",
+      "tag": "🇫🇷 法国 (France) 05 - xiaohe",
       "server": "185.114.72.31",
       "server_port": 2053,
       "password": "humanity",
@@ -134,8 +91,8 @@
     },
     {
       "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 08 - xiaohe",
-      "server": "185.220.100.168",
+      "tag": "🇫🇷 法国 (France) 06 - xiaohe",
+      "server": "185.255.179.166",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -152,9 +109,26 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 07 - xiaohe",
+      "server": "rgiw5k0gg5-1492025789-direct.kheibarr.com",
+      "server_port": 443,
+      "uuid": "rgiw5k0gg5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "rgiw5k0gg5-1492025789-direct.kheibarr.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
       "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 09 - xiaohe",
-      "server": "185.255.179.166",
+      "tag": "🇫🇷 法国 (France) 08 - xiaohe",
+      "server": "45.87.41.18",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -182,8 +156,7 @@
         "🇫🇷 法国 (France) 05 - xiaohe",
         "🇫🇷 法国 (France) 06 - xiaohe",
         "🇫🇷 法国 (France) 07 - xiaohe",
-        "🇫🇷 法国 (France) 08 - xiaohe",
-        "🇫🇷 法国 (France) 09 - xiaohe"
+        "🇫🇷 法国 (France) 08 - xiaohe"
       ]
     },
     {
@@ -197,8 +170,7 @@
         "🇫🇷 法国 (France) 05 - xiaohe",
         "🇫🇷 法国 (France) 06 - xiaohe",
         "🇫🇷 法国 (France) 07 - xiaohe",
-        "🇫🇷 法国 (France) 08 - xiaohe",
-        "🇫🇷 法国 (France) 09 - xiaohe"
+        "🇫🇷 法国 (France) 08 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,7 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: cloudflare.182682.xyz
+  server: 104.17.170.142
+  port: 80
+  udp: true
+  type: vless
+  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: c2cc.yuba.xx.kg
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  server: cdn.tzpro.xyz
   port: 443
   udp: true
   type: vless
@@ -14,17 +25,6 @@ proxies:
   servername: c2cc.yuba.xx.kg
   skip-cert-verify: false
   client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: c2cc.yuba.xx.kg
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: cloudflare.182682.xyz
-  port: 80
-  udp: true
-  type: vless
-  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
   network: ws
   ws-opts:
     path: /?ed=2048

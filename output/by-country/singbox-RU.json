@@ -6,18 +6,9 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - xiaohe",
-      "server": "cloudflare.182682.xyz",
-      "server_port": 443,
+      "server": "104.17.170.142",
+      "server_port": 80,
       "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
-      "tls": {
-        "enabled": true,
-        "server_name": "c2cc.yuba.xx.kg",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "randomized"
-        }
-      },
       "transport": {
         "type": "ws",
         "path": "/?ed=2048",
@@ -29,9 +20,18 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
-      "server": "cloudflare.182682.xyz",
-      "server_port": 80,
+      "server": "cdn.tzpro.xyz",
+      "server_port": 443,
       "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
+      "tls": {
+        "enabled": true,
+        "server_name": "c2cc.yuba.xx.kg",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
       "transport": {
         "type": "ws",
         "path": "/?ed=2048",
