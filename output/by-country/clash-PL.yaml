@@ -5,23 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: enabling-snipe.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: enabling-snipe.rooster465.autos
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  server: pl.flen-vpn.xyz
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  tls: true
-  servername: pl.flen-vpn.xyz
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
   server: 95.85.253.241
   port: 2087
   udp: true
@@ -31,15 +14,15 @@ proxies:
   servername: 95.85.253.241
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
-  server: 144.31.49.47
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  server: enabling-snipe.rooster465.autos
   port: 443
   udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
+  type: trojan
+  password: UX82473651
+  sni: enabling-snipe.rooster465.autos
   skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
   server: 77.110.105.122
   port: 443
   udp: true
@@ -50,6 +33,23 @@ proxies:
   servername: co-pl.speedtec.ru
   skip-cert-verify: false
   client-fingerprint: random
+- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+  server: 144.31.49.47
+  port: 443
+  udp: true
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
+  server: pl.flen-vpn.xyz
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  tls: true
+  servername: pl.flen-vpn.xyz
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select

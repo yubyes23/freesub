@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 01 - xiaohe",
-      "server": "cdn.tzpro.xyz",
+      "server": "cf.0sm.com",
       "server_port": 80,
       "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
       "transport": {
@@ -18,23 +18,21 @@
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇺🇸 美国 (United States) 02 - xiaohe",
-      "server": "c2cc.yuba.xx.kg",
-      "server_port": 80,
-      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "c2cc.yuba.xx.kg"
-        }
+      "server": "pro-mako.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "pro-mako.rooster465.autos",
+        "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 03 - xiaohe",
-      "server": "104.17.214.3",
+      "server": "cloudflare-ip.mofashi.ltd",
       "server_port": 80,
       "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
       "transport": {
@@ -48,7 +46,7 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 04 - xiaohe",
-      "server": "104.17.216.175",
+      "server": "104.17.49.247",
       "server_port": 80,
       "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
       "transport": {
@@ -62,18 +60,9 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 05 - xiaohe",
-      "server": "104.17.31.218",
-      "server_port": 443,
+      "server": "104.25.160.2",
+      "server_port": 80,
       "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
-      "tls": {
-        "enabled": true,
-        "server_name": "c2cc.yuba.xx.kg",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "randomized"
-        }
-      },
       "transport": {
         "type": "ws",
         "path": "/?ed=2048",
@@ -85,7 +74,7 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 06 - xiaohe",
-      "server": "162.159.237.92",
+      "server": "cf.877771.xyz",
       "server_port": 80,
       "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
       "transport": {
@@ -99,7 +88,7 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 07 - xiaohe",
-      "server": "cf.0sm.com",
+      "server": "104.18.154.63",
       "server_port": 80,
       "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
       "transport": {
@@ -113,9 +102,18 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 08 - xiaohe",
-      "server": "104.17.145.137",
-      "server_port": 80,
+      "server": "104.17.160.103",
+      "server_port": 443,
       "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
+      "tls": {
+        "enabled": true,
+        "server_name": "c2cc.yuba.xx.kg",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
       "transport": {
         "type": "ws",
         "path": "/?ed=2048",
@@ -127,30 +125,7 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 09 - xiaohe",
-      "server": "104.17.216.175",
-      "server_port": 443,
-      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
-      "tls": {
-        "enabled": true,
-        "server_name": "25ec.yubo.qzz.io",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "25ec.yubo.qzz.io"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 10 - xiaohe",
-      "server": "104.17.145.137",
+      "server": "cf.0sm.com",
       "server_port": 443,
       "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
       "tls": {
@@ -162,6 +137,20 @@
           "fingerprint": "randomized"
         }
       },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "c2cc.yuba.xx.kg"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 10 - xiaohe",
+      "server": "104.17.101.116",
+      "server_port": 80,
+      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
       "transport": {
         "type": "ws",
         "path": "/?ed=2048",
@@ -173,44 +162,21 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 11 - xiaohe",
-      "server": "104.17.22.136",
-      "server_port": 443,
-      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
-      "tls": {
-        "enabled": true,
-        "server_name": "25ec.yubo.qzz.io",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "server": "185.162.229.30",
+      "server_port": 8880,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
       "transport": {
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "25ec.yubo.qzz.io"
+          "Host": "vms.lifetime61.workers.dev"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 12 - xiaohe",
-      "server": "104.17.184.130",
-      "server_port": 80,
-      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "c2cc.yuba.xx.kg"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 13 - xiaohe",
-      "server": "172.67.66.22",
+      "server": "104.17.23.217",
       "server_port": 443,
       "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
       "tls": {
@@ -232,45 +198,59 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 14 - xiaohe",
-      "server": "104.17.31.218",
+      "tag": "🇺🇸 美国 (United States) 13 - xiaohe",
+      "server": "104.17.146.82",
       "server_port": 80,
-      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
+      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/?ed=2048",
         "headers": {
-          "Host": "25ec.yubo.qzz.io"
+          "Host": "c2cc.yuba.xx.kg"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 14 - xiaohe",
+      "server": "104.17.50.166",
+      "server_port": 443,
+      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
+      "tls": {
+        "enabled": true,
+        "server_name": "c2cc.yuba.xx.kg",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "c2cc.yuba.xx.kg"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 15 - xiaohe",
-      "server": "25ec.yubo.qzz.io",
-      "server_port": 443,
-      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
-      "tls": {
-        "enabled": true,
-        "server_name": "25ec.yubo.qzz.io",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "server": "104.17.145.31",
+      "server_port": 80,
+      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/?ed=2048",
         "headers": {
-          "Host": "25ec.yubo.qzz.io"
+          "Host": "c2cc.yuba.xx.kg"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 16 - xiaohe",
-      "server": "104.19.0.222",
+      "server": "172.67.76.31",
       "server_port": 443,
       "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
       "tls": {
@@ -293,30 +273,7 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 17 - xiaohe",
-      "server": "104.17.187.73",
-      "server_port": 443,
-      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
-      "tls": {
-        "enabled": true,
-        "server_name": "c2cc.yuba.xx.kg",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "randomized"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "c2cc.yuba.xx.kg"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 18 - xiaohe",
-      "server": "104.17.146.43",
+      "server": "cdn.tzpro.xyz",
       "server_port": 80,
       "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
       "transport": {
@@ -329,31 +286,43 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 19 - xiaohe",
-      "server": "cloudflare-ip.mofashi.ltd",
+      "tag": "🇺🇸 美国 (United States) 18 - xiaohe",
+      "server": "104.17.160.103",
       "server_port": 443,
-      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
+      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
       "tls": {
         "enabled": true,
-        "server_name": "c2cc.yuba.xx.kg",
+        "server_name": "25ec.yubo.qzz.io",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "randomized"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/?ed=2048",
+        "path": "/",
         "headers": {
-          "Host": "c2cc.yuba.xx.kg"
+          "Host": "25ec.yubo.qzz.io"
         }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇺🇸 美国 (United States) 19 - xiaohe",
+      "server": "rb1211-5.vatilon.cc",
+      "server_port": 10003,
+      "password": "aec8e5e3-bb81-4b22-8802-0b88c54997b3",
+      "tls": {
+        "enabled": true,
+        "server_name": "rb1211-5.vatilon.cc",
+        "insecure": false
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 20 - xiaohe",
-      "server": "104.17.184.130",
+      "server": "104.26.12.12",
       "server_port": 443,
       "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
       "tls": {
@@ -376,7 +345,7 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 21 - xiaohe",
-      "server": "172.67.66.22",
+      "server": "c2cc.yuba.xx.kg",
       "server_port": 80,
       "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
       "transport": {
@@ -388,46 +357,32 @@
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇺🇸 美国 (United States) 22 - xiaohe",
-      "server": "104.16.149.250",
-      "server_port": 80,
-      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
+      "server": "104.17.50.166",
+      "server_port": 443,
+      "password": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
+      "tls": {
+        "enabled": true,
+        "server_name": "25ec.yubo.qzz.io",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/?ed=2048",
+        "path": "/",
         "headers": {
-          "Host": "c2cc.yuba.xx.kg"
+          "Host": "25ec.yubo.qzz.io"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 23 - xiaohe",
-      "server": "cf.090227.xyz",
-      "server_port": 443,
-      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
-      "tls": {
-        "enabled": true,
-        "server_name": "c2cc.yuba.xx.kg",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "randomized"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "c2cc.yuba.xx.kg"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 24 - xiaohe",
-      "server": "104.17.31.218",
+      "server": "104.17.160.103",
       "server_port": 80,
       "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
       "transport": {
@@ -439,9 +394,21 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇺🇸 美国 (United States) 24 - xiaohe",
+      "server": "alert-titmouse.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "alert-titmouse.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 25 - xiaohe",
-      "server": "cdn.tzpro.xyz",
+      "server": "xn--b6gac.eu.org",
       "server_port": 443,
       "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
       "tls": {
@@ -464,9 +431,18 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 26 - xiaohe",
-      "server": "xn--b6gac.eu.org",
-      "server_port": 80,
+      "server": "cf.090227.xyz",
+      "server_port": 443,
       "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
+      "tls": {
+        "enabled": true,
+        "server_name": "c2cc.yuba.xx.kg",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
       "transport": {
         "type": "ws",
         "path": "/?ed=2048",
@@ -478,9 +454,18 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 27 - xiaohe",
-      "server": "104.17.22.136",
-      "server_port": 80,
+      "server": "104.17.136.10",
+      "server_port": 443,
       "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
+      "tls": {
+        "enabled": true,
+        "server_name": "c2cc.yuba.xx.kg",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
       "transport": {
         "type": "ws",
         "path": "/?ed=2048",
@@ -492,7 +477,7 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 28 - xiaohe",
-      "server": "172.64.159.200",
+      "server": "104.26.12.12",
       "server_port": 80,
       "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
       "transport": {
@@ -506,7 +491,21 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 29 - xiaohe",
-      "server": "104.17.187.73",
+      "server": "104.17.145.31",
+      "server_port": 80,
+      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "25ec.yubo.qzz.io"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 30 - xiaohe",
+      "server": "104.18.154.63",
       "server_port": 443,
       "uuid": "f888a23f-acb8-4be2-9b74-e560491619eb",
       "tls": {
@@ -528,31 +527,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 30 - xiaohe",
-      "server": "c2cc.yuba.xx.kg",
-      "server_port": 443,
-      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
-      "tls": {
-        "enabled": true,
-        "server_name": "c2cc.yuba.xx.kg",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "randomized"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "c2cc.yuba.xx.kg"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇺🇸 美国 (United States) 31 - xiaohe",
-      "server": "172.64.159.200",
+      "server": "104.17.49.247",
       "server_port": 443,
       "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
       "tls": {
@@ -573,46 +549,54 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇺🇸 美国 (United States) 32 - xiaohe",
-      "server": "104.17.187.73",
-      "server_port": 80,
-      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "c2cc.yuba.xx.kg"
-        }
-      }
+      "server": "64.74.163.69",
+      "server_port": 18766,
+      "method": "aes-128-gcm",
+      "password": "4efe1af272e7292139b889f6a63ee071"
     },
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 33 - xiaohe",
-      "server": "cf.877771.xyz",
-      "server_port": 443,
-      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
-      "tls": {
-        "enabled": true,
-        "server_name": "c2cc.yuba.xx.kg",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "randomized"
-        }
-      },
+      "server": "cloudflare.182682.xyz",
+      "server_port": 80,
+      "uuid": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
       "transport": {
         "type": "ws",
-        "path": "/?ed=2048",
+        "path": "/",
         "headers": {
-          "Host": "c2cc.yuba.xx.kg"
+          "Host": "25ec.yubo.qzz.io"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 34 - xiaohe",
-      "server": "104.17.22.136",
+      "server": "104.17.146.82",
+      "server_port": 443,
+      "uuid": "f888a23f-acb8-4be2-9b74-e560491619eb",
+      "tls": {
+        "enabled": true,
+        "server_name": "5656.boye.de5.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "5656.boye.de5.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 35 - xiaohe",
+      "server": "104.17.146.82",
       "server_port": 443,
       "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
       "tls": {
@@ -624,20 +608,6 @@
           "fingerprint": "randomized"
         }
       },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "c2cc.yuba.xx.kg"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 35 - xiaohe",
-      "server": "cloudflare.182682.xyz",
-      "server_port": 80,
-      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
       "transport": {
         "type": "ws",
         "path": "/?ed=2048",
@@ -649,24 +619,12 @@
     {
       "type": "trojan",
       "tag": "🇺🇸 美国 (United States) 36 - xiaohe",
-      "server": "pro-mako.rooster465.autos",
+      "server": "cfip.1323123.xyz",
       "server_port": 443,
-      "password": "UX82473651",
+      "password": "8cc4f532-7c2f-4884-ab4e-64f5046152a2",
       "tls": {
         "enabled": true,
-        "server_name": "pro-mako.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 37 - xiaohe",
-      "server": "5656.boye.de5.net",
-      "server_port": 443,
-      "uuid": "f888a23f-acb8-4be2-9b74-e560491619eb",
-      "tls": {
-        "enabled": true,
-        "server_name": "5656.boye.de5.net",
+        "server_name": "25ec.yubo.qzz.io",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -675,35 +633,15 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/?ed=2048",
+        "path": "/",
         "headers": {
-          "Host": "5656.boye.de5.net"
+          "Host": "25ec.yubo.qzz.io"
         }
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 美国 (United States) 38 - xiaohe",
-      "server": "103.11.76.248",
-      "server_port": 28679,
-      "method": "2022-blake3-aes-128-gcm",
-      "password": "NzJlOTQ5NWYtM2ZkYi00Cg=="
-    },
-    {
-      "type": "trojan",
-      "tag": "🇺🇸 美国 (United States) 39 - xiaohe",
-      "server": "alert-titmouse.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "alert-titmouse.rooster465.autos",
-        "insecure": true
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 40 - xiaohe",
+      "tag": "🇺🇸 美国 (United States) 37 - xiaohe",
       "server": "guanwang.awsno.com",
       "server_port": 443,
       "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
@@ -722,17 +660,36 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 41 - xiaohe",
-      "server": "v29.hdacd.com",
-      "server_port": 30829,
-      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-      "security": "auto",
-      "alter_id": 2
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 38 - xiaohe",
+      "server": "cfip.1323123.xyz",
+      "server_port": 80,
+      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "c2cc.yuba.xx.kg"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 39 - xiaohe",
+      "server": "172.67.76.31",
+      "server_port": 80,
+      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "c2cc.yuba.xx.kg"
+        }
+      }
     },
     {
       "type": "trojan",
-      "tag": "🇺🇸 美国 (United States) 42 - xiaohe",
+      "tag": "🇺🇸 美国 (United States) 40 - xiaohe",
       "server": "38.181.42.136",
       "server_port": 9443,
       "password": "trj-qWC4DKUemeUYWSKA1xx7okumSKKw0QSX",
@@ -744,11 +701,145 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇺🇸 美国 (United States) 41 - xiaohe",
+      "server": "103.11.76.248",
+      "server_port": 28679,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "NzJlOTQ5NWYtM2ZkYi00Cg=="
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 42 - xiaohe",
+      "server": "104.17.129.251",
+      "server_port": 443,
+      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
+      "tls": {
+        "enabled": true,
+        "server_name": "c2cc.yuba.xx.kg",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "c2cc.yuba.xx.kg"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇺🇸 美国 (United States) 43 - xiaohe",
-      "server": "64.74.163.69",
-      "server_port": 18766,
-      "method": "aes-128-gcm",
-      "password": "4efe1af272e7292139b889f6a63ee071"
+      "server": "cf.090227.xyz",
+      "server_port": 80,
+      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "c2cc.yuba.xx.kg"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 44 - xiaohe",
+      "server": "141.101.122.147",
+      "server_port": 443,
+      "uuid": "c4edb87e-8544-4fa4-bd1c-b0cda9a34b46",
+      "tls": {
+        "enabled": true,
+        "server_name": "a.cwvps.eu.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "a.cwvps.eu.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 45 - xiaohe",
+      "server": "cloudflare-ip.mofashi.ltd",
+      "server_port": 443,
+      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
+      "tls": {
+        "enabled": true,
+        "server_name": "c2cc.yuba.xx.kg",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "c2cc.yuba.xx.kg"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 46 - xiaohe",
+      "server": "starlink-ft.251313.xyz",
+      "server_port": 443,
+      "password": "https://xship.top",
+      "tls": {
+        "enabled": true,
+        "server_name": "xship.top",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇺🇸 美国 (United States) 47 - xiaohe",
+      "server": "my1.australiacaregroup.site",
+      "server_port": 10003,
+      "password": "aec8e5e3-bb81-4b22-8802-0b88c54997b3",
+      "tls": {
+        "enabled": true,
+        "server_name": "my1.australiacaregroup.site",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/trojan",
+        "headers": {
+          "Host": "my1.australiacaregroup.site"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 48 - xiaohe",
+      "server": "my1.australiacaregroup.site",
+      "server_port": 10001,
+      "uuid": "aec8e5e3-bb81-4b22-8802-0b88c54997b3",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "my1.australiacaregroup.site",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vmess",
+        "headers": {
+          "Host": "my1.australiacaregroup.site"
+        }
+      }
     },
     {
       "type": "selector",
@@ -797,7 +888,12 @@
         "🇺🇸 美国 (United States) 40 - xiaohe",
         "🇺🇸 美国 (United States) 41 - xiaohe",
         "🇺🇸 美国 (United States) 42 - xiaohe",
-        "🇺🇸 美国 (United States) 43 - xiaohe"
+        "🇺🇸 美国 (United States) 43 - xiaohe",
+        "🇺🇸 美国 (United States) 44 - xiaohe",
+        "🇺🇸 美国 (United States) 45 - xiaohe",
+        "🇺🇸 美国 (United States) 46 - xiaohe",
+        "🇺🇸 美国 (United States) 47 - xiaohe",
+        "🇺🇸 美国 (United States) 48 - xiaohe"
       ]
     },
     {
@@ -846,7 +942,12 @@
         "🇺🇸 美国 (United States) 40 - xiaohe",
         "🇺🇸 美国 (United States) 41 - xiaohe",
         "🇺🇸 美国 (United States) 42 - xiaohe",
-        "🇺🇸 美国 (United States) 43 - xiaohe"
+        "🇺🇸 美国 (United States) 43 - xiaohe",
+        "🇺🇸 美国 (United States) 44 - xiaohe",
+        "🇺🇸 美国 (United States) 45 - xiaohe",
+        "🇺🇸 美国 (United States) 46 - xiaohe",
+        "🇺🇸 美国 (United States) 47 - xiaohe",
+        "🇺🇸 美国 (United States) 48 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,16 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: cdn.tzpro.xyz
+  server: 104.17.50.166
   port: 80
   udp: true
   type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2048
     headers:
-      Host: 25ec.yubo.qzz.io
+      Host: c2cc.yuba.xx.kg
 proxy-groups:
 - name: PROXIES
   type: select

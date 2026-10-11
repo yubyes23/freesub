@@ -5,6 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
+  server: 104.17.146.82
+  port: 80
+  udp: true
+  type: vless
+  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 25ec.yubo.qzz.io
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
+  server: 104.17.49.247
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  tls: true
+  servername: 25ec.yubo.qzz.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 25ec.yubo.qzz.io
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
   server: 77.74.123.107
   port: 8443
   udp: true
@@ -12,7 +38,7 @@ proxies:
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   sni: grape-test-italy.dynuddns.net
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   server: 162.249.125.133
   port: 443
   udp: true
@@ -29,6 +55,8 @@ proxy-groups:
   - AUTO
   - 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
+  - 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
+  - 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -36,5 +64,7 @@ proxy-groups:
   proxies:
   - 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
+  - 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
+  - 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
 rules:
 - MATCH,PROXIES
