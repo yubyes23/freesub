@@ -5,37 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - xiaohe
-  server: 51.255.13.232
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-- name: 🇫🇷 法国 (France) 02 - xiaohe
-  server: e3k67dwms3-51255166202-direct.tavafog.com
+  server: 188.114.96.3
   port: 443
   udp: true
-  type: vless
-  uuid: e3k67dwms3
-  flow: xtls-rprx-vision
-  tls: true
-  servername: e3k67dwms3-51255166202-direct.tavafog.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 03 - xiaohe
-  server: 37.49.230.85
-  port: 8443
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 02 - xiaohe
+  server: 62.210.147.2
+  port: 43115
   udp: true
-  type: vless
-  uuid: c6db98c5-9959-425e-9340-300779fc4e4b
-  tls: true
-  servername: fr5.sodahub.online
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: fr5grpc
-- name: 🇫🇷 法国 (France) 04 - xiaohe
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: www.microsoft.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 03 - xiaohe
   server: tyxyrytyro-51255165170-direct.araghchy.com
   port: 443
   udp: true
@@ -46,37 +34,18 @@ proxies:
   servername: tyxyrytyro-51255165170-direct.araghchy.com
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 05 - xiaohe
-  server: 62.210.147.2
-  port: 43115
-  udp: true
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 06 - xiaohe
-  server: 212.183.88.136
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 07 - xiaohe
-  server: rgiw5k0gg5-1492025789-direct.kheibarr.com
+- name: 🇫🇷 法国 (France) 04 - xiaohe
+  server: e3k67dwms3-51255166202-direct.tavafog.com
   port: 443
   udp: true
   type: vless
-  uuid: rgiw5k0gg5
+  uuid: e3k67dwms3
   flow: xtls-rprx-vision
   tls: true
-  servername: rgiw5k0gg5-1492025789-direct.kheibarr.com
+  servername: e3k67dwms3-51255166202-direct.tavafog.com
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 08 - xiaohe
+- name: 🇫🇷 法国 (France) 05 - xiaohe
   server: 45.87.41.18
   port: 443
   udp: true
@@ -87,7 +56,14 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇫🇷 法国 (France) 09 - xiaohe
+- name: 🇫🇷 法国 (France) 06 - xiaohe
+  server: 51.255.13.232
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
+- name: 🇫🇷 法国 (France) 07 - xiaohe
   server: 185.114.72.31
   port: 2053
   udp: true
@@ -98,43 +74,25 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇫🇷 法国 (France) 10 - xiaohe
-  server: f4.vimeostream.online
-  port: 11443
+- name: 🇫🇷 法国 (France) 08 - xiaohe
+  server: rgiw5k0gg5-1492025789-direct.kheibarr.com
+  port: 443
   udp: true
   type: vless
-  uuid: c6db98c5-9959-425e-9340-300779fc4e4b
+  uuid: rgiw5k0gg5
+  flow: xtls-rprx-vision
   tls: true
-  servername: f4.vimeostream.online
+  servername: rgiw5k0gg5-1492025789-direct.kheibarr.com
   skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /api/v2/stream/ws
-    headers:
-      Host: f4.vimeostream.online
-- name: 🇫🇷 法国 (France) 11 - xiaohe
-  server: 185.220.100.168
-  port: 443
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 09 - xiaohe
+  server: v35.hdacd.com
+  port: 30835
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 12 - xiaohe
-  server: 185.255.179.166
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -149,9 +107,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 07 - xiaohe
   - 🇫🇷 法国 (France) 08 - xiaohe
   - 🇫🇷 法国 (France) 09 - xiaohe
-  - 🇫🇷 法国 (France) 10 - xiaohe
-  - 🇫🇷 法国 (France) 11 - xiaohe
-  - 🇫🇷 法国 (France) 12 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -166,8 +121,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 07 - xiaohe
   - 🇫🇷 法国 (France) 08 - xiaohe
   - 🇫🇷 法国 (France) 09 - xiaohe
-  - 🇫🇷 法国 (France) 10 - xiaohe
-  - 🇫🇷 法国 (France) 11 - xiaohe
-  - 🇫🇷 法国 (France) 12 - xiaohe
 rules:
 - MATCH,PROXIES

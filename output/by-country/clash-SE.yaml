@@ -5,13 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: sweedenqfds777.qcloud.surf
-  port: 21223
+  server: 732051t.se1.h1clayd.click
+  port: 443
   udp: true
-  type: hysteria2
-  password: 8bd04756-3beb-4348-82c9-d35453df50ce
-  sni: sweedenqfds777.qcloud.surf
-  skip-cert-verify: true
+  type: vless
+  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
+  tls: true
+  reality-opts:
+    public-key: NqyAfxsF9xeJZi_5itA5VCxaja1ioXjw7xPM_QonKVk
+    short-id: 0983a448f995e806
+  servername: 732051t.se1.h1clayd.click
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

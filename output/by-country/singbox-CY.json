@@ -4,22 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
-      "server": "654168416355441.d6f54hd1j.cc",
+      "type": "vless",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe",
+      "server": "cdn.tzpro.xyz",
       "server_port": 443,
-      "uuid": "ecdc303d-bcbf-4129-bc02-dd67703f7081",
-      "security": "auto",
+      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
       "tls": {
         "enabled": true,
-        "server_name": "654168416355441.d6f54hd1j.cc",
-        "insecure": false
+        "server_name": "c2cc.yuba.xx.kg",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/?ed=2048",
         "headers": {
-          "Host": "654168416355441.d6f54hd1j.cc"
+          "Host": "c2cc.yuba.xx.kg"
         }
       }
     },
@@ -28,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
+        "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
+        "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
