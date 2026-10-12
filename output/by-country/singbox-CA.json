@@ -4,8 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇨🇦 加拿大 (Canada) 01 - xiaohe",
+      "server": "xn--b6gac.eu.org",
+      "server_port": 80,
+      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "c2cc.yuba.xx.kg"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 02 - xiaohe",
       "server": "51.222.136.236",
       "server_port": 8882,
       "method": "aes-256-gcm",
@@ -13,50 +27,69 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 02 - xiaohe",
+      "tag": "🇨🇦 加拿大 (Canada) 03 - xiaohe",
+      "server": "51.222.12.127",
+      "server_port": 445,
+      "method": "aes-256-gcm",
+      "password": "zDNVedRFPQexG9v"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 04 - xiaohe",
+      "server": "172.66.192.136",
+      "server_port": 443,
+      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
+      "tls": {
+        "enabled": true,
+        "server_name": "c2cc.yuba.xx.kg",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "c2cc.yuba.xx.kg"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 05 - xiaohe",
       "server": "51.79.85.185",
       "server_port": 8118,
       "method": "aes-256-gcm",
       "password": "cdBIDV42DCwnfIN"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 03 - xiaohe",
-      "server": "51.222.200.165",
-      "server_port": 5000,
-      "method": "aes-256-gcm",
-      "password": "Y6R9pAtvxxzmGC"
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 04 - xiaohe",
-      "server": "milo.rubinaz.xyz",
-      "server_port": 8080,
-      "uuid": "6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 05 - xiaohe",
-      "server": "51.222.141.125",
-      "server_port": 445,
-      "method": "aes-256-gcm",
-      "password": "zDNVedRFPQexG9v"
-    },
-    {
-      "type": "shadowsocks",
+      "type": "trojan",
       "tag": "🇨🇦 加拿大 (Canada) 06 - xiaohe",
-      "server": "51.79.64.198",
-      "server_port": 8119,
-      "method": "aes-256-gcm",
-      "password": "cdBIDV42DCwnfIN"
+      "server": "www.wto.org",
+      "server_port": 8443,
+      "password": "ec1fa47d-4eac-4b3f-8cae-4a2982d43e2f",
+      "tls": {
+        "enabled": true,
+        "server_name": "jiangjc.pages.dev",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "jiangjc.pages.dev"
+        }
+      }
     },
     {
       "type": "shadowsocks",
       "tag": "🇨🇦 加拿大 (Canada) 07 - xiaohe",
-      "server": "51.222.12.127",
-      "server_port": 445,
+      "server": "51.222.200.165",
+      "server_port": 5000,
       "method": "aes-256-gcm",
-      "password": "zDNVedRFPQexG9v"
+      "password": "Y6R9pAtvxxzmGC"
     },
     {
       "type": "shadowsocks",
@@ -65,6 +98,29 @@
       "server_port": 5003,
       "method": "aes-256-gcm",
       "password": "g5MeD6Ft3CWlJId"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 09 - xiaohe",
+      "server": "51.222.141.125",
+      "server_port": 445,
+      "method": "aes-256-gcm",
+      "password": "zDNVedRFPQexG9v"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 10 - xiaohe",
+      "server": "milo.rubinaz.xyz",
+      "server_port": 8080,
+      "uuid": "6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 11 - xiaohe",
+      "server": "51.79.64.198",
+      "server_port": 8119,
+      "method": "aes-256-gcm",
+      "password": "cdBIDV42DCwnfIN"
     },
     {
       "type": "selector",
@@ -78,7 +134,10 @@
         "🇨🇦 加拿大 (Canada) 05 - xiaohe",
         "🇨🇦 加拿大 (Canada) 06 - xiaohe",
         "🇨🇦 加拿大 (Canada) 07 - xiaohe",
-        "🇨🇦 加拿大 (Canada) 08 - xiaohe"
+        "🇨🇦 加拿大 (Canada) 08 - xiaohe",
+        "🇨🇦 加拿大 (Canada) 09 - xiaohe",
+        "🇨🇦 加拿大 (Canada) 10 - xiaohe",
+        "🇨🇦 加拿大 (Canada) 11 - xiaohe"
       ]
     },
     {
@@ -92,7 +151,10 @@
         "🇨🇦 加拿大 (Canada) 05 - xiaohe",
         "🇨🇦 加拿大 (Canada) 06 - xiaohe",
         "🇨🇦 加拿大 (Canada) 07 - xiaohe",
-        "🇨🇦 加拿大 (Canada) 08 - xiaohe"
+        "🇨🇦 加拿大 (Canada) 08 - xiaohe",
+        "🇨🇦 加拿大 (Canada) 09 - xiaohe",
+        "🇨🇦 加拿大 (Canada) 10 - xiaohe",
+        "🇨🇦 加拿大 (Canada) 11 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
