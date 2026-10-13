@@ -5,7 +5,59 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - xiaohe
-  server: 104.19.34.14
+  server: 104.19.230.113
+  port: 80
+  udp: true
+  type: vless
+  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 25ec.yubo.qzz.io
+- name: 🇸🇬 新加坡 (Singapore) 02 - xiaohe
+  server: 104.18.53.198
+  port: 443
+  udp: true
+  type: trojan
+  password: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  sni: 25ec.yubo.qzz.io
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇸🇬 新加坡 (Singapore) 03 - xiaohe
+  server: 172.66.175.219
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  tls: true
+  servername: 25ec.yubo.qzz.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 25ec.yubo.qzz.io
+- name: 🇸🇬 新加坡 (Singapore) 04 - xiaohe
+  server: 172.64.79.5
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  tls: true
+  servername: 25ec.yubo.qzz.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 25ec.yubo.qzz.io
+- name: 🇸🇬 新加坡 (Singapore) 05 - xiaohe
+  server: 104.17.154.202
   port: 443
   udp: true
   type: vless
@@ -19,54 +71,14 @@ proxies:
     path: /?ed=2048
     headers:
       Host: 5656.boye.de5.net
-- name: 🇸🇬 新加坡 (Singapore) 02 - xiaohe
+- name: 🇸🇬 新加坡 (Singapore) 06 - xiaohe
   server: 45.128.12.20
   port: 14249
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 9epp3o9ng8ej59uv
-- name: 🇸🇬 新加坡 (Singapore) 03 - xiaohe
-  server: moral-basilisk.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: moral-basilisk.rooster465.autos
-  skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 04 - xiaohe
-  server: ace-liger.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: ace-liger.rooster465.autos
-  skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 05 - xiaohe
-  server: brave-tomcat.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: brave-tomcat.rooster465.autos
-  skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 06 - xiaohe
-  server: simple-molly.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: simple-molly.rooster465.autos
-  skip-cert-verify: false
 - name: 🇸🇬 新加坡 (Singapore) 07 - xiaohe
-  server: inviting-ferret.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: inviting-ferret.rooster465.autos
-  skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 08 - xiaohe
   server: musical-mouse.rooster465.autos
   port: 443
   udp: true
@@ -74,13 +86,37 @@ proxies:
   password: UX82473651
   sni: musical-mouse.rooster465.autos
   skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 09 - xiaohe
-  server: rested-seahorse.rooster465.autos
+- name: 🇸🇬 新加坡 (Singapore) 08 - xiaohe
+  server: moral-basilisk.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: rested-seahorse.rooster465.autos
+  sni: moral-basilisk.rooster465.autos
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 09 - xiaohe
+  server: simple-molly.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: simple-molly.rooster465.autos
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 10 - xiaohe
+  server: inviting-ferret.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: inviting-ferret.rooster465.autos
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 11 - xiaohe
+  server: brave-tomcat.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: brave-tomcat.rooster465.autos
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
@@ -96,6 +132,8 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 07 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 08 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 09 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 10 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -110,5 +148,7 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 07 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 08 - xiaohe
   - 🇸🇬 新加坡 (Singapore) 09 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 10 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 11 - xiaohe
 rules:
 - MATCH,PROXIES

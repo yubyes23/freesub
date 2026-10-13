@@ -4,24 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
-      "server": "732051t.se1.h1clayd.click",
-      "server_port": 443,
-      "uuid": "ec572cf0-1337-4c51-b4ec-ff2f538c1f4c",
-      "tls": {
-        "enabled": true,
-        "server_name": "732051t.se1.h1clayd.click",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "NqyAfxsF9xeJZi_5itA5VCxaja1ioXjw7xPM_QonKVk",
-          "short_id": "0983a448f995e806"
-        }
-      }
+      "server": "70.34.212.124",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "AxIYWtskJWIIaefW"
     },
     {
       "type": "selector",

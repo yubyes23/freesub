@@ -5,17 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: 732051t.se1.h1clayd.click
-  port: 443
+  server: 70.34.212.124
+  port: 8388
   udp: true
-  type: vless
-  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
-  tls: true
-  reality-opts:
-    public-key: NqyAfxsF9xeJZi_5itA5VCxaja1ioXjw7xPM_QonKVk
-    short-id: 0983a448f995e806
-  servername: 732051t.se1.h1clayd.click
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
 proxy-groups:
 - name: PROXIES
   type: select
