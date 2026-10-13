@@ -5,27 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
-  server: 172.66.192.222
-  port: 443
-  udp: true
-  type: vless
-  uuid: f888a23f-acb8-4be2-9b74-e560491619eb
-  tls: true
-  servername: 5656.boye.de5.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 5656.boye.de5.net
-- name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   server: 132.243.175.144
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+- name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
+  server: 152.67.75.161
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 3a702d4d1de4949005d8431220e040fb
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: c13f29db6a638ad2b211b9ce2669ef27
 proxy-groups:
 - name: PROXIES
   type: select

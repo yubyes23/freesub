@@ -5,16 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
-  server: nas.aizhzo.com
-  port: 5010
-  udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: nas.aizhzo.com
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
   server: relay.xiaomans.com
   port: 20003
   udp: true
@@ -27,6 +17,16 @@ proxies:
     short-id: 09d75ddaf90d0ba5
   servername: www.cloudflare.com
   client-fingerprint: safari
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
+  server: nas.aizhzo.com
+  port: 5010
+  udp: true
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 proxy-groups:
 - name: PROXIES
   type: select

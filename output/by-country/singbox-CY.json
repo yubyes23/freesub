@@ -6,23 +6,17 @@
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe",
-      "server": "cdn.tzpro.xyz",
+      "server": "77.110.105.122",
       "server_port": 443,
-      "uuid": "fe0ab8a8-01ad-4807-8a31-68609f899f09",
+      "uuid": "019fbe0f-2d9f-4b89-9f81-e1e36129892a",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "c2cc.yuba.xx.kg",
+        "server_name": "co-pl.speedtec.ru",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "randomized"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "c2cc.yuba.xx.kg"
+          "fingerprint": "random"
         }
       }
     },

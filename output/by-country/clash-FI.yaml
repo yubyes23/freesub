@@ -5,50 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: cf.877771.xyz
-  port: 80
-  udp: true
-  type: vless
-  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 25ec.yubo.qzz.io
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 45.149.114.171
-  port: 777
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 185.103.110.66
-  port: 18280
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   server: 185.103.110.68
   port: 18283
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  server: 170.168.4.59
-  port: 17170
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  server: 185.103.110.66
+  port: 18280
   udp: true
-  type: vless
-  uuid: 3eec23c1-2a0d-4d53-afa5-62745a1f5ffe
-  tls: true
-  servername: northerntrail.gazette.help
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trail-grpc
+  type: ss
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
 proxy-groups:
 - name: PROXIES
   type: select
@@ -56,9 +25,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,8 +32,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
 rules:
 - MATCH,PROXIES

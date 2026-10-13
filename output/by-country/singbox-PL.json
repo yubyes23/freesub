@@ -6,6 +6,26 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
+      "server": "pl-1-1.unturned-rust-dead.lol",
+      "server_port": 443,
+      "uuid": "c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl-1-1.unturned-rust-dead.lol",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
       "server": "2.26.225.89",
       "server_port": 8443,
       "uuid": "51a1fd52-fd88-4905-a976-35e44be28e4b",
@@ -20,14 +40,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 波兰 (Poland) 01 - xiaohe"
+        "🇵🇱 波兰 (Poland) 01 - xiaohe",
+        "🇵🇱 波兰 (Poland) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 波兰 (Poland) 01 - xiaohe"
+        "🇵🇱 波兰 (Poland) 01 - xiaohe",
+        "🇵🇱 波兰 (Poland) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

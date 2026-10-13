@@ -5,31 +5,42 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 172.66.144.70
+  server: 104.17.219.231
   port: 80
   udp: true
   type: vless
-  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
+  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
   network: ws
   ws-opts:
-    path: /?ed=2048
+    path: /
     headers:
-      Host: c2cc.yuba.xx.kg
+      Host: 25ec.yubo.qzz.io
 - name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: cf.877771.xyz
+  server: 104.19.151.183
   port: 443
   udp: true
   type: vless
-  uuid: fe0ab8a8-01ad-4807-8a31-68609f899f09
+  uuid: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
   tls: true
-  servername: c2cc.yuba.xx.kg
+  servername: 25ec.yubo.qzz.io
   skip-cert-verify: false
-  client-fingerprint: randomized
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /?ed=2048
+    path: /
     headers:
-      Host: c2cc.yuba.xx.kg
+      Host: 25ec.yubo.qzz.io
+- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
+  server: cf.0sm.com
+  port: 443
+  udp: true
+  type: trojan
+  password: 8cc4f532-7c2f-4884-ab4e-64f5046152a2
+  sni: 25ec.yubo.qzz.io
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +48,7 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
+  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +56,6 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
+  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 rules:
 - MATCH,PROXIES
